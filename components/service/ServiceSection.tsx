@@ -1,0 +1,111 @@
+import {FC} from 'react'
+import NextLink from 'next/link';
+import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button } from '@mui/material';
+
+import ConstructionIcon from '@mui/icons-material/Construction';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import ArchitectureIcon from '@mui/icons-material/Architecture';
+
+// TODO: agregar el alt en todas las imagenes usadas
+
+interface ServiceSectionProps {
+    serviceSectionTitle: string;
+    service1Title: string;
+    service1Description: string;
+    service1Link: string;
+    service2Title: string;
+    service2Description: string;
+    service2Link: string;
+    service3Title: string;
+    service3Description: string;
+    service3Link: string;
+    textBtn: string;
+}
+
+export const ServiceSection: FC<ServiceSectionProps> = ({
+    serviceSectionTitle,
+    service1Title,
+    service1Description,
+    service1Link,
+    service2Title,
+    service2Description,
+    service2Link,
+    service3Title,
+    service3Description,
+    service3Link,
+    textBtn,
+}) => {
+  return (
+    <Grid container justifyContent='center' alignItems='center' spacing={3}>
+        <Grid item xs={12}>
+            <Typography sx={{fontSize: {xs:'25px', sm:'40px', md:'50px'}, color: 'text.disabled', textAlign: 'center'}}>{serviceSectionTitle}</Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
+                <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                    <ConstructionIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: {xs:'18px', sm:'20px'}}}>
+                            {service1Title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'16px', sm:'18px'}}}>
+                            {service1Description}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <NextLink href={service1Link} passHref>
+                        <Button size="small" variant="contained" color="secondary">
+                            {textBtn}
+                        </Button>
+                    </NextLink>
+                </CardActions>
+            </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
+                <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                    <ApartmentIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: {xs:'18px', sm:'20px'}}}>
+                            {service2Title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'16px', sm:'18px'}}}>
+                            {service2Description}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <NextLink href={service2Link} passHref>
+                        <Button size="small" variant="contained" color="secondary">
+                            {textBtn}
+                        </Button>
+                    </NextLink>
+                </CardActions>
+            </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
+                <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                    <ArchitectureIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: {xs:'18px', sm:'20px'}}}>
+                            {service3Title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'16px', sm:'18px'}}}>
+                            {service3Description}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <NextLink href={service3Link} passHref>
+                        <Button size="small" variant="contained" color="secondary">
+                            {textBtn}
+                        </Button>
+                    </NextLink>
+                </CardActions>
+            </Card>
+        </Grid>
+    </Grid>
+  )
+}
