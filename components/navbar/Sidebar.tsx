@@ -39,6 +39,12 @@ interface ItemsMenuProps {
     linkServiceTwo: string;
     serviceThree: string;
     linkServiceThree: string;
+    serviceFour: string;
+    linkServiceFour: string;
+    serviceFive: string;
+    linkServiceFive: string;
+    serviceSix: string;
+    linkServiceSix: string;
     linkBtnLanguage: string;
   }
 
@@ -56,6 +62,12 @@ export const Sidebar: FC<ItemsMenuProps> = ({
     linkServiceTwo,
     serviceThree,
     linkServiceThree,
+    serviceFour,
+    linkServiceFour,
+    serviceFive,
+    linkServiceFive,
+    serviceSix,
+    linkServiceSix,
     linkBtnLanguage,
 }) => {
 
@@ -133,6 +145,24 @@ export const Sidebar: FC<ItemsMenuProps> = ({
                             <NextLink href={linkServiceThree} passHref>
                                 <ListItem button onClick={ closeSideMenu }>
                                     <ListItemText primary={serviceThree} />
+                                </ListItem>
+                            </NextLink>
+                            <Divider />
+                            <NextLink href={linkServiceFour} passHref>
+                                <ListItem button onClick={ closeSideMenu }>
+                                    <ListItemText primary={serviceFour} />
+                                </ListItem>
+                            </NextLink>
+                            <Divider />
+                            <NextLink href={linkServiceFive} passHref>
+                                <ListItem button onClick={ closeSideMenu }>
+                                    <ListItemText primary={serviceFive} />
+                                </ListItem>
+                            </NextLink>
+                            <Divider />
+                            <NextLink href={linkServiceSix} passHref>
+                                <ListItem button onClick={ closeSideMenu }>
+                                    <ListItemText primary={serviceSix} />
                                 </ListItem>
                             </NextLink>
                             <Divider />

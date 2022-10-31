@@ -71,12 +71,18 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           contact={'Contacto'}
           linkContact={'/es/contacto'}
           services={'Servicios'}
-          serviceOne={'Sitios Web'}
-          linkServiceOne={'/es/servicios/sitio-web'}
-          serviceTwo={'Diseño Gráfico'}
-          linkServiceTwo={'/es/servicios/diseno-grafico'}
-          serviceThree={'E-Commerce'}
-          linkServiceThree={'/es/servicios/e-commerce'}
+          serviceOne={'Servicio 1'}
+          linkServiceOne={'/es'}
+          serviceTwo={'Servicio 2'}
+          linkServiceTwo={'/es'}
+          serviceThree={'Servicio 3'}
+          linkServiceThree={'/es'}
+          serviceFour={'Servicio 4'}
+          linkServiceFour={'/es'}
+          serviceFive={'Servicio 5'}
+          linkServiceFive={'/es'}
+          serviceSix={'Servicio 6'}
+          linkServiceSix={'/es'}
           linkBtnLanguage={
             pathname === '/es'
             ? '/'
