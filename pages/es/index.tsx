@@ -11,7 +11,7 @@ import { SectionContact } from '../../components/contact'
 const HomePage: NextPage = () => {
   return (
     <PlantillaLayoutEs title={'EJC - Home'} contentPage={'Servicios de construcción'}>
-      <Box sx={{mt: {xs: 17, sm: 18}}}>
+      <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
         <SlideHome 
           titleSlide1={'Servicio 1'}
           descriptionService1={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?'}
