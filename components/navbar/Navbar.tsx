@@ -176,7 +176,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   </Menu>
                   <NextLink href={linkAbout} passHref>
                     <Button variant={ pathname === linkAbout ? "contained" : "text" } color="secondary">
-                      {/* #eceff1 */}
+                      
                       <Typography
                         variant="subtitle2" 
                         className={pathname === linkAbout ? "" : "text-color"}
