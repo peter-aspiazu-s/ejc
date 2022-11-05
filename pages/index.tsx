@@ -14,15 +14,15 @@ const HomePage: NextPage = () => {
     <PlantillaLayout title={'EJC - Home'} contentPage={'Construction services'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
         <SlideHome 
-          titleSlide1={'Service 1'}
+          titleSlide1={'Roofing'}
           descriptionService1={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?'}
-          servicePath1={'/'}
-          titleSlide2={'Service 2'}
+          servicePath1={'/services/roofing'}
+          titleSlide2={'Siding'}
           descriptionService2={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?'}
-          servicePath2={'/'}
-          titleSlide3={'Service 3'}
+          servicePath2={'/services/siding'}
+          titleSlide3={'Gutters'}
           descriptionService3={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?'}
-          servicePath3={'/'}
+          servicePath3={'/services/gutters'}
           start={'Start'}
         />
       </Box>
@@ -48,7 +48,7 @@ const HomePage: NextPage = () => {
           aboutTitle={'About Us'}
           aboutSemiDescription={'We are EJC Home Improvement Corp. A well-established...'}
           aboutVisitBTN={'Visit The Page'}
-          aboutLinkBtn={'/about'}
+          aboutLinkBtn={'/company-information/about'}
         />
       </Box>
     
@@ -56,15 +56,15 @@ const HomePage: NextPage = () => {
         <Container>
           <ServiceSection
             serviceSectionTitle={'Services'}
-            service1Title={'Service 1'}
+            service1Title={'Roofing'}
             service1Description={'Lorem ipsum dolor sit amet consectetur adipisicing elit...'}
-            service1Link={'/'}
-            service2Title={'Service 2'}
+            service1Link={'/services/roofing'}
+            service2Title={'Siding'}
             service2Description={'Lorem ipsum dolor sit amet consectetur adipisicing elit...'}
-            service2Link={'/'}
-            service3Title={'Service 3'}
+            service2Link={'/services/siding'}
+            service3Title={'Gutters'}
             service3Description={'Lorem ipsum dolor sit amet consectetur adipisicing elit...'}
-            service3Link={'/'}
+            service3Link={'/services/gutters'}
             textBtn={'Visit The Page'}
           />
         </Container>
@@ -75,7 +75,7 @@ const HomePage: NextPage = () => {
           contactTitle={'Contact Us'}
           contactSemiDescription={'Check the different ways to contact us...'}
           contactVisitBTN={'Visit The Page'}
-          contactLinkBtn={'/contact'}
+          contactLinkBtn={'/company-information/contact'}
         />
       </Box>
     </PlantillaLayout>

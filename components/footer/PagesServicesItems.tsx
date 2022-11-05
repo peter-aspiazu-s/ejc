@@ -39,11 +39,23 @@ export const PagesServicesItems: FC<FooterProps> = ({
 
   return (
     <>
-        <Typography variant="h6" sx={{ fontWeight: 'bold', mb:2, color:'text.disabled' }}>{titleItemsServices}</Typography>
+        <Typography 
+            sx={{ 
+                fontWeight: 'bold', 
+                mb:2, 
+                color:'text.disabled',
+                fontSize:{xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'} 
+            }}>{titleItemsServices}</Typography>
         <NextLink href={linkServiceOne} passHref>
             <Link 
                 variant="overline" 
-                sx={{ mb:1, display: 'block', color:'text.disabled', textDecorationColor:'#90a4ae' }}
+                sx={{ 
+                    mb:1, 
+                    display: 'block', 
+                    color:'text.disabled', 
+                    textDecorationColor:'#90a4ae',
+                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                }}
                 // underline={ (pathname === linkServiceOne) ? 'always' : 'hover' }
                 underline={ (pathname === '/none') ? 'always' : 'hover' }
             >
@@ -53,7 +65,13 @@ export const PagesServicesItems: FC<FooterProps> = ({
         <NextLink href={linkServiceTwo} passHref>
             <Link   
                 variant="overline" 
-                sx={{ mb:1, display: 'block', color:'text.disabled', textDecorationColor:'#90a4ae' }}
+                sx={{ 
+                    mb:1, 
+                    display: 'block', 
+                    color:'text.disabled', 
+                    textDecorationColor:'#90a4ae', 
+                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                }}
                 // underline={ (pathname === linkServiceTwo) ? 'always' : 'hover' }
                 underline={ (pathname === '/none') ? 'always' : 'hover' }
             >
@@ -63,14 +81,20 @@ export const PagesServicesItems: FC<FooterProps> = ({
         <NextLink href={linkServiceThree} passHref>
             <Link   
                 variant="overline" 
-                sx={{ mb:1, display: 'block', color:'text.disabled', textDecorationColor:'#90a4ae' }}
+                sx={{ 
+                    mb:1, 
+                    display: 'block', 
+                    color:'text.disabled', 
+                    textDecorationColor:'#90a4ae',
+                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                }}
                 // underline={ (pathname === linkServiceThree) ? 'always' : 'hover' }
                 underline={ (pathname === '/none') ? 'always' : 'hover' }
             >
                 {serviceThree}
             </Link>
         </NextLink>
-        <NextLink href={linkServiceFour} passHref>
+        {/* <NextLink href={linkServiceFour} passHref>
             <Link   
                 variant="overline" 
                 sx={{ mb:1, display: 'block', color:'text.disabled', textDecorationColor:'#90a4ae' }}
@@ -97,7 +121,7 @@ export const PagesServicesItems: FC<FooterProps> = ({
             >
                 {serviceSix}
             </Link>
-        </NextLink>
+        </NextLink> */}
     </>
   )
 }

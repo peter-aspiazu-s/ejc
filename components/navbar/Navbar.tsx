@@ -29,6 +29,8 @@ interface ItemsMenuProps {
   about: string;
   linkAbout: string;
   contact: string;
+  frecuentQuestions: string;
+  linkFrecuentQuestions: string;
   linkContact: string;
   services: string;
   serviceOne: string;
@@ -37,12 +39,7 @@ interface ItemsMenuProps {
   linkServiceTwo: string;
   serviceThree: string;
   linkServiceThree: string;
-  serviceFour: string;
-  linkServiceFour: string;
-  serviceFive: string;
-  linkServiceFive: string;
-  serviceSix: string;
-  linkServiceSix: string;
+  companyInformation: string;
   linkBtnLanguage: string;
 }
 
@@ -53,6 +50,8 @@ export const Navbar: FC<ItemsMenuProps> = ({
   linkAbout,
   contact,
   linkContact,
+  frecuentQuestions,
+  linkFrecuentQuestions,
   services,
   serviceOne,
   linkServiceOne,
@@ -60,20 +59,18 @@ export const Navbar: FC<ItemsMenuProps> = ({
   linkServiceTwo,
   serviceThree,
   linkServiceThree,
-  serviceFour,
-  linkServiceFour,
-  serviceFive,
-  linkServiceFive,
-  serviceSix,
-  linkServiceSix,
+  companyInformation,
   linkBtnLanguage,
 }) => {
 
   const { pathname, openSideMenu, handleModeTheme, modeTheme } = useContext( UiContext )
   
   const [ anchorEl, setAnchorEl ] = useState<null | HTMLElement>(null)
-
   const open = Boolean(anchorEl)
+
+  
+  const [ anchorElCompanyInformation, setAnchorElCompanyInformation ] = useState<null | HTMLElement>(null)
+  const openCompanyInformation = Boolean(anchorElCompanyInformation)
   
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget)
@@ -82,10 +79,24 @@ export const Navbar: FC<ItemsMenuProps> = ({
   const handleClose = () => {
     setAnchorEl(null)
   }
+  const handleClickCompanyInformation = (event: MouseEvent<HTMLButtonElement>) => {
+    setAnchorElCompanyInformation(event.currentTarget)
+  }
+
+  const handleCloseCompanyInformation = () => {
+    setAnchorElCompanyInformation(null)
+  }
 
   return (
-    <AppBar sx={{ backgroundColor: 'primary.light', height: {xs: '110px', sm: '115px', md: '120px'} }}>
-        <Toolbar>
+    <AppBar sx={{ 
+        backgroundColor: 'primary.light', 
+        height: {xs: '110px', sm: '115px', md: '120px'},
+        display: {xs: 'flex'}, 
+        justifyContent: {xs:'center'}, 
+        alignItems: {xs:'space-between'}
+      }}
+    >
+        <Toolbar sx={{px: {lg: 8,xl: 10}}}>
             <Grid container sx={{display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
               <Grid 
                 item 
@@ -98,6 +109,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   <Image src='/images/logotipo.webp' width={140} height={140} className="logo" />
                 </NextLink>
               </Grid>
+
               <Grid 
                 item 
                 md={6} 
@@ -106,9 +118,14 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   <NextLink href={linkHome} passHref>
                     <Button variant={ pathname === linkHome ? "contained" : "text" } color="secondary">
                     <Typography
-                      variant="subtitle2" 
                       className={pathname === linkHome ? "" : "text-color"}
-                      sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                      sx={{ 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center',
+                        fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                      }}
+                    >
                       {home}
                     </Typography>
                     </Button>
@@ -129,14 +146,19 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     color="secondary"
                   >
                     <Typography
-                      variant="subtitle2"
                       className={
                         pathname === "/none" ? "" : "text-color"} 
                       // className={
                       //   pathname === linkServiceOne 
                       //   || pathname === linkServiceTwo
                       //   || pathname === linkServiceThree ? "" : "text-color"} 
-                      sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                      sx={{ 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center',
+                        fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                      }}
+                    >
                       {services}
                     <KeyboardArrowDownIcon />
                     </Typography>
@@ -151,50 +173,118 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     }}
                   >
                     <NextLink href={linkServiceOne} passHref>
-                      <MenuItem onClick={ handleClose } sx={{ color:'text.disabled' }}>{serviceOne}</MenuItem>
+                      <MenuItem 
+                        onClick={ handleClose } 
+                        sx={{ 
+                          color:'text.disabled',
+                          fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                        }}
+                      >
+                        {serviceOne}
+                      </MenuItem>
                     </NextLink>
                     <Divider />
                     <NextLink href={linkServiceTwo} passHref>
-                      <MenuItem onClick={ handleClose } sx={{ color: 'text.disabled' }}>{serviceTwo}</MenuItem>
+                      <MenuItem 
+                        onClick={ handleClose } 
+                        sx={{ 
+                          color: 'text.disabled',
+                          fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                        }}
+                      >
+                        {serviceTwo}
+                      </MenuItem>
                     </NextLink>
                     <Divider />
                     <NextLink href={linkServiceThree} passHref>
-                      <MenuItem onClick={ handleClose } sx={{ color: 'text.disabled' }}>{serviceThree}</MenuItem>
-                    </NextLink>
-                    <Divider />
-                    <NextLink href={linkServiceThree} passHref>
-                      <MenuItem onClick={ handleClose } sx={{ color: 'text.disabled' }}>{serviceFour}</MenuItem>
-                    </NextLink>
-                    <Divider />
-                    <NextLink href={linkServiceThree} passHref>
-                      <MenuItem onClick={ handleClose } sx={{ color: 'text.disabled' }}>{serviceFive}</MenuItem>
-                    </NextLink>
-                    <Divider />
-                    <NextLink href={linkServiceThree} passHref>
-                      <MenuItem onClick={ handleClose } sx={{ color: 'text.disabled' }}>{serviceSix}</MenuItem>
+                      <MenuItem 
+                        onClick={ handleClose } 
+                        sx={{ 
+                          color: 'text.disabled',
+                          fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                        }}
+                      >
+                        {serviceThree}
+                      </MenuItem>
                     </NextLink>
                   </Menu>
-                  <NextLink href={linkAbout} passHref>
-                    <Button variant={ pathname === linkAbout ? "contained" : "text" } color="secondary">
-                      
-                      <Typography
-                        variant="subtitle2" 
-                        className={pathname === linkAbout ? "" : "text-color"}
-                        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                  <Button
+                    id="services-botton"
+                    aria-controls={ openCompanyInformation ? 'services-botton' : undefined }
+                    aria-haspopup="true"
+                    aria-expanded={ openCompanyInformation ? 'true' : undefined }
+                    onClick={ handleClickCompanyInformation }
+                    // variant={ 
+                    //   pathname === linkServiceOne 
+                    //   || pathname === linkServiceTwo
+                    //   || pathname === linkServiceThree ? "contained" : "text" 
+                    // }
+                    variant="text"
+                    color="secondary"
+                  >
+                    <Typography
+                      className={
+                        pathname === "/none" ? "" : "text-color"} 
+                      // className={
+                      //   pathname === linkServiceOne 
+                      //   || pathname === linkServiceTwo
+                      //   || pathname === linkServiceThree ? "" : "text-color"} 
+                      sx={{ 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center',
+                        fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                      }}
+                    >
+                      {companyInformation}
+                    <KeyboardArrowDownIcon />
+                    </Typography>
+                  </Button>
+                  <Menu 
+                    id="company-information-menu"
+                    anchorEl={anchorElCompanyInformation}
+                    open={openCompanyInformation}
+                    onClose={ handleCloseCompanyInformation }
+                    MenuListProps={{
+                      'aria-labelledby': 'services-menu',
+                    }}
+                  >
+                    <NextLink href={linkAbout} passHref>
+                      <MenuItem 
+                        onClick={ handleCloseCompanyInformation } 
+                        sx={{ 
+                          color:'text.disabled',
+                          fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                        }}
+                      >
                         {about}
-                      </Typography>
-                    </Button>
-                  </NextLink>
-                  <NextLink href={linkContact} passHref>
-                    <Button variant={ pathname === linkContact ? "contained" : "text" } color="secondary">
-                      <Typography
-                        variant="subtitle2"
-                        className={pathname === linkContact ? "" : "text-color"} 
-                        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                      </MenuItem>
+                    </NextLink>
+                    <Divider />
+                    <NextLink href={linkContact} passHref>
+                      <MenuItem 
+                        onClick={ handleCloseCompanyInformation } 
+                        sx={{ 
+                          color: 'text.disabled',
+                          fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                        }}
+                      >
                         {contact}
-                      </Typography>
-                    </Button>
-                  </NextLink>
+                      </MenuItem>
+                    </NextLink>
+                    <Divider />
+                    <NextLink href={linkFrecuentQuestions} passHref>
+                      <MenuItem 
+                        onClick={ handleCloseCompanyInformation } 
+                        sx={{ 
+                          color: 'text.disabled',
+                          fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
+                        }}
+                      >
+                        {frecuentQuestions}
+                      </MenuItem>
+                    </NextLink>
+                  </Menu>
                 </Stack>
               </Grid>
               <Grid item sm={1} sx={{ display: {xs: 'none', sm: 'flex'}, justifyContent: 'end' }}>
@@ -219,7 +309,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
               </Grid> */}
               <Grid item xs={2} sm={1} sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'end' }} >
                   <IconButton onClick={ openSideMenu } sx={{ color:'text.disabled' }}>
-                      <MenuIcon sx={{fontSize: {xs:'30px'}}} />
+                      <MenuIcon sx={{fontSize: {xs: '1.5rem'}}} />
                   </IconButton>
               </Grid>
             </Grid>

@@ -3,8 +3,11 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { Grid, Typography, Button, Box } from '@mui/material';
 
-import AboutSectionImageDesktop from '../../public/images/about-section.webp'
-import AboutSectionImageMobile from '../../public/images/about-section2.webp'
+import BannerSectionAboutxs from '../../public/images/banner-section-about-xs.webp'
+import BannerSectionAboutsm from '../../public/images/banner-section-about-sm.webp'
+import BannerSectionAboutmd from '../../public/images/banner-section-about-md.webp'
+import BannerSectionAboutlg from '../../public/images/banner-section-about-lg.webp'
+import BannerSectionAboutxl from '../../public/images/banner-section-about-xl.webp'
 
 interface SectionAboutProps {
     aboutTitle: string;
@@ -22,11 +25,20 @@ export const SectionAbout: FC<SectionAboutProps> = ({
   return (
     <Grid container>
         <Grid item xs={12}>
-            <Box sx={{display: {xs: 'none', md: 'block'}}}>
-                <Image src={AboutSectionImageDesktop} />
+            <Box sx={{display: {xs: 'block', sm: 'none'}}}>
+                <Image src={BannerSectionAboutxs} />
             </Box>
-            <Box sx={{display: {xs: 'block', md: 'none'}}}>
-                <Image src={AboutSectionImageMobile} />
+            <Box sx={{display: {xs: 'none', sm: 'block', md: 'none'}}}>
+                <Image src={BannerSectionAboutsm} />
+            </Box>
+            <Box sx={{display: {xs: 'none', md: 'block', lg: 'none'}}}>
+                <Image src={BannerSectionAboutmd} />
+            </Box>
+            <Box sx={{display: {xs: 'none', lg: 'block', xl: 'none'}}}>
+                <Image src={BannerSectionAboutlg} />
+            </Box>
+            <Box sx={{display: {xs: 'none', xl: 'block',}}}>
+                <Image src={BannerSectionAboutxl} />
             </Box>
             <Box
                 sx={{
@@ -41,10 +53,23 @@ export const SectionAbout: FC<SectionAboutProps> = ({
                     p: {xs: 1, sm: 10}
                 }}
             >
-                <Typography sx={{fontSize: {xs:'25px', sm:'40px', md:'50px'}, mb: {xs: 1, sm: 3, md: 3, lg: 4}}} component="h3">{aboutTitle}</Typography>
-                <Typography sx={{fontSize: {xs:'16px', sm:'18px'}, mb: {xs: 2, sm: 3, md: 3, lg: 4}, textAlign:{xs:'center', md:'left'}}} component="p">{aboutSemiDescription}</Typography>
+                <Typography 
+                    sx={{
+                        fontSize: {xs: '1.4rem', sm: '1.5rem', md: '1.7rem', lg: '1.8rem', xl: '1.9rem'}, 
+                        mb: {xs: 1, sm: 3, md: 3, lg: 4}
+                    }} component="h3">{aboutTitle}</Typography>
+                <Typography 
+                    sx={{
+                        fontSize: {xs: '0.9rem', md: '1rem'}, 
+                        mb: {xs: 2, sm: 3, md: 3, lg: 4}, 
+                        textAlign:{xs:'center', md:'left'}
+                    }} component="p">{aboutSemiDescription}</Typography>
                 <NextLink href={aboutLinkBtn} passHref>
-                    <Button variant="contained" color="secondary" size={'large'} sx={{fontSize: {xs:'14px'}}}>{aboutVisitBTN}</Button>
+                    <Button 
+                        variant="contained" 
+                        color="secondary" 
+                        size={'large'} 
+                        sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}>{aboutVisitBTN}</Button>
                 </NextLink>
             </Box>
         </Grid>

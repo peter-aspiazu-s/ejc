@@ -28,28 +28,25 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           home={'Home'}
           linkHome={'/'}
           about={'About'}
-          linkAbout={'/about'}
+          linkAbout={'/company-information/about'}
           contact={'Contact'}
-          linkContact={'/contact'}
+          linkContact={'/company-information/contact'}
+          frecuentQuestions={'Frequent Questions'}
+          linkFrecuentQuestions={'/company-information/frequent-questions'}
           services={'Services'}
-          serviceOne={'Service 1'}
-          linkServiceOne={'/'}
-          serviceTwo={'Service 2'}
-          linkServiceTwo={'/'}
-          serviceThree={'Service 3'}
-          linkServiceThree={'/'}
-          serviceFour={'Service 4'}
-          linkServiceFour={'/'}
-          serviceFive={'Service 5'}
-          linkServiceFive={'/'}
-          serviceSix={'Service 6'}
-          linkServiceSix={'/'}
+          serviceOne={'Roofing'}
+          linkServiceOne={'/services/roofing'}
+          serviceTwo={'Siding'}
+          linkServiceTwo={'/services/siding'}
+          serviceThree={'Gutters'}
+          linkServiceThree={'/services/gutters'}
+          companyInformation={'Company Information'}
           linkBtnLanguage={
             pathname === '/' 
             ? '/es'
-            : pathname === '/about' 
+            : pathname === '/company-information/about' 
               ? '/es/nosotros'
-              : pathname === '/contact'
+              : pathname === '/company-information/contact'
                 ? '/es/contacto'
                 : pathname === '/services/web-site'
                   ? '/es/servicios/sitio-web'
@@ -66,28 +63,25 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           home={'Home'}
           linkHome={'/'}
           about={'About'}
-          linkAbout={'/about'}
+          linkAbout={'/company-information/about'}
           contact={'Contact'}
-          linkContact={'/contact'}
+          linkContact={'/company-information/contact'}
+          frecuentQuestions={'Frequent Questions'}
+          linkFrecuentQuestions={'/company-information/frequent-questions'}
           services={'Services'}
-          serviceOne={'Service 1'}
-          linkServiceOne={'/'}
-          serviceTwo={'Service 2'}
-          linkServiceTwo={'/'}
-          serviceThree={'Service 3'}
-          linkServiceThree={'/'}
-          serviceFour={'Service 4'}
-          linkServiceFour={'/'}
-          serviceFive={'Service 5'}
-          linkServiceFive={'/'}
-          serviceSix={'Service 6'}
-          linkServiceSix={'/'}
+          serviceOne={'Roofing'}
+          linkServiceOne={'/services/roofing'}
+          serviceTwo={'Siding'}
+          linkServiceTwo={'/services/siding'}
+          serviceThree={'Gutters'}
+          linkServiceThree={'/services/gutters'}
+          companyInformation={'Company Information'}
           linkBtnLanguage={
             pathname === '/' 
             ? '/es'
-            : pathname === '/about' 
+            : pathname === '/company-information/about' 
               ? '/es/nosotros'
-              : pathname === '/contact'
+              : pathname === '/company-information/contact'
                 ? '/es/contacto'
                 : pathname === '/services/web-site'
                   ? '/es/servicios/sitio-web'
@@ -109,16 +103,16 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           home={'Home'}
           linkHome={'/'}
           about={'About'}
-          linkAbout={'/about'}
+          linkAbout={'/company-information/about'}
           contact={'Contact'}
-          linkContact={'/contact'}
+          linkContact={'/company-information/contact'}
           titleItemsServices={'Service Pages'}
-          serviceOne={'Service 1'}
-          linkServiceOne={'/'}
-          serviceTwo={'Service 2'}
-          linkServiceTwo={'/'}
-          serviceThree={'Service 3'}
-          linkServiceThree={'/'}
+          serviceOne={'Roofing'}
+          linkServiceOne={'/services/roofing'}
+          serviceTwo={'Siding'}
+          linkServiceTwo={'/services/siding'}
+          serviceThree={'Gutters'}
+          linkServiceThree={'/services/gutters'}
           serviceFour={'Service 4'}
           linkServiceFour={'/'}
           serviceFive={'Service 5'}

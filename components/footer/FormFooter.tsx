@@ -128,7 +128,8 @@ export const FormFooter: FC<FormProps> = ({
           fullWidth
           InputLabelProps={{
             style: {
-                color: '#263238'
+                color: '#263238',
+                fontSize: '1rem'
             }
           }}
           InputProps={{
@@ -152,7 +153,8 @@ export const FormFooter: FC<FormProps> = ({
           fullWidth
           InputLabelProps={{
             style: {
-                color: '#263238'
+                color: '#263238',
+                fontSize: '1rem'
             }
           }}
           InputProps={{
@@ -178,7 +180,8 @@ export const FormFooter: FC<FormProps> = ({
           rows={3}
           InputLabelProps={{
             style: {
-                color: '#263238'
+                color: '#263238',
+                fontSize: '1rem'
             }
           }}
           InputProps={{
@@ -188,7 +191,13 @@ export const FormFooter: FC<FormProps> = ({
           }}
           sx={{ mb:2 }} 
       />
-      <Button type="submit" variant="contained" fullWidth color="secondary">{btnSubmit}</Button>
+      <Button 
+        type="submit" 
+        variant="contained" 
+        fullWidth 
+        color="secondary"
+        sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
+        >{btnSubmit}</Button>
     </Box>
   )
 }

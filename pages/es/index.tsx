@@ -13,15 +13,15 @@ const HomePage: NextPage = () => {
     <PlantillaLayoutEs title={'EJC - Home'} contentPage={'Servicios de construcción'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
         <SlideHome 
-          titleSlide1={'Servicio 1'}
+          titleSlide1={'Techumbre'}
           descriptionService1={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?'}
-          servicePath1={'/es'}
-          titleSlide2={'Servicio 2'}
+          servicePath1={'/es/servicios/techumbre'}
+          titleSlide2={'Vía muerta'}
           descriptionService2={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?'}
-          servicePath2={'/es'}
-          titleSlide3={'Servicio 3'}
+          servicePath2={'/es/servicios/via-muerta'}
+          titleSlide3={'Canalones'}
           descriptionService3={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?'}
-          servicePath3={'/es'}
+          servicePath3={'/es/servicios/canalones'}
           start={'Empezar'}
         />
       </Box>
@@ -47,22 +47,22 @@ const HomePage: NextPage = () => {
           aboutTitle={'Sobre Nosotros'}
           aboutSemiDescription={'Somos EJC Home Improvement Corp. una empresa consolidada, con...'}
           aboutVisitBTN={'Visitar Página'}
-          aboutLinkBtn={'/es/nosotros'}
+          aboutLinkBtn={'/es/informacion-empresa/nosotros'}
         />
       </Box>
       <Box sx={{py: 5}}>
         <Container>
           <ServiceSection
             serviceSectionTitle={'Servicios'}
-            service1Title={'Servicio 1'}
+            service1Title={'Techumbre'}
             service1Description={'Lorem ipsum dolor sit amet consectetur adipisicing elit...'}
-            service1Link={'/es'}
-            service2Title={'Servicio 2'}
+            service1Link={'/es/servicios/techumbre'}
+            service2Title={'Vía muerta'}
             service2Description={'Lorem ipsum dolor sit amet consectetur adipisicing elit...'}
-            service2Link={'/es'}
-            service3Title={'Servicio 3'}
+            service2Link={'/es/servicios/via-muerta'}
+            service3Title={'Canalones'}
             service3Description={'Lorem ipsum dolor sit amet consectetur adipisicing elit...'}
-            service3Link={'/es'}
+            service3Link={'/es/servicios/canalones'}
             textBtn={'Visitar Página'}
           />
         </Container>
@@ -73,7 +73,7 @@ const HomePage: NextPage = () => {
           contactTitle={'Contáctanos'}
           contactSemiDescription={'Revisa las diferentes formas de contactarnos...'}
           contactVisitBTN={'Visitar Página'}
-          contactLinkBtn={'/es/contacto'}
+          contactLinkBtn={'/es/informacion-empresa/contacto'}
         />
       </Box>
     </PlantillaLayoutEs>

@@ -126,7 +126,8 @@ export const ContactForm: FC<ContactFormProps> = ({
                     onBlur={ () => setTouchedName( true ) }
                     InputLabelProps={{
                         style: {
-                            color: '#eceff1'
+                            color: '#eceff1',
+                            fontSize: '1rem'
                         }
                     }}
                     InputProps={{
@@ -150,7 +151,8 @@ export const ContactForm: FC<ContactFormProps> = ({
                     onBlur={ () => setTouchedEmail( true ) } 
                     InputLabelProps={{
                         style: {
-                            color: '#eceff1'
+                            color: '#eceff1',
+                            fontSize: '1rem'
                         }
                     }}
                     InputProps={{
@@ -174,7 +176,8 @@ export const ContactForm: FC<ContactFormProps> = ({
                     onBlur={ () => setTouchedMessage( true ) }
                     InputLabelProps={{
                         style: {
-                            color: '#eceff1'
+                            color: '#eceff1',
+                            fontSize: '1rem'
                         }
                     }}
                     InputProps={{
@@ -187,7 +190,13 @@ export const ContactForm: FC<ContactFormProps> = ({
                     rows={3}
                     sx={{mb:3}}
                 />
-                <Button type="submit" variant="contained" size="large" color="secondary">{btnSubmit}</Button>
+                <Button 
+                    type="submit" 
+                    variant="contained" 
+                    size="large" 
+                    color="secondary"
+                    sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
+                >{btnSubmit}</Button>
             </Box>
         </Grid>
     </Grid>

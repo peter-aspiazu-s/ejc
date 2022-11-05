@@ -24,10 +24,20 @@ export const AboutMisionVision: FC<AboutMisionVisionProps> = ({
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <ConstructionIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: {xs:'24px', sm:'26px'}, textAlign: {xs: 'center', md: 'left'}}}>
+                        <Typography 
+                            gutterBottom 
+                            component="div" 
+                            sx={{fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}, 
+                            textAlign: {xs: 'center', md: 'left'}
+                        }}>
                             {titleMision}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'14px', sm:'16px'}, textAlign: {xs: 'center', md: 'left'}}}>
+                        <Typography 
+                            color="text.secondary" 
+                            sx={{
+                                fontSize: {xs: '0.9rem', md: '1rem'}, 
+                                textAlign: {xs: 'center', md: 'left'}
+                            }}>
                             {descriptionMision}
                         </Typography>
                     </CardContent>
@@ -39,10 +49,21 @@ export const AboutMisionVision: FC<AboutMisionVisionProps> = ({
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <TrendingUpIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: {xs:'24px', sm:'26px'}, textAlign: {xs: 'center', md: 'left'}}}>
+                        <Typography 
+                            gutterBottom 
+                            component="div" 
+                            sx={{
+                                fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}, 
+                                textAlign: {xs: 'center', md: 'left'}
+                            }}>
                             {titleVision}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'14px', sm:'16px'}, textAlign: {xs: 'center', md: 'left'}}}>
+                        <Typography 
+                            color="text.secondary" 
+                            sx={{
+                                fontSize: {xs: '0.9rem', md: '1rem'}, 
+                                textAlign: {xs: 'center', md: 'left'}
+                            }}>
                             {descriptionVision}
                         </Typography>
                     </CardContent>

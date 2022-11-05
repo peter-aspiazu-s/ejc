@@ -17,7 +17,10 @@ export const ContactSocialMedia: FC<FooterProps> = ({ contactUs }) => {
             size="large" 
             fullWidth 
             color="secondary"
-            sx={{mb: 3}}
+            sx={{
+                mb: 3,
+                fontSize: {xs: '0.8rem', xl: '1rem'}
+            }}
             href="#"
             target="_blank"
         >

@@ -13,7 +13,12 @@ export const PresentCompanyFooter: FC<FooterProps> = ({presentCompany}) => {
           <Image src='/images/logotipo.webp' width={250} height={250} />
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="subtitle1" sx={{color:'text.disabled', textAlign: {xs: 'justify',}}}>{presentCompany}</Typography>
+        <Typography 
+          sx={{
+            color:'text.disabled', 
+            textAlign: {xs: 'justify'},
+            fontSize: {xs: '0.9rem', md: '1rem'}
+          }}>{presentCompany}</Typography>
       </Grid>
     </Grid>
   )

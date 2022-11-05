@@ -34,16 +34,30 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <PhoneInTalkIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: {xs:'18px', sm:'20px'}, textAlign: 'center', mb:2}}>
+                        <Typography 
+                            gutterBottom 
+                            component="div" 
+                            sx={{
+                                fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', 
+                                    xl: '1.6rem'}, 
+                                textAlign: 'center', 
+                                mb:2}}>
                             {contact1Name}
                         </Typography>
                         <Link href={`tel:${contact1Phone}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
-                            <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'16px', sm:'18px'}, textAlign: 'center', mb:2}}>
+                            <Typography 
+                                color="text.secondary" 
+                                sx={{
+                                    fontSize: {xs: '0.9rem', md: '1rem'}, 
+                                textAlign: 'center', 
+                                mb:2}}>
                                 +{contact1Phone}
                             </Typography>
                         </Link>
                         <Link href={`mailto:${contact1Email}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
-                            <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'16px', sm:'18px'}, textAlign: 'center'}}>
+                            <Typography 
+                                color="text.secondary" 
+                                sx={{fontSize: {xs: '0.9rem', md: '1rem'}, textAlign: 'center'}}>
                                 {contact1Email}
                             </Typography>
                         </Link>
@@ -51,11 +65,12 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                 </CardActionArea>
                 <CardActions sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <Button 
-                        size="small" 
+                        size="large" 
                         variant="contained" 
                         color="secondary"
                         href={contact1Link}
                         target="_blank"
+                        sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
                     >
                         {textBtnContact}
                     </Button>
@@ -67,16 +82,26 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <PhoneInTalkIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" sx={{fontSize: {xs:'18px', sm:'20px'}, textAlign: 'center', mb:2}}>
+                        <Typography 
+                            gutterBottom 
+                            component="div" 
+                            sx={{
+                                fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', 
+                                xl: '1.6rem'}, 
+                            textAlign: 'center', mb:2}}>
                             {contact2Name}
                         </Typography>
                         <Link href={`tel:${contact2Phone}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
-                            <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'16px', sm:'18px'}, textAlign: 'center', mb:2}}>
+                            <Typography 
+                                color="text.secondary" 
+                                sx={{fontSize: {xs: '0.9rem', md: '1rem'}, textAlign: 'center', mb:2}}>
                                 +{contact2Phone}
                             </Typography>
                         </Link>
                         <Link href={`mailto:${contact2Email}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
-                            <Typography variant="body2" color="text.secondary" sx={{fontSize: {xs:'16px', sm:'18px'}, textAlign: 'center'}}>
+                            <Typography 
+                                color="text.secondary" 
+                                sx={{fontSize: {xs: '0.9rem', md: '1rem'}, textAlign: 'center'}}>
                                 {contact2Email}
                             </Typography>
                         </Link>
@@ -84,11 +109,12 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                 </CardActionArea>
                 <CardActions sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <Button 
-                        size="small" 
+                        size="large" 
                         variant="contained" 
                         color="secondary"
                         href={contact2Link}
                         target="_blank"
+                        sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
                     >
                         {textBtnContact}
                     </Button>

@@ -32,6 +32,8 @@ interface ItemsMenuProps {
     linkAbout: string;
     contact: string;
     linkContact: string;
+    frecuentQuestions: string;
+    linkFrecuentQuestions: string;
     services: string;
     serviceOne: string;
     linkServiceOne: string;
@@ -39,12 +41,7 @@ interface ItemsMenuProps {
     linkServiceTwo: string;
     serviceThree: string;
     linkServiceThree: string;
-    serviceFour: string;
-    linkServiceFour: string;
-    serviceFive: string;
-    linkServiceFive: string;
-    serviceSix: string;
-    linkServiceSix: string;
+    companyInformation: string;
     linkBtnLanguage: string;
   }
 
@@ -55,6 +52,8 @@ export const Sidebar: FC<ItemsMenuProps> = ({
     linkAbout,
     contact,
     linkContact,
+    frecuentQuestions,
+    linkFrecuentQuestions,
     services,
     serviceOne,
     linkServiceOne,
@@ -62,12 +61,7 @@ export const Sidebar: FC<ItemsMenuProps> = ({
     linkServiceTwo,
     serviceThree,
     linkServiceThree,
-    serviceFour,
-    linkServiceFour,
-    serviceFive,
-    linkServiceFive,
-    serviceSix,
-    linkServiceSix,
+    companyInformation,
     linkBtnLanguage,
 }) => {
 
@@ -90,7 +84,7 @@ export const Sidebar: FC<ItemsMenuProps> = ({
                     <Grid container alignItems='center'>
                         <Grid item xs={4} sx={{display: 'flex', justifyContent: {xs:'center', sm:'start'}}}>
                             <IconButton onClick={ closeSideMenu } sx={{ color:'text.disabled' }}>
-                                <KeyboardArrowRightIcon fontSize='large' />
+                                <KeyboardArrowRightIcon sx={{fontSize: {xs:'2.4rem'}}} />
                             </IconButton>
                         </Grid>
                         <Grid item xs={4} sx={{display: {xs: 'flex', sm: 'none'}, justifyContent: 'center'}}>
@@ -117,69 +111,119 @@ export const Sidebar: FC<ItemsMenuProps> = ({
                     <Divider />
                     <NextLink href={linkHome} passHref>
                         <ListItem button onClick={ closeSideMenu }>
-                            <ListItemText primary={home} sx={{color: 'text.disabled'}} />
+                            <ListItemText 
+                                primary={home} 
+                                sx={{color: 'text.disabled'}} 
+                                primaryTypographyProps={{
+                                    style: {
+                                        fontSize: '1rem'
+                                    }
+                                }}    
+                            />
                         </ListItem>
                     </NextLink>
                     <Accordion>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{color:"text.disabled"}} />}
+                            expandIcon={<ExpandMoreIcon sx={{color:"text.disabled", fontSize: '1.2rem'}} />}
                             aria-controls="panella-content"
                             id="panella-header"
                         >
-                            <Typography sx={{color: 'text.disabled'}}>{services}</Typography>
+                            <Typography sx={{color: 'text.disabled', fontSize: '1rem'}}>{services}</Typography>
                         </AccordionSummary>
                         <AccordionDetails sx={{ color:'text.disabled' }}>     
                             <Divider />
                             <NextLink href={linkServiceOne} passHref>
                                 <ListItem button onClick={ closeSideMenu }>
-                                    <ListItemText primary={serviceOne} />
+                                    <ListItemText 
+                                        primary={serviceOne} 
+                                        primaryTypographyProps={{
+                                            style: {
+                                                fontSize: '1rem'
+                                            }
+                                        }}   
+                                    />
                                 </ListItem>
                             </NextLink>
                             <Divider />
                             <NextLink href={linkServiceTwo} passHref>
                                 <ListItem button onClick={ closeSideMenu }>
-                                    <ListItemText primary={serviceTwo} />
+                                    <ListItemText 
+                                        primary={serviceTwo} 
+                                        primaryTypographyProps={{
+                                            style: {
+                                                fontSize: '1rem'
+                                            }
+                                        }}   
+                                    />
                                 </ListItem>
                             </NextLink>  
                             <Divider />
                             <NextLink href={linkServiceThree} passHref>
                                 <ListItem button onClick={ closeSideMenu }>
-                                    <ListItemText primary={serviceThree} />
+                                    <ListItemText 
+                                        primary={serviceThree} 
+                                        primaryTypographyProps={{
+                                            style: {
+                                                fontSize: '1rem'
+                                            }
+                                        }}   
+                                    />
                                 </ListItem>
                             </NextLink>
-                            <Divider />
-                            <NextLink href={linkServiceFour} passHref>
-                                <ListItem button onClick={ closeSideMenu }>
-                                    <ListItemText primary={serviceFour} />
-                                </ListItem>
-                            </NextLink>
-                            <Divider />
-                            <NextLink href={linkServiceFive} passHref>
-                                <ListItem button onClick={ closeSideMenu }>
-                                    <ListItemText primary={serviceFive} />
-                                </ListItem>
-                            </NextLink>
-                            <Divider />
-                            <NextLink href={linkServiceSix} passHref>
-                                <ListItem button onClick={ closeSideMenu }>
-                                    <ListItemText primary={serviceSix} />
-                                </ListItem>
-                            </NextLink>
-                            <Divider />
                         </AccordionDetails>
                     </Accordion>
-                    <NextLink href={linkAbout} passHref>
-                        <ListItem button onClick={ closeSideMenu }>
-                            <ListItemText primary={about} sx={{color: 'text.disabled'}} />
-                        </ListItem>
-                    </NextLink>
-                    <Divider />
-                    <NextLink href={linkContact} passHref>
-                        <ListItem button onClick={ closeSideMenu }>
-                            <ListItemText primary={contact} sx={{color: 'text.disabled'}} />
-                        </ListItem>
-                    </NextLink>
-                    <Divider />
+
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon sx={{color:"text.disabled", fontSize: '1.2rem'}} />}
+                            aria-controls="panella-content"
+                            id="panella-header"
+                        >
+                            <Typography sx={{color: 'text.disabled', fontSize: '1rem'}}>{companyInformation}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{ color:'text.disabled' }}>     
+                            <Divider />
+                            <NextLink href={linkAbout} passHref>
+                                <ListItem button onClick={ closeSideMenu }>
+                                    <ListItemText 
+                                        primary={about} 
+                                        primaryTypographyProps={{
+                                            style: {
+                                                fontSize: '1rem'
+                                            }
+                                        }}   
+                                    />
+                                </ListItem>
+                            </NextLink>
+                            <Divider />
+                            <NextLink href={linkContact} passHref>
+                                <ListItem button onClick={ closeSideMenu }>
+                                    <ListItemText 
+                                        primary={contact} 
+                                        primaryTypographyProps={{
+                                            style: {
+                                                fontSize: '1rem'
+                                            }
+                                        }}   
+                                    />
+                                </ListItem>
+                            </NextLink>
+                            <Divider />
+                            <NextLink href={linkFrecuentQuestions} passHref>
+                                <ListItem button onClick={ closeSideMenu }>
+                                    <ListItemText 
+                                        primary={frecuentQuestions} 
+                                        primaryTypographyProps={{
+                                            style: {
+                                                fontSize: '1rem'
+                                            }
+                                        }}   
+                                    />
+                                </ListItem>
+                            </NextLink>
+                        </AccordionDetails>
+                    </Accordion>
+                    
                 </List>
             </Box>
         </Drawer>

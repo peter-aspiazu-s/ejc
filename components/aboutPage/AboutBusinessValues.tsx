@@ -90,15 +90,28 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
   return (
     <Grid container>
         <Grid item xs={12} mb={3}>
-            <Typography sx={{color:'text.disabled', fontSize: {xs:'20px', sm:'35px', md:'45px'}}}>{aboutBusinessValuesTitle}</Typography>
+            <Typography 
+                sx={{
+                    color:'text.disabled', 
+                    fontSize: {
+                        xs: '1.4rem', 
+                        sm: '1.5rem', 
+                        md: '1.7rem', 
+                        lg: '1.8rem', 
+                        xl: '1.9rem'}
+                }}>{aboutBusinessValuesTitle}</Typography>
         </Grid>
         <Grid item xs={12}>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{aboutBusinessValuesSubtitle1}</Typography>
+                    <Typography 
+                        sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
+                    >{aboutBusinessValuesSubtitle1}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
+                    >
                         {aboutBusinessValuesDescription1}
                     </Typography>
                 </AccordionDetails>
@@ -107,10 +120,14 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
         <Grid item xs={12}>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{aboutBusinessValuesSubtitle2}</Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
+                    >{aboutBusinessValuesSubtitle2}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
+                    >
                         {aboutBusinessValuesDescription2}
                     </Typography>
                 </AccordionDetails>
@@ -119,10 +136,14 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
         <Grid item xs={12}>
             <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{aboutBusinessValuesSubtitle3}</Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
+                    >{aboutBusinessValuesSubtitle3}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography 
+                        sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
+                    >
                         {aboutBusinessValuesDescription3}
                     </Typography>
                 </AccordionDetails>
@@ -131,10 +152,14 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
         <Grid item xs={12}>
             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{aboutBusinessValuesSubtitle4}</Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
+                    >{aboutBusinessValuesSubtitle4}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
+                    >
                         {aboutBusinessValuesDescription4}
                     </Typography>
                 </AccordionDetails>
@@ -143,10 +168,14 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
         <Grid item xs={12}>
             <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{aboutBusinessValuesSubtitle5}</Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
+                    >{aboutBusinessValuesSubtitle5}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography 
+                        sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
+                    >
                         {aboutBusinessValuesDescription5}
                     </Typography>
                 </AccordionDetails>
@@ -155,10 +184,14 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
         <Grid item xs={12}>
             <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{aboutBusinessValuesSubtitle6}</Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
+                    >{aboutBusinessValuesSubtitle6}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography 
+                        sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
+                    >
                         {aboutBusinessValuesDescription6}
                     </Typography>
                 </AccordionDetails>
@@ -167,10 +200,14 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
         <Grid item xs={12}>
             <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{aboutBusinessValuesSubtitle7}</Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
+                    >{aboutBusinessValuesSubtitle7}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography
+                        sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
+                    >
                         {aboutBusinessValuesDescription7}
                     </Typography>
                 </AccordionDetails>
