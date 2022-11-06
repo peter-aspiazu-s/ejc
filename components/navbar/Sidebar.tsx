@@ -32,8 +32,8 @@ interface ItemsMenuProps {
     linkAbout: string;
     contact: string;
     linkContact: string;
-    frecuentQuestions: string;
-    linkFrecuentQuestions: string;
+    frequentQuestions: string;
+    linkFrequentQuestions: string;
     services: string;
     serviceOne: string;
     linkServiceOne: string;
@@ -52,8 +52,8 @@ export const Sidebar: FC<ItemsMenuProps> = ({
     linkAbout,
     contact,
     linkContact,
-    frecuentQuestions,
-    linkFrecuentQuestions,
+    frequentQuestions,
+    linkFrequentQuestions,
     services,
     serviceOne,
     linkServiceOne,
@@ -209,10 +209,10 @@ export const Sidebar: FC<ItemsMenuProps> = ({
                                 </ListItem>
                             </NextLink>
                             <Divider />
-                            <NextLink href={linkFrecuentQuestions} passHref>
+                            <NextLink href={linkFrequentQuestions} passHref>
                                 <ListItem button onClick={ closeSideMenu }>
                                     <ListItemText 
-                                        primary={frecuentQuestions} 
+                                        primary={frequentQuestions} 
                                         primaryTypographyProps={{
                                             style: {
                                                 fontSize: '1rem'

@@ -31,8 +31,8 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           linkAbout={'/company-information/about'}
           contact={'Contact'}
           linkContact={'/company-information/contact'}
-          frecuentQuestions={'Frequent Questions'}
-          linkFrecuentQuestions={'/company-information/frequent-questions'}
+          frequentQuestions={'Frequent Questions'}
+          linkFrequentQuestions={'/company-information/frequent-questions'}
           services={'Services'}
           serviceOne={'Roofing'}
           linkServiceOne={'/services/roofing'}
@@ -45,18 +45,20 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
             pathname === '/' 
             ? '/es'
             : pathname === '/company-information/about' 
-              ? '/es/nosotros'
+              ? '/es/informacion-empresa/nosotros'
               : pathname === '/company-information/contact'
-                ? '/es/contacto'
-                : pathname === '/services/web-site'
-                  ? '/es/servicios/sitio-web'
-                  : pathname === '/services/graphic-design'
-                    ? '/es/servicios/diseno-grafico'
-                    : pathname === '/services/e-commerce'
-                      ? '/es/servicios/e-commerce'
+                ? '/es/informacion-empresa/contacto'
+                : pathname === '/services/roofing'
+                  ? '/es/servicios/techumbre'
+                  : pathname === '/services/siding'
+                    ? '/es/servicios/via-muerta'
+                    : pathname === '/services/gutters'
+                      ? '/es/servicios/canalones'
                       : pathname === '/policies'
                         ? '/es/politicas'
-                        : '/'
+                        : pathname === '/company-information/frequent-questions'
+                          ? '/es/informacion-empresa/preguntas-frecuentes'
+                          : '/'
           }
         />
         <Sidebar 
@@ -66,8 +68,8 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           linkAbout={'/company-information/about'}
           contact={'Contact'}
           linkContact={'/company-information/contact'}
-          frecuentQuestions={'Frequent Questions'}
-          linkFrecuentQuestions={'/company-information/frequent-questions'}
+          frequentQuestions={'Frequent Questions'}
+          linkFrequentQuestions={'/company-information/frequent-questions'}
           services={'Services'}
           serviceOne={'Roofing'}
           linkServiceOne={'/services/roofing'}
@@ -80,18 +82,20 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
             pathname === '/' 
             ? '/es'
             : pathname === '/company-information/about' 
-              ? '/es/nosotros'
+              ? '/es/informacion-empresa/nosotros'
               : pathname === '/company-information/contact'
-                ? '/es/contacto'
-                : pathname === '/services/web-site'
-                  ? '/es/servicios/sitio-web'
-                  : pathname === '/services/graphic-design'
-                    ? '/es/servicios/diseno-grafico'
-                    : pathname === '/services/e-commerce'
-                      ? '/es/servicios/e-commerce'
+                ? '/es/informacion-empresa/contacto'
+                : pathname === '/services/roofing'
+                  ? '/es/servicios/techumbre'
+                  : pathname === '/services/siding'
+                    ? '/es/servicios/via-muerta'
+                    : pathname === '/services/gutters'
+                      ? '/es/servicios/canalones'
                       : pathname === '/policies'
                         ? '/es/politicas'
-                        : '/'
+                        : pathname === '/company-information/frequent-questions'
+                          ? '/es/informacion-empresa/preguntas-frecuentes'
+                          : '/'
           }
         />
 
@@ -106,6 +110,8 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           linkAbout={'/company-information/about'}
           contact={'Contact'}
           linkContact={'/company-information/contact'}
+          frequentQuestions={'Frequent Questions'}
+          linkFrequentQuestions={'/company-information/frequent-questions'}
           titleItemsServices={'Service Pages'}
           serviceOne={'Roofing'}
           linkServiceOne={'/services/roofing'}
@@ -136,6 +142,7 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           messageErrorMessage={'The message is required and must have 10 or more letters'}
           warningMessageInput={'Please enter a value'}
           variantForm={'standard'}
+          TextButtonWhatsApp={'Contact us by WhatsApp'}
         />
     </>
   )

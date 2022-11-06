@@ -45,28 +45,28 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   }));
 
 
-interface FrecuentQuestionsProps {
-    frecuentQuestionsTitle: string;
-    frecuentQuestionsSubtitle1: string;
-    frecuentQuestionsDescription1: string;
-    frecuentQuestionsSubtitle2: string;
-    frecuentQuestionsDescription2: string;
-    frecuentQuestionsSubtitle3: string;
-    frecuentQuestionsDescription3: string;
-    frecuentQuestionsSubtitle4: string;
-    frecuentQuestionsDescription4: string;
+interface FrequentQuestionsProps {
+    frequentQuestionsTitle: string;
+    frequentQuestionsSubtitle1: string;
+    frequentQuestionsDescription1: string;
+    frequentQuestionsSubtitle2: string;
+    frequentQuestionsDescription2: string;
+    frequentQuestionsSubtitle3: string;
+    frequentQuestionsDescription3: string;
+    frequentQuestionsSubtitle4: string;
+    frequentQuestionsDescription4: string;
 }
 
-export const FrecuentQuestions: FC<FrecuentQuestionsProps> = ({
-    frecuentQuestionsTitle,
-    frecuentQuestionsSubtitle1,
-    frecuentQuestionsDescription1,
-    frecuentQuestionsSubtitle2,
-    frecuentQuestionsDescription2,
-    frecuentQuestionsSubtitle3,
-    frecuentQuestionsDescription3,
-    frecuentQuestionsSubtitle4,
-    frecuentQuestionsDescription4,
+export const FrequentQuestions: FC<FrequentQuestionsProps> = ({
+    frequentQuestionsTitle,
+    frequentQuestionsSubtitle1,
+    frequentQuestionsDescription1,
+    frequentQuestionsSubtitle2,
+    frequentQuestionsDescription2,
+    frequentQuestionsSubtitle3,
+    frequentQuestionsDescription3,
+    frequentQuestionsSubtitle4,
+    frequentQuestionsDescription4,
 }) => {
 
     const [expanded, setExpanded] = useState<string | false>('panel1');
@@ -77,7 +77,7 @@ export const FrecuentQuestions: FC<FrecuentQuestionsProps> = ({
     };
 
   return (
-    <Grid container>
+    <Grid container className="animate__animated animate__fadeIn">
         <Grid item>
             <Paper elevation={3} sx={{p: {xs:3, md:5}}}>
                 <Grid container>
@@ -91,20 +91,20 @@ export const FrecuentQuestions: FC<FrecuentQuestionsProps> = ({
                                     md: '1.7rem', 
                                     lg: '1.8rem', 
                                     xl: '1.9rem'}
-                            }}>{frecuentQuestionsTitle}</Typography>
+                            }}>{frequentQuestionsTitle}</Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                 <Typography 
                                     sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
-                                >{frecuentQuestionsSubtitle1}</Typography>
+                                >{frequentQuestionsSubtitle1}</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography
                                     sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
                                 >
-                                    {frecuentQuestionsDescription1}
+                                    {frequentQuestionsDescription1}
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -114,13 +114,13 @@ export const FrecuentQuestions: FC<FrecuentQuestionsProps> = ({
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                 <Typography
                                     sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
-                                >{frecuentQuestionsSubtitle2}</Typography>
+                                >{frequentQuestionsSubtitle2}</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography
                                     sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
                                 >
-                                    {frecuentQuestionsDescription2}
+                                    {frequentQuestionsDescription2}
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -130,13 +130,13 @@ export const FrecuentQuestions: FC<FrecuentQuestionsProps> = ({
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                 <Typography
                                     sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
-                                >{frecuentQuestionsSubtitle3}</Typography>
+                                >{frequentQuestionsSubtitle3}</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography 
                                     sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
                                 >
-                                    {frecuentQuestionsDescription3}
+                                    {frequentQuestionsDescription3}
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -146,13 +146,13 @@ export const FrecuentQuestions: FC<FrecuentQuestionsProps> = ({
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                 <Typography
                                     sx={{fontSize: {xs: '1rem', md: '1.1rem', lg: '1.2rem', xl: '1.3rem'}}}
-                                >{frecuentQuestionsSubtitle4}</Typography>
+                                >{frequentQuestionsSubtitle4}</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography
                                     sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}
                                 >
-                                    {frecuentQuestionsDescription4}
+                                    {frequentQuestionsDescription4}
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>

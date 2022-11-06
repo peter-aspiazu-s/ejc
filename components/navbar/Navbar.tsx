@@ -29,8 +29,8 @@ interface ItemsMenuProps {
   about: string;
   linkAbout: string;
   contact: string;
-  frecuentQuestions: string;
-  linkFrecuentQuestions: string;
+  frequentQuestions: string;
+  linkFrequentQuestions: string;
   linkContact: string;
   services: string;
   serviceOne: string;
@@ -50,8 +50,8 @@ export const Navbar: FC<ItemsMenuProps> = ({
   linkAbout,
   contact,
   linkContact,
-  frecuentQuestions,
-  linkFrecuentQuestions,
+  frequentQuestions,
+  linkFrequentQuestions,
   services,
   serviceOne,
   linkServiceOne,
@@ -106,7 +106,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                 sx={{display: 'flex', justifyContent:'start', alignItems:{xs:'center'}}}
               >
                 <NextLink href={linkHome} passHref>
-                  <Image src='/images/logotipo.webp' width={140} height={140} className="logo" />
+                  <Image src='/images/logotipo.webp' width={110} height={110} className="logo" />
                 </NextLink>
               </Grid>
 
@@ -137,21 +137,20 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     aria-haspopup="true"
                     aria-expanded={ open ? 'true' : undefined }
                     onClick={ handleClick }
-                    // variant={ 
-                    //   pathname === linkServiceOne 
-                    //   || pathname === linkServiceTwo
-                    //   || pathname === linkServiceThree ? "contained" : "text" 
-                    // }
-                    variant="text"
+                    variant={ 
+                      pathname === linkServiceOne 
+                      || pathname === linkServiceTwo
+                      || pathname === linkServiceThree ? "contained" : "text" 
+                    }
                     color="secondary"
                   >
                     <Typography
-                      className={
-                        pathname === "/none" ? "" : "text-color"} 
                       // className={
-                      //   pathname === linkServiceOne 
-                      //   || pathname === linkServiceTwo
-                      //   || pathname === linkServiceThree ? "" : "text-color"} 
+                      //   pathname === "/none" ? "" : "text-color"} 
+                      className={
+                        pathname === linkServiceOne 
+                        || pathname === linkServiceTwo
+                        || pathname === linkServiceThree ? "" : "text-color"} 
                       sx={{ 
                         display: 'flex', 
                         justifyContent: 'center', 
@@ -214,21 +213,21 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     aria-haspopup="true"
                     aria-expanded={ openCompanyInformation ? 'true' : undefined }
                     onClick={ handleClickCompanyInformation }
-                    // variant={ 
-                    //   pathname === linkServiceOne 
-                    //   || pathname === linkServiceTwo
-                    //   || pathname === linkServiceThree ? "contained" : "text" 
-                    // }
-                    variant="text"
+                    variant={ 
+                      pathname === linkContact 
+                      || pathname === linkAbout
+                      || pathname === linkFrequentQuestions ? "contained" : "text" 
+                    }
+                    // variant="text"
                     color="secondary"
                   >
                     <Typography
-                      className={
-                        pathname === "/none" ? "" : "text-color"} 
                       // className={
-                      //   pathname === linkServiceOne 
-                      //   || pathname === linkServiceTwo
-                      //   || pathname === linkServiceThree ? "" : "text-color"} 
+                      //   pathname === "/none" ? "" : "text-color"} 
+                      className={
+                        pathname === linkContact 
+                        || pathname === linkAbout
+                        || pathname === linkFrequentQuestions ? "" : "text-color"} 
                       sx={{ 
                         display: 'flex', 
                         justifyContent: 'center', 
@@ -273,7 +272,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                       </MenuItem>
                     </NextLink>
                     <Divider />
-                    <NextLink href={linkFrecuentQuestions} passHref>
+                    <NextLink href={linkFrequentQuestions} passHref>
                       <MenuItem 
                         onClick={ handleCloseCompanyInformation } 
                         sx={{ 
@@ -281,7 +280,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                           fontSize: {md:'0.7rem', lg:'0.8rem', xl: '1rem'}
                         }}
                       >
-                        {frecuentQuestions}
+                        {frequentQuestions}
                       </MenuItem>
                     </NextLink>
                   </Menu>
@@ -298,15 +297,6 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   </Button>
                 </NextLink>
               </Grid>
-              {/* <Grid item sm={1} sx={{ display: {xs: 'none', sm: 'flex'}, justifyContent: 'end' }}>
-                <IconButton color="secondary" onClick={handleModeTheme}>
-                  {
-                    modeTheme
-                      ? <LightModeIcon />
-                      : <NightlightIcon />
-                  }
-                </IconButton>
-              </Grid> */}
               <Grid item xs={2} sm={1} sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'end' }} >
                   <IconButton onClick={ openSideMenu } sx={{ color:'text.disabled' }}>
                       <MenuIcon sx={{fontSize: {xs: '1.5rem'}}} />

@@ -30,13 +30,13 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
   return (
     <Grid container justifyContent='center' alignItems='center' spacing={3}>
         <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', pb: 2 }}>
+            <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', py: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     {/* <Image src="/images/antonio-g-caguana.webp" width={300} height={300} /> */}
                     <CardMedia
                         component="img"
-                        sx={{height:{xs: 300, sm:400}}}
-                        image="/images/antonio-g-caguana.webp"
+                        sx={{width:{xs: 250, sm:350, lg:400}}}
+                        image="/images/antonio-g-caguana-border.webp"
                         alt="luego pondre algo"
                     />
                     <CardContent>
@@ -90,13 +90,13 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
             </Card>
         </Grid>
         <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', pb: 2 }}>
+            <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', py: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     {/* <Image src="/images/maria-t-loja.webp" width={400} height={400} /> */}
                     <CardMedia
                         component="img"
-                        sx={{height:{xs: 300, sm:400}}}
-                        image="/images/maria-t-loja.webp"
+                        sx={{width:{xs: 250, sm:350, lg:400}}}
+                        image="/images/maria-t-loja-border.webp"
                         alt="luego pondre algo"
                     />
                     <CardContent>

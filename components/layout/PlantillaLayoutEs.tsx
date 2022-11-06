@@ -32,8 +32,8 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           linkAbout={'/es/informacion-empresa/nosotros'}
           contact={'Contacto'}
           linkContact={'/es/informacion-empresa/contacto'}
-          frecuentQuestions={'Preguntas Frecuentes'}
-          linkFrecuentQuestions={'/informacion-empresa/preguntas-frecuentes'}
+          frequentQuestions={'Preguntas Frecuentes'}
+          linkFrequentQuestions={'/informacion-empresa/preguntas-frecuentes'}
           services={'Servicios'}
           serviceOne={'Techumbre'}
           linkServiceOne={'/es/servicios/techumbre'}
@@ -45,19 +45,21 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           linkBtnLanguage={
             pathname === '/es'
             ? '/'
-            : pathname === '/es/nosotros'
-              ? '/about'
-              : pathname === '/es/contacto'
-                ? '/contact'
-                : pathname === '/es/servicios/sitio-web'
-                  ? '/services/web-site'
-                  : pathname === '/es/servicios/diseno-grafico'
-                    ? '/services/graphic-design'
-                    : pathname === '/es/servicios/e-commerce'
-                      ? '/services/e-commerce'
-                      : pathname === '/es/politicas'
-                        ? '/policies'
-                        : '/'
+            : pathname === '/es/informacion-empresa/nosotros'
+              ? '/company-information/about'
+              : pathname === '/es/informacion-empresa/contacto'
+                ? '/company-information/contact'
+                : pathname === '/es/informacion-empresa/preguntas-frecuentes'
+                  ? '/company-information/frequent-questions'
+                  : pathname === '/es/servicios/techumbre'
+                    ? '/services/roofing'
+                    : pathname === '/es/servicios/via-muerta'
+                      ? '/services/siding'
+                      : pathname === '/es/servicios/canalones'
+                        ? '/services/gutters'
+                        : pathname === '/es/politicas'
+                          ? '/policies'
+                          : '/'
           }
         />
         <Sidebar 
@@ -67,8 +69,8 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           linkAbout={'/es/informacion-empresa/nosotros'}
           contact={'Contacto'}
           linkContact={'/es/informacion-empresa/contacto'}
-          frecuentQuestions={'Preguntas Frecuentes'}
-          linkFrecuentQuestions={'/informacion-empresa/preguntas-frecuentes'}
+          frequentQuestions={'Preguntas Frecuentes'}
+          linkFrequentQuestions={'/informacion-empresa/preguntas-frecuentes'}
           services={'Servicios'}
           serviceOne={'Techumbre'}
           linkServiceOne={'/es/servicios/techumbre'}
@@ -80,19 +82,21 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           linkBtnLanguage={
             pathname === '/es'
             ? '/'
-            : pathname === '/es/nosotros'
-              ? '/about'
-              : pathname === '/es/contacto'
-                ? '/contact'
-                : pathname === '/es/servicios/sitio-web'
-                  ? '/services/web-site'
-                  : pathname === '/es/servicios/diseno-grafico'
-                    ? '/services/graphic-design'
-                    : pathname === '/es/servicios/e-commerce'
-                      ? '/services/e-commerce'
-                      : pathname === '/es/politicas'
-                        ? '/policies'
-                        : '/'
+            : pathname === '/es/informacion-empresa/nosotros'
+              ? '/company-information/about'
+              : pathname === '/es/informacion-empresa/contacto'
+                ? '/company-information/contact'
+                : pathname === '/es/informacion-empresa/preguntas-frecuentes'
+                  ? '/company-information/frequent-questions'
+                  : pathname === '/es/servicios/techumbre'
+                    ? '/services/roofing'
+                    : pathname === '/es/servicios/via-muerta'
+                      ? '/services/siding'
+                      : pathname === '/es/servicios/canalones'
+                        ? '/services/gutters'
+                        : pathname === '/es/politicas'
+                          ? '/policies'
+                          : '/'
           }
         />
         
@@ -107,6 +111,8 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           linkAbout={'/es/informacion-empresa/nosotros'}
           contact={'Contacto'}
           linkContact={'/es/informacion-empresa/contacto'}
+          frequentQuestions={'Preguntas Frecuentes'}
+          linkFrequentQuestions={'/es/informacion-empresa/preguntas-frecuentes'}
           titleItemsServices={'Páginas de Servicios'}
           serviceOne={'Techumbre'}
           linkServiceOne={'/es/servicios/techumbre'}
@@ -137,6 +143,7 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           messageErrorMessage={'El mensaje es requerido y debe tener 10 o más letras'}
           warningMessageInput={'Ingrese un valor'}
           variantForm={'standard'}
+          TextButtonWhatsApp={'Contáctanos por WhatsApp'}
         />
     </>
   )

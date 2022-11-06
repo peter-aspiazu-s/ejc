@@ -4,6 +4,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material'
 import { lightTheme, darkTheme } from '../themes'
 import { UiContext, UiProvider } from '../context'
 import useContext from 'react';
+import 'animate.css';
 
 // TODO: colocar el tipo NextPage a las páginas
 

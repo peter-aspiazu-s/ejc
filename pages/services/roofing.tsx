@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material';
 import { PlantillaLayout } from '../../components/layout'
-import { ServiceOneHeader, ServiceOneMore } from '../../components/servicesPages';
+import { ServiceOneHeader, ServiceOneMore, WorkDone } from '../../components/servicesPages';
 
 const RoofingPage: NextPage = () => {
   return (
@@ -19,6 +19,11 @@ const RoofingPage: NextPage = () => {
           serviceOneMoreDescription1={'That is why a timely repair is considered necessary in order to have adequate maintenance and avoid major expenses in the future.'}
           serviceOneMoreDescription2={'At EJC Home Improvement Corp, our priority is to help our customers ensure that their roofs receive the best repairs, using quality materials, helping them last for several years without the need for short-term replacement.'}
           serviceOneMoreDescription3={'It is worth mentioning that our ceilings and designs have added value, since they can be customized to the needs of our customers, in order to improve their durability.'}
+        />
+      </Container>
+      <Container sx={{py:5}}>
+        <WorkDone 
+          workDone={'Work Done'}
         />
       </Container>
     </PlantillaLayout>

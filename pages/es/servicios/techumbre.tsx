@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayoutEs } from '../../../components/layout'
-import { ServiceOneHeader, ServiceOneMore } from '../../../components/servicesPages'
+import { ServiceOneHeader, ServiceOneMore, WorkDone } from '../../../components/servicesPages'
 
 const TechumbrePage: NextPage = () => {
   return (
@@ -14,7 +14,6 @@ const TechumbrePage: NextPage = () => {
         />
       </Box>
       <Container sx={{py:5}}>
-      <Container sx={{py:5}}>
         <ServiceOneMore 
           serviceOneMoreTitle={'Más sobre el servicio'}
           serviceOneMoreDescription1={'Es por esto que se considera necesario una oportuna reparación con el fin de que tengan un mantenimiento adecuado y se eviten gastos mayores a futuro.'}
@@ -22,6 +21,10 @@ const TechumbrePage: NextPage = () => {
           serviceOneMoreDescription3={'Cabe mencionar que nuestros techos y diseños tienen un valor añadido, ya que se pueden personalizar a las necesidades de nuestros clientes, con el fin de mejorar su durabilidad.'}
         />
       </Container>
+      <Container sx={{py:5}}>
+        <WorkDone 
+          workDone={'Trabajos Realizados'}
+        />
       </Container>
     </PlantillaLayoutEs>
   )

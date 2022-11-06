@@ -11,6 +11,8 @@ interface FooterProps {
     linkContact:string;
     about:string;
     linkAbout:string;
+    frequentQuestions: string;
+    linkFrequentQuestions: string;
 }
 
 export const PagesItems: FC<FooterProps> = ({
@@ -21,6 +23,8 @@ export const PagesItems: FC<FooterProps> = ({
     linkContact,
     about,
     linkAbout,
+    frequentQuestions,
+    linkFrequentQuestions,
 }) => {
 
     const { pathname } = useContext(UiContext)
@@ -42,7 +46,7 @@ export const PagesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled',
                     textDecorationColor:'#90a4ae',
-                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                    fontSize: {xs:'0.7rem'}
                 }}
                 underline={ pathname === linkHome ? 'always' : 'hover' }
             >
@@ -57,7 +61,7 @@ export const PagesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae',
-                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
                 }}
                 underline={ (pathname === linkAbout) ? 'always' : 'hover' }
             >
@@ -72,11 +76,26 @@ export const PagesItems: FC<FooterProps> = ({
                 display: 'block', 
                 color:'text.disabled', 
                 textDecorationColor:'#90a4ae',
-                fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                fontSize: {xs:'0.7rem', xl: '0.8rem'}
             }}
             underline={ (pathname === linkContact) ? 'always' : 'hover' }
         >
             {contact}
+        </Link>
+        </NextLink>
+        <NextLink href={linkFrequentQuestions} passHref>
+        <Link 
+            variant="overline" 
+            sx={{ 
+                mb:1, 
+                display: 'block', 
+                color:'text.disabled', 
+                textDecorationColor:'#90a4ae',
+                fontSize: {xs:'0.7rem', xl: '0.8rem'}
+            }}
+            underline={ (pathname === linkFrequentQuestions) ? 'always' : 'hover' }
+        >
+            {frequentQuestions}
         </Link>
         </NextLink>
     </>

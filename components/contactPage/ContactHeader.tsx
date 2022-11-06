@@ -20,7 +20,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
     contactVisitBTN,
 }) => {
   return (
-    <Grid container>
+    <Grid container className="animate__animated animate__fadeIn">
         <Grid item xs={12}>
             <Box sx={{display: {xs: 'bloxk', sm: 'none'}}}>
                 <Image src={BannerPageContactxs} />

@@ -6,6 +6,7 @@ import { PagesServicesItems } from './PagesServicesItems';
 import { ContactSocialMedia } from './ContactSocialMedia';
 import { FormFooter } from './FormFooter';
 import { LegalTerms } from './LegalTerms';
+import { ButtonWhatsApp } from './ButtonWhatsApp';
 
 interface FooterProps {
     presentCompany: string;
@@ -16,6 +17,8 @@ interface FooterProps {
     linkAbout: string;
     contact: string;
     linkContact: string;
+    frequentQuestions: string;
+    linkFrequentQuestions: string;
     titleItemsServices: string;
     serviceOne: string;
     linkServiceOne: string;
@@ -46,6 +49,7 @@ interface FooterProps {
     messageErrorMessage: string;
     warningMessageInput: string;
     variantForm: string;
+    TextButtonWhatsApp: string;
 }
 
 export const Footer: FC<FooterProps> = ({
@@ -57,6 +61,8 @@ export const Footer: FC<FooterProps> = ({
     linkAbout,
     contact,
     linkContact,
+    frequentQuestions,
+    linkFrequentQuestions,
     titleItemsServices,
     serviceOne,
     linkServiceOne,
@@ -87,6 +93,7 @@ export const Footer: FC<FooterProps> = ({
     messageErrorMessage,
     warningMessageInput,
     variantForm,
+    TextButtonWhatsApp,
 }) => {
 
   return (
@@ -123,6 +130,8 @@ export const Footer: FC<FooterProps> = ({
                             linkContact={linkContact}
                             about={about}
                             linkAbout={linkAbout}
+                            frequentQuestions={frequentQuestions}
+                            linkFrequentQuestions={linkFrequentQuestions}
                          />
                     </Grid>
                     <Grid item xs={12} sm={6} md={3} sx={{textAlign: {xs: 'center', sm: 'left'}}}>
@@ -174,6 +183,19 @@ export const Footer: FC<FooterProps> = ({
                     </Grid>
                 </Grid>
             </Container>
+        </Box>
+
+        <Box 
+            sx={{
+                position: 'fixed',
+                right: '10px',
+                bottom: '20px',
+                zIndex: 1001 
+            }}
+        >
+            <ButtonWhatsApp 
+                TextButtonWhatsApp={TextButtonWhatsApp}
+            />
         </Box>
 
         <Box sx={{backgroundColor: 'primary.main', py:2}}>

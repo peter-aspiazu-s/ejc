@@ -54,10 +54,9 @@ export const PagesServicesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae',
-                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
                 }}
-                // underline={ (pathname === linkServiceOne) ? 'always' : 'hover' }
-                underline={ (pathname === '/none') ? 'always' : 'hover' }
+                underline={ (pathname === linkServiceOne) ? 'always' : 'hover' }
             >
                 {serviceOne}
             </Link>
@@ -70,10 +69,9 @@ export const PagesServicesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae', 
-                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
                 }}
-                // underline={ (pathname === linkServiceTwo) ? 'always' : 'hover' }
-                underline={ (pathname === '/none') ? 'always' : 'hover' }
+                underline={ (pathname === linkServiceTwo) ? 'always' : 'hover' }
             >
                 {serviceTwo}
             </Link>
@@ -86,42 +84,13 @@ export const PagesServicesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae',
-                    fontSize: {xs:'0.7rem', lg:'0.8rem'}
+                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
                 }}
-                // underline={ (pathname === linkServiceThree) ? 'always' : 'hover' }
-                underline={ (pathname === '/none') ? 'always' : 'hover' }
+                underline={ (pathname === linkServiceThree) ? 'always' : 'hover' }
             >
                 {serviceThree}
             </Link>
         </NextLink>
-        {/* <NextLink href={linkServiceFour} passHref>
-            <Link   
-                variant="overline" 
-                sx={{ mb:1, display: 'block', color:'text.disabled', textDecorationColor:'#90a4ae' }}
-                // underline={ (pathname === linkServiceThree) ? 'always' : 'hover' }
-                underline={ (pathname === '/none') ? 'always' : 'hover' }
-            >
-                {serviceFour}
-            </Link>
-        </NextLink>
-        <NextLink href={linkServiceFive} passHref>
-            <Link   
-                variant="overline" 
-                sx={{ mb:1, display: 'block', color:'text.disabled', textDecorationColor:'#90a4ae' }}
-                underline={ (pathname === '/none') ? 'always' : 'hover' }
-            >
-                {serviceFive}
-            </Link>
-        </NextLink>
-        <NextLink href={linkServiceSix} passHref>
-            <Link   
-                variant="overline" 
-                sx={{ mb:1, display: 'block', color:'text.disabled', textDecorationColor:'#90a4ae' }}
-                underline={ (pathname === '/none') ? 'always' : 'hover' }
-            >
-                {serviceSix}
-            </Link>
-        </NextLink> */}
     </>
   )
 }

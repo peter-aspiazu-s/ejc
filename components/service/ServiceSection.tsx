@@ -2,9 +2,9 @@ import {FC} from 'react'
 import NextLink from 'next/link';
 import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button } from '@mui/material';
 
-import ConstructionIcon from '@mui/icons-material/Construction';
-import ApartmentIcon from '@mui/icons-material/Apartment';
-import ArchitectureIcon from '@mui/icons-material/Architecture';
+import FilterHdrIcon from '@mui/icons-material/FilterHdr';
+import CabinIcon from '@mui/icons-material/Cabin';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 // TODO: agregar el alt en todas las imagenes usadas
 
@@ -48,7 +48,10 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <ConstructionIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <FilterHdrIcon 
+                        sx={{
+                            fontSize: {xs: '130px', sm: '150px', md: '180px'}
+                        }} />
                     <CardContent>
                         <Typography 
                             gutterBottom 
@@ -80,7 +83,10 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <ApartmentIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <CabinIcon 
+                        sx={{
+                            fontSize: {xs: '130px', sm: '150px', md: '180px'}
+                        }} />
                     <CardContent>
                         <Typography 
                             gutterBottom 
@@ -112,7 +118,7 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <ArchitectureIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <AccountTreeIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
                     <CardContent>
                         <Typography 
                             gutterBottom 
