@@ -54,7 +54,7 @@ export const PagesServicesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae',
-                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
+                    fontSize: {xs:'0.7rem'}
                 }}
                 underline={ (pathname === linkServiceOne) ? 'always' : 'hover' }
             >
@@ -69,7 +69,7 @@ export const PagesServicesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae', 
-                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
+                    fontSize: {xs:'0.7rem'}
                 }}
                 underline={ (pathname === linkServiceTwo) ? 'always' : 'hover' }
             >
@@ -84,7 +84,7 @@ export const PagesServicesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae',
-                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
+                    fontSize: {xs:'0.7rem'}
                 }}
                 underline={ (pathname === linkServiceThree) ? 'always' : 'hover' }
             >

@@ -21,7 +21,7 @@ const HomePage: NextPage = () => {
           descriptionService2={'Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...'}
           servicePath2={'/es/servicios/via-muerta'}
           titleSlide3={'Canalones'}
-          descriptionService3={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargarnos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'}
+          descriptionService3={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'}
           servicePath3={'/es/servicios/canalones'}
           start={'Empezar'}
         />
@@ -31,7 +31,7 @@ const HomePage: NextPage = () => {
           <CompanySummary
               companySummaryTitle={'EJC | Home Improvement Corp'}
               companySummaryDescription1={'Somos EJC Home Improvement Corp. una empresa consolidada, con personal que cuenta con una gran trayectoria, con sede principal en el Estado de Nueva York. Nuestro enfoque se orienta a la gestión y ejecución de servicios de construcción, remodelación y reparación de infraestructuras....'}
-              companySummaryLinkAbout={'/informacion-empresa/nosotros'}
+              companySummaryLinkAbout={'/es/informacion-empresa/nosotros'}
               companySummaryMore={'Leer más'}
             />
         </Container>

@@ -12,7 +12,7 @@ const PreguntasFrecuentesPage: NextPage = () => {
                 frequentQuestionsSubtitle1={'¿Cómo contratar nuestros servicios?'}
                 frequentQuestionsDescription1={'Puedes contactarnos a través de nuestros números de contacto, correo electrónico o a través de la página web y cotizar con nosotros sin costo. Dentro de dos días hábiles, un especialista te contactará para asistirte. Tras tu aprobación se realizará la labor acordada.'}
                 frequentQuestionsSubtitle2={'¿En qué zonas del país está disponible?'}
-                frequentQuestionsDescription2={''}
+                frequentQuestionsDescription2={'En cuanto a nuestra cobertura, ofrecemos nuestros servicios en las ciudades de Spring Valley, Nanuet, New City y ciudades cercanas como Albany, Kingston, Syracuse y Rocchester.'}
                 frequentQuestionsSubtitle3={'¿Cuánto tiempo de experiencia tenemos?'}
                 frequentQuestionsDescription3={'Nuestro capital humano cuenta con alta experiencia en las áreas en las que ofrecemos nuestros servicios. Nueve años en estas áreas nos han permitido ampliar nuestros conocimientos para ofrecer servicios de alta calidad.'}
                 frequentQuestionsSubtitle4={'¿Contamos con seguros?'}

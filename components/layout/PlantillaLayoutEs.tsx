@@ -33,7 +33,7 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           contact={'Contacto'}
           linkContact={'/es/informacion-empresa/contacto'}
           frequentQuestions={'Preguntas Frecuentes'}
-          linkFrequentQuestions={'/informacion-empresa/preguntas-frecuentes'}
+          linkFrequentQuestions={'/es/informacion-empresa/preguntas-frecuentes'}
           services={'Servicios'}
           serviceOne={'Techumbre'}
           linkServiceOne={'/es/servicios/techumbre'}
@@ -70,7 +70,7 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           contact={'Contacto'}
           linkContact={'/es/informacion-empresa/contacto'}
           frequentQuestions={'Preguntas Frecuentes'}
-          linkFrequentQuestions={'/informacion-empresa/preguntas-frecuentes'}
+          linkFrequentQuestions={'/es/informacion-empresa/preguntas-frecuentes'}
           services={'Servicios'}
           serviceOne={'Techumbre'}
           linkServiceOne={'/es/servicios/techumbre'}
@@ -103,7 +103,7 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
         {children}
         
         <Footer
-          presentCompany={'Es un empresa dedicada a la creación de aplicaciónes web, usando tecnologías de confianza como NextJS, Material UI, CSS, React, Node, Mongo, Express, JWT, SQL'}
+          presentCompany={'Somos EJC Home Improvement Corp. una empresa consolidada, con personal que cuenta con una gran trayectoria, con sede principal en el Estado de Nueva York. Nuestro enfoque se orienta a la gestión y ejecución de servicios de construcción, remodelación y reparación de infraestructuras.'}
           titleItems={'Páginas'}
           home={'Inicio'}
           linkHome={'/es'}

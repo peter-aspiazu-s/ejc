@@ -17,6 +17,10 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import MenuIcon from '@mui/icons-material/Menu';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { UiContext } from '../../context';
 
 import ImageEnglish from '../../public/images/english.webp'
@@ -102,7 +106,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                 item 
                 xs={10} 
                 sm={10} 
-                md={4} 
+                md={2} 
                 sx={{display: 'flex', justifyContent:'start', alignItems:{xs:'center'}}}
               >
                 <NextLink href={linkHome} passHref>
@@ -300,6 +304,20 @@ export const Navbar: FC<ItemsMenuProps> = ({
               <Grid item xs={2} sm={1} sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'end' }} >
                   <IconButton onClick={ openSideMenu } sx={{ color:'text.disabled' }}>
                       <MenuIcon sx={{fontSize: {xs: '1.5rem'}}} />
+                  </IconButton>
+              </Grid>
+              <Grid item md={3} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'end' }} >
+                  <IconButton color="secondary" href="#" target="_blank">
+                      <FacebookIcon />
+                  </IconButton>
+                  <IconButton color="secondary" href="#" target="_blank">
+                      <InstagramIcon />
+                  </IconButton>
+                  <IconButton color="secondary" href="#" target="_blank">
+                      <TwitterIcon />
+                  </IconButton>
+                  <IconButton color="secondary" href="#" target="_blank">
+                      <YouTubeIcon />
                   </IconButton>
               </Grid>
             </Grid>

@@ -9,7 +9,7 @@ const CanalonesPage: NextPage = () => {
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
         <ServiceThreeHeader 
           ServiceThreeHeaderTitle={'Canalones'}
-          ServiceThreeHeaderSemiDescription={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargarnos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados.'}
+          ServiceThreeHeaderSemiDescription={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados.'}
           ServiceThreeHeaderVisitBTN={'Contáctanos'}
         />
       </Box>

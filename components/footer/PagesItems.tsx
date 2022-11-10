@@ -61,7 +61,7 @@ export const PagesItems: FC<FooterProps> = ({
                     display: 'block', 
                     color:'text.disabled', 
                     textDecorationColor:'#90a4ae',
-                    fontSize: {xs:'0.7rem', xl: '0.8rem'}
+                    fontSize: {xs:'0.7rem'}
                 }}
                 underline={ (pathname === linkAbout) ? 'always' : 'hover' }
             >
@@ -76,7 +76,7 @@ export const PagesItems: FC<FooterProps> = ({
                 display: 'block', 
                 color:'text.disabled', 
                 textDecorationColor:'#90a4ae',
-                fontSize: {xs:'0.7rem', xl: '0.8rem'}
+                fontSize: {xs:'0.7rem'}
             }}
             underline={ (pathname === linkContact) ? 'always' : 'hover' }
         >
@@ -91,7 +91,7 @@ export const PagesItems: FC<FooterProps> = ({
                 display: 'block', 
                 color:'text.disabled', 
                 textDecorationColor:'#90a4ae',
-                fontSize: {xs:'0.7rem', xl: '0.8rem'}
+                fontSize: {xs:'0.7rem'}
             }}
             underline={ (pathname === linkFrequentQuestions) ? 'always' : 'hover' }
         >

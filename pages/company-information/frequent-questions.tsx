@@ -12,7 +12,7 @@ const frequentQuestionsPage: NextPage = () => {
                 frequentQuestionsSubtitle1={'How to contract our services?'}
                 frequentQuestionsDescription1={'You can contact us through our contact numbers, email or through the website and quote with us at no cost. Within two business days, a specialist will contact you to assist you. After your approval, the agreed work will be carried out.'}
                 frequentQuestionsSubtitle2={'In what areas of the country is it available?'}
-                frequentQuestionsDescription2={''}
+                frequentQuestionsDescription2={'Regarding our coverage, we offer our services in the cities of Spring Valley, Nanuet, New City and nearby cities such as Albany, Kingston, Syracuse and Rocchester.'}
                 frequentQuestionsSubtitle3={'How much experience do we have?'}
                 frequentQuestionsDescription3={'Our human capital has high experience in the areas in which we offer our services. Nine years in these areas have allowed us to expand our knowledge to offer high quality services.'}
                 frequentQuestionsSubtitle4={'Do we have insurance?'}
