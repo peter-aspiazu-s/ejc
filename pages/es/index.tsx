@@ -8,11 +8,12 @@ import { SectionAbout } from '../../components/about'
 import { ServiceSection } from '../../components/service'
 import { SectionContact } from '../../components/contact'
 import { CompanySummary } from '../../components/companySummary'
+import { TypedHome } from '../../components/typedHome'
 
 const HomePage: NextPage = () => {
   return (
     <PlantillaLayoutEs title={'EJC - Home'} contentPage={'Servicios de construcción'}>
-      <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
+      {/* <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
         <SlideHome 
           titleSlide1={'Techumbre'}
           descriptionService1={'La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...'}
@@ -25,7 +26,37 @@ const HomePage: NextPage = () => {
           servicePath3={'/es/servicios/canalones'}
           start={'Empezar'}
         />
+      </Box> */}
+
+      <Box 
+        sx={{
+          mt: {
+            xs: 13, sm: 14, md: 15
+            },
+          display: {xs: 'block', md: 'none'}
+          }}    
+      >
+        <TypedHome 
+          servicesTyped={['Techumbre', 'Vía muerta', 'Canalones']}
+        />
       </Box>
+      <Box 
+        sx={{
+          mt: {
+            xs: 13, sm: 14, md: 15
+            },
+          display: {xs: 'none', md: 'block'}
+          }}    
+      >
+        <TypedHome 
+          servicesTyped={[
+            'Techumbre - La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...', 
+            'Vía muerta - Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...', 
+            'Canalones - En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'
+          ]}
+        />
+      </Box>
+
       <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>
         <Container>
           <CompanySummary

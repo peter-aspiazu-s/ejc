@@ -14,8 +14,8 @@ const HomePage: NextPage = () => {
 
   return (
     <PlantillaLayout title={'EJC - Home'} contentPage={'Construction services'}>
-      <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
-        {/* <SlideHome 
+      {/* <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
+        <SlideHome 
           titleSlide1={'Roofing'}
           descriptionService1={'Construction and roof replacement at EJC Home Improvement Corp. is one of the best investments a homeowner can make, as the quality of work and materials installed are of high quality...'}
           servicePath1={'/services/roofing'}
@@ -26,9 +26,34 @@ const HomePage: NextPage = () => {
           descriptionService3={'At EJC Home Improvement Corp we not only carry out rain gutter installations in your home, but we also take care of their maintenance, repair and cleaning to extend their durability thanks to our trained specialists...'}
           servicePath3={'/services/gutters'}
           start={'Start'}
-        /> */}
-        <TypedHome
+        />
+      </Box> */}
+      <Box 
+        sx={{
+          mt: {
+            xs: 13, sm: 14, md: 15
+            },
+          display: {xs: 'block', md: 'none'}
+          }}    
+      >
+        <TypedHome 
           servicesTyped={['Roofing', 'Siding', 'Gutters']}
+        />
+      </Box>
+      <Box 
+        sx={{
+          mt: {
+            xs: 13, sm: 14, md: 15
+            },
+          display: {xs: 'none', md: 'block'}
+          }}    
+      >
+        <TypedHome 
+          servicesTyped={[
+            'Roofing - Construction and roof replacement at EJC Home Improvement Corp. is one of the best investments a homeowner can make, as the quality of work and materials installed are of high quality...', 
+            'Siding - With our siding service your walls will have the right materials to have facades of good quality and aesthetics...', 
+            'Gutters - At EJC Home Improvement Corp we not only carry out rain gutter installations in your home, but we also take care of their maintenance, repair and cleaning to extend their durability thanks to our trained specialists...'
+          ]}
         />
       </Box>
       <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>

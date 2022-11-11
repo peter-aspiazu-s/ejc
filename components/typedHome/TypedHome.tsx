@@ -1,7 +1,8 @@
 import {FC} from 'react'
 import Typed from 'react-typed'
 import Image from 'next/image'
-import {Grid, Box} from '@mui/material'
+import NextLink from 'next/link'
+import {Grid, Box, Typography, Button} from '@mui/material'
 
 import BannerSlideHomeImg1xs from '../../public/images/banner-slide-home-img1-xs.webp'
 import BannerSlideHomeImg1sm from '../../public/images/banner-slide-home-img1-sm.webp'
@@ -14,7 +15,7 @@ interface TypedHomeProps {
 }
 
 export const TypedHome:FC<TypedHomeProps> = ({
-    servicesTyped
+    servicesTyped,
 }) => {
   return (
     <Grid container sx={{display:'flex', justifyContent:'center', alignItems:'center'}}> 
@@ -40,8 +41,9 @@ export const TypedHome:FC<TypedHomeProps> = ({
             position:"absolute",
             // top:'50%',
             display:"flex",
-            justifyContent:"start",
-            alignItems:"center"
+            justifyContent:"center",
+            alignItems:"center",
+            px:{md:3}
         }}>
             <Grid 
                 item 
@@ -58,7 +60,8 @@ export const TypedHome:FC<TypedHomeProps> = ({
                     loop
                     style={{
                         color: "#fff",
-                        fontSize: "2rem"
+                        fontSize: "1.4rem",
+                        textAlign: 'center'
                     }}
                 />
             </Grid>
