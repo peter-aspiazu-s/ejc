@@ -11,7 +11,7 @@ import BannerSlideHomeImg1lg from '../../public/images/banner-slide-home-img1-lg
 import BannerSlideHomeImg1xl from '../../public/images/banner-slide-home-img1-xl.webp'
 
 interface TypedHomeProps {
-    servicesTyped: Array[];
+    servicesTyped: string[];
 }
 
 export const TypedHome:FC<TypedHomeProps> = ({
