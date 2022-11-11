@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { Box, Container, Grid, Typography, IconButton } from '@mui/material';
 import { PlantillaLayoutEs } from '../../../components/layout'
 import { ContactDirect, ContactHeader, ContactForm } from '../../../components/contactPage';
+import { Location } from '../../../components/location';
 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -66,6 +67,11 @@ const ContactPage: NextPage = () => {
         <IconButton color="secondary" href="#" target="_blank">
           <YouTubeIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
         </IconButton>
+      </Container>
+      <Container sx={{py: 3}}>
+        <Location 
+          titleLocation={'Ubicación'}
+        />
       </Container>
     </PlantillaLayoutEs>
   )
