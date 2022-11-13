@@ -213,7 +213,8 @@ export const Footer: FC<FooterProps> = ({
                             display: 'flex', 
                             flexDirection: {xs: 'column', sm: 'row'}, 
                             justifyContent: 'space-around',
-                            textAlign: {xs: 'center', sm: 'left'}
+                            textAlign: {xs: 'center', sm: 'left'},
+                            zIndex: "2000"
                         }}
                     >
                         <LegalTerms 

@@ -11,7 +11,8 @@ import {
   Menu,
   MenuItem,
   IconButton,
-  Divider
+  Divider,
+  Box
 } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -110,9 +111,34 @@ export const Navbar: FC<ItemsMenuProps> = ({
                 sx={{display: 'flex', justifyContent:'start', alignItems:{xs:'center'}}}
               >
                 <NextLink href={linkHome} passHref>
-                  <Image src='/images/logotipo.webp' width={110} height={110} className="logo" />
+                  <Image src='/images/logotipo.svg' width={100} height={100} className='logo' />
                 </NextLink>
               </Grid>
+
+              <Box 
+                sx={{
+                  position:{
+                    xs: "absolute"
+                  },
+                  transform: "rotate(90deg)",
+                  top: "-15px",
+                  right:"0px"
+                }}
+              >
+                <Image src="/images/decoracion1.webp" width={200} height={200} />
+              </Box>
+              <Box 
+                sx={{
+                  position:{
+                    xs: "fixed"
+                  },
+                  transform: "rotate(90deg)",
+                  bottom: "-10px",
+                  left:"-10px"
+                }}
+              >
+                <Image src="/images/decoracion2.webp" width={200} height={200} />
+              </Box>
 
               <Grid 
                 item 
