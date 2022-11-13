@@ -121,7 +121,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     xs: "absolute"
                   },
                   transform: "rotate(90deg)",
-                  top: "-15px",
+                  top: {xs:"103px", sm:"105px", md: "107px"},
                   right:"0px"
                 }}
               >
