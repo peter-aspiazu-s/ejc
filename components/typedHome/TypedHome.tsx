@@ -3,6 +3,7 @@ import Typed from 'react-typed'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import {Grid, Box, Typography, Button} from '@mui/material'
+import { scrollButtonBannerHome } from '../../helpers'
 
 import BannerSlideHomeImg1xs from '../../public/images/banner-slide-home-img1-xs.webp'
 import BannerSlideHomeImg1sm from '../../public/images/banner-slide-home-img1-sm.webp'
@@ -12,11 +13,20 @@ import BannerSlideHomeImg1xl from '../../public/images/banner-slide-home-img1-xl
 
 interface TypedHomeProps {
     servicesTyped: string[];
+    viewMore: string;
 }
 
 export const TypedHome:FC<TypedHomeProps> = ({
     servicesTyped,
+    viewMore
 }) => {
+
+    const handleClickButton = (e: any) => {
+        e.preventDefault();
+        scrollButtonBannerHome(e);
+        // setState(false);
+    }
+    
   return (
     <Grid container sx={{display:'flex', justifyContent:'center', alignItems:'center'}}> 
         <Grid item xs={12}>
@@ -64,6 +74,16 @@ export const TypedHome:FC<TypedHomeProps> = ({
                         textAlign: 'center'
                     }}
                 />
+            </Grid>
+            <Grid item>
+                <Button 
+                    variant="contained" 
+                    color="secondary"
+                    onClick={handleClickButton}
+                    href="#servicesection"
+                >
+                    {viewMore}
+                </Button>
             </Grid>
         </Grid>
     </Grid>

@@ -38,6 +38,7 @@ const HomePage: NextPage = () => {
       >
         <TypedHome 
           servicesTyped={['Roofing', 'Siding', 'Gutters']}
+          viewMore="Ver Más"
         />
       </Box>
       <Box 
@@ -54,6 +55,7 @@ const HomePage: NextPage = () => {
             'Siding - Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...', 
             'Gutters - En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'
           ]}
+          viewMore="Ver Más"
         />
       </Box>
 

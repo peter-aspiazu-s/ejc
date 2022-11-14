@@ -33,6 +33,7 @@ interface FooterProps {
     serviceSix:string;
     linkServiceSix:string;
     contactUs:string;
+    linkContactFooter: string;
     legalWarning:string;
     linkLegalWarning:string;
     privacyPolicy:string;
@@ -77,6 +78,7 @@ export const Footer: FC<FooterProps> = ({
     serviceSix,
     linkServiceSix,
     contactUs,
+    linkContactFooter,
     legalWarning,
     linkLegalWarning,
     privacyPolicy,
@@ -164,6 +166,7 @@ export const Footer: FC<FooterProps> = ({
                     >
                         <ContactSocialMedia 
                             contactUs={contactUs}
+                            linkContactFooter={linkContactFooter}
                         />
                     </Grid>
 

@@ -127,6 +127,7 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           serviceSix={'Servicio 6'}
           linkServiceSix={'/es'}
           contactUs={'Contáctanos'}
+          linkContactFooter={"https://wa.link/gswe2l"}
           legalWarning={'Aviso Legal'}
           linkLegalWarning={'/es/politicas'}
           privacyPolicy={'Política de Privacidad'}

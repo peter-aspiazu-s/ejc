@@ -38,6 +38,7 @@ const HomePage: NextPage = () => {
       >
         <TypedHome 
           servicesTyped={['Roofing', 'Siding', 'Gutters']}
+          viewMore="View More"
         />
       </Box>
       <Box 
@@ -54,6 +55,7 @@ const HomePage: NextPage = () => {
             'Siding - With our siding service your walls will have the right materials to have good quality and aesthetic facades...', 
             'Gutters - At EJC Home Improvement Corp we not only install rain gutters in your house, but we also take care of their maintenance, repair and cleaning to extend their durability thanks to our trained specialists...'
           ]}
+          viewMore="View More"
         />
       </Box>
       <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>

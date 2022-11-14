@@ -7,9 +7,13 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 interface FooterProps {
     contactUs:string;
+    linkContactFooter: string;
 }
 
-export const ContactSocialMedia: FC<FooterProps> = ({ contactUs }) => {
+export const ContactSocialMedia: FC<FooterProps> = ({ 
+    contactUs,
+    linkContactFooter 
+}) => {
   return (
     <>  
         <Button 
@@ -21,7 +25,7 @@ export const ContactSocialMedia: FC<FooterProps> = ({ contactUs }) => {
                 mb: 3,
                 fontSize: {xs: '0.8rem', xl: '1rem'}
             }}
-            href="#"
+            href={linkContactFooter}
             target="_blank"
         >
             {contactUs}

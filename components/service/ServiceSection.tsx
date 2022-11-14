@@ -36,7 +36,7 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
     textBtn,
 }) => {
   return (
-    <Grid container justifyContent='center' alignItems='center' spacing={3}>
+    <Grid container justifyContent='center' alignItems='center' spacing={3} id="servicesection">
         <Grid item xs={12}>
             <Typography 
                 sx={{
