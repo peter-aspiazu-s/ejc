@@ -12,7 +12,7 @@ import { TypedHome } from '../../components/typedHome'
 
 const HomePage: NextPage = () => {
   return (
-    <PlantillaLayoutEs title={'EJC - Home'} contentPage={'Servicios de construcción'}>
+    <PlantillaLayoutEs title={'EJC - Inicio'} contentPage={'Nuestro enfoque se orienta a la gestión y ejecución de servicios de construcción, remodelación y reparación de infraestructuras'}>
       {/* <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
         <SlideHome 
           titleSlide1={'Techumbre'}
@@ -87,7 +87,7 @@ const HomePage: NextPage = () => {
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionAbout 
           aboutTitle={'Sobre Nosotros'}
-          aboutSemiDescription={'Somos EJC Home Improvement Corp. una empresa consolidada, con...'}
+          aboutSemiDescription={'Somos EJC Home Improvement Corp., una empresa consolidada, con...'}
           aboutVisitBTN={'Visitar Página'}
           aboutLinkBtn={'/es/informacion-empresa/nosotros'}
         />

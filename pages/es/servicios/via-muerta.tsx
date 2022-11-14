@@ -5,7 +5,7 @@ import { ServiceTwoHeader, ServiceTwoMore, WorkDoneTwo } from '../../../componen
 
 const ViaMuertaPage: NextPage = () => {
   return (
-    <PlantillaLayoutEs title={'EJC | Vía muerta'} contentPage={'Servicios de vía muerta'}>
+    <PlantillaLayoutEs title={'EJC | Siding'} contentPage={'En EJC Home Improvement Corp en nuestro servicio de siding, generamos un revestimiento que ayuda al cuidado y mantenimiento de cualquier infraestructura, haciéndola más duradera y protegida del exterior.'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
         <ServiceTwoHeader 
           ServiceTwoHeaderTitle={'Vía muerta'}

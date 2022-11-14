@@ -13,7 +13,7 @@ import { TypedHome } from '../components/typedHome'
 const HomePage: NextPage = () => {
 
   return (
-    <PlantillaLayout title={'EJC - Home'} contentPage={'Construction services'}>
+    <PlantillaLayout title={'EJC - Home'} contentPage={'Our approach is oriented to the management and execution of infrastructure construction, remodeling and repair services'}>
       {/* <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
         <SlideHome 
           titleSlide1={'Roofing'}
@@ -50,9 +50,9 @@ const HomePage: NextPage = () => {
       >
         <TypedHome 
           servicesTyped={[
-            'Roofing - Construction and roof replacement at EJC Home Improvement Corp. is one of the best investments a homeowner can make, as the quality of work and materials installed are of high quality...', 
-            'Siding - With our siding service your walls will have the right materials to have facades of good quality and aesthetics...', 
-            'Gutters - At EJC Home Improvement Corp we not only carry out rain gutter installations in your home, but we also take care of their maintenance, repair and cleaning to extend their durability thanks to our trained specialists...'
+            'Roofing - The construction and replacement of roofs at EJC Home Improvement Corp. is one of the best investments a homeowner can make, since the quality of work and the materials installed are of the highest quality...', 
+            'Siding - With our siding service your walls will have the right materials to have good quality and aesthetic facades...', 
+            'Gutters - At EJC Home Improvement Corp we not only install rain gutters in your house, but we also take care of their maintenance, repair and cleaning to extend their durability thanks to our trained specialists...'
           ]}
         />
       </Box>
@@ -60,7 +60,7 @@ const HomePage: NextPage = () => {
         <Container>
           <CompanySummary
             companySummaryTitle={'EJC | Home Improvement Corp'}
-            companySummaryDescription1={'We are EJC Home Improvement Corp, a well-established company with highly experienced staff, headquartered in New York State. Our approach is oriented to the management and execution of infrastructure construction, remodeling and repair services...'}
+            companySummaryDescription1={'We are EJC Home Improvement Corp., a well-established company with a long-standing staff, headquartered in New York State. Our focus is oriented towards the management and execution of construction, remodeling and infrastructure repair services...'}
             companySummaryLinkAbout={'/company-information/about'}
             companySummaryMore={'Read more'}
           />
@@ -86,7 +86,7 @@ const HomePage: NextPage = () => {
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionAbout 
           aboutTitle={'About Us'}
-          aboutSemiDescription={'We are EJC Home Improvement Corp. A well-established...'}
+          aboutSemiDescription={'We are EJC Home Improvement Corp., a well-established...'}
           aboutVisitBTN={'Visit The Page'}
           aboutLinkBtn={'/company-information/about'}
         />
@@ -97,13 +97,13 @@ const HomePage: NextPage = () => {
           <ServiceSection
             serviceSectionTitle={'Services'}
             service1Title={'Roofing'}
-            service1Description={'Construction and roof replacement at EJC Home Improvement Corp. is one of the best...'}
+            service1Description={'The construction and replacement of roofs at EJC Home Improvement Corp. is one of the best...'}
             service1Link={'/services/roofing'}
             service2Title={'Siding'}
-            service2Description={'With our siding service your walls will have the right materials to have facades of good...'}
+            service2Description={'With our siding service your walls will have the right materials to have good quality and...'}
             service2Link={'/services/siding'}
             service3Title={'Gutters'}
-            service3Description={'At EJC Home Improvement Corp we not only carry out rain gutter installations in your...'}
+            service3Description={'At EJC Home Improvement Corp we not only install rain gutters in your house, but we also...'}
             service3Link={'/services/gutters'}
             textBtn={'Visit The Page'}
           />

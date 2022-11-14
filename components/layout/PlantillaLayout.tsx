@@ -102,7 +102,7 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
         {children}
         
         <Footer 
-          presentCompany={'We are EJC Home Improvement Corp. A well-established company with highly experienced staff, headquartered in New York State. Our approach is oriented to the management and execution of infrastructure construction, remodeling and repair services.'}
+          presentCompany={'We are EJC Home Improvement Corp., a well-established company with a long-standing staff, headquartered in New York State. Our focus is oriented towards the management and execution of construction, remodeling and infrastructure repair services.'}
           titleItems={'Pages'}
           home={'Home'}
           linkHome={'/'}

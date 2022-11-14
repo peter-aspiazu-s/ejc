@@ -24,6 +24,9 @@ import RoofingWorkImg11 from '../../public/images/roofing-work-img11-border.webp
 import RoofingWorkImg12 from '../../public/images/roofing-work-img12-border.webp'
 import RoofingWorkImg13 from '../../public/images/roofing-work-img13-border.webp'
 import RoofingWorkImg14 from '../../public/images/roofing-work-img14-border.webp'
+import RoofingWorkImg15 from '../../public/images/roofing-work-img15-border.webp'
+import RoofingWorkImg16 from '../../public/images/roofing-work-img16-border.webp'
+import RoofingWorkImg17 from '../../public/images/roofing-work-img17-border.webp'
 
 interface WorkDoneProps {
     workDone: string;
@@ -125,6 +128,15 @@ export const WorkDone: FC<WorkDoneProps> = ({
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg14} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={RoofingWorkImg15} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={RoofingWorkImg16} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={RoofingWorkImg17} />
                         </SwiperSlide>
                     </Swiper>
                 </Paper>

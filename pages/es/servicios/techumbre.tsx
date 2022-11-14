@@ -5,7 +5,7 @@ import { ServiceOneHeader, ServiceOneMore, WorkDone } from '../../../components/
 
 const TechumbrePage: NextPage = () => {
   return (
-    <PlantillaLayoutEs title={'EJC | Techumbre'} contentPage={'Servicios de techumbre'}>
+    <PlantillaLayoutEs title={'EJC | Techumbre'} contentPage={'En EJC Home Improvement Corp, nuestra prioridad está en ayudar a nuestros clientes a garantizar que sus techos reciban las mejores reparaciones, utilizando materiales de calidad, ayudando a que perduren varios años sin necesidad de un reemplazo en corto tiempo.'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
         <ServiceOneHeader 
           ServiceOneHeaderTitle={'Techumbre'}

@@ -5,7 +5,7 @@ import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusiness
 
 const AboutPage: NextPage = () => {
   return (
-    <PlantillaLayoutEs title={'EJC - Nosotros'} contentPage={'Página con información sobre nosotros'}>
+    <PlantillaLayoutEs title={'EJC - Nosotros'} contentPage={'Somos EJC Home Improvement Corp. una empresa consolidada, con personal que cuenta con una gran trayectoria, con sede principal en el Estado de Nueva York. Nuestro enfoque se orienta a la gestión y ejecución de servicios de construcción, remodelación y reparación de infraestructuras.'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
         <AboutHeader 
           aboutTitle={'¿Quienes Somos?'}

@@ -121,11 +121,11 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     xs: "absolute"
                   },
                   transform: "rotate(90deg)",
-                  top: {xs:"103px", sm:"105px", md: "107px"},
+                  top: "-15px",
                   right:"0px"
                 }}
               >
-                <Image src="/images/decoracion1.webp" width={200} height={200} />
+                <Image src="/images/decoracion1.webp" width={160} height={160} />
               </Box>
               <Box 
                 sx={{
@@ -160,7 +160,6 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     </Typography>
                     </Button>
                   </NextLink>
-                  {/* TODO: colocar una animacion que cambie el icono si se abre el submenu */}
                   <Button
                     id="services-botton"
                     aria-controls={ open ? 'services-botton' : undefined }

@@ -14,6 +14,8 @@ import GuttersWorkImg1 from '../../public/images/gutters-work-img1-border.webp'
 import GuttersWorkImg2 from '../../public/images/gutters-work-img2-border.webp'
 import GuttersWorkImg3 from '../../public/images/gutters-work-img3-border.webp'
 import GuttersWorkImg4 from '../../public/images/gutters-work-img4-border.webp'
+import GuttersWorkImg5 from '../../public/images/gutters-work-img5-border.webp'
+import GuttersWorkImg6 from '../../public/images/gutters-work-img6-border.webp'
 
 interface WorkDoneThreeProps {
     workDoneThree: string;
@@ -85,6 +87,12 @@ export const WorkDoneThree: FC<WorkDoneThreeProps> = ({
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={GuttersWorkImg4} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={GuttersWorkImg5} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={GuttersWorkImg6} />
                         </SwiperSlide>
                     </Swiper>
                 </Paper>
