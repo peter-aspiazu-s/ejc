@@ -63,7 +63,7 @@ export const WorkDoneThree: FC<WorkDoneThreeProps> = ({
                     elevation={3} 
                     sx={{
                         p: {xs:1, sm:2, md:3, lg:4, xl:5},
-                        width: {xs:290, sm:500, md:700}
+                        width: {xs:"100%", sm:500, md:700}
                     }}>
                     <Swiper
                         spaceBetween={30}

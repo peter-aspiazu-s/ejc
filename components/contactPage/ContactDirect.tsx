@@ -44,14 +44,14 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                                 mb:2}}>
                             {contact1Name}
                         </Typography>
-                        <Link href={`tel:${contact1Phone}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
+                        <Link href={`tel:+18455389673`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
                             <Typography 
                                 color="text.secondary" 
                                 sx={{
                                     fontSize: {xs: '0.9rem', md: '1rem'}, 
                                 textAlign: 'center', 
                                 mb:2}}>
-                                +{contact1Phone}
+                                +1 (845) 5389673
                             </Typography>
                         </Link>
                         <Link href={`mailto:${contact1Email}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
@@ -91,11 +91,11 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                             textAlign: 'center', mb:2}}>
                             {contact2Name}
                         </Typography>
-                        <Link href={`tel:${contact2Phone}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
+                        <Link href={`tel:+18458933425`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
                             <Typography 
                                 color="text.secondary" 
                                 sx={{fontSize: {xs: '0.9rem', md: '1rem'}, textAlign: 'center', mb:2}}>
-                                +{contact2Phone}
+                                +1 (845) 893-3425
                             </Typography>
                         </Link>
                         <Link href={`mailto:${contact2Email}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>

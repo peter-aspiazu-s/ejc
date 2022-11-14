@@ -32,9 +32,9 @@ export const ContactSocialMedia: FC<FooterProps> = ({ contactUs }) => {
         <IconButton color="secondary" href="#" target="_blank">
             <InstagramIcon />
         </IconButton>
-        <IconButton color="secondary" href="#" target="_blank">
+        {/* <IconButton color="secondary" href="#" target="_blank">
             <TwitterIcon />
-        </IconButton>
+        </IconButton> */}
         <IconButton color="secondary" href="#" target="_blank">
             <YouTubeIcon />
         </IconButton>

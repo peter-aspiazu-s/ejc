@@ -7,11 +7,11 @@ import PublicIcon from '@mui/icons-material/Public';
 interface AboutPersonalProps {
     about1Name: string;
     about1Position: string;
-    about1Phone: string;
+    about1Phone?: string;
     about1Email: string;
     about2Name: string;
     about2Position: string;
-    about2Phone: string;
+    about2Phone?: string;
     about2Email: string;
     textBtnAbout: string;
 }
@@ -55,14 +55,14 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
                             mb:2}}>
                             {about1Position}
                         </Typography>
-                        <Link href={`tel:${about1Phone}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
+                        <Link href={`tel:+18455389673`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
                             <Typography 
                                 color="text.secondary" 
                                 sx={{
                                     fontSize: {xs: '0.9rem', md: '1rem'}, 
                                     textAlign: 'center', 
                                     mb:2}}>
-                                +{about1Phone}
+                                +1 (845) 5389673
                             </Typography>
                         </Link>
                         <Link href={`mailto:${about1Email}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
@@ -115,13 +115,13 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
                             mb:2}}>
                             {about2Position}
                         </Typography>
-                        <Link href={`tel:${about2Phone}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
+                        <Link href={`tel:+18458933425`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
                             <Typography 
                                 color="text.secondary" 
                                 sx={{fontSize: {xs: '0.9rem', md: '1rem'}, 
                                 textAlign: 'center', 
                                 mb:2}}>
-                                +{about2Phone}
+                                +1 (845) 893-3425
                             </Typography>
                         </Link>
                         <Link href={`mailto:${about2Email}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>

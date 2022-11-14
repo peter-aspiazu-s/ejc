@@ -71,9 +71,9 @@ const ContactPage: NextPage = () => {
         <IconButton color="secondary" href="#" target="_blank">
           <InstagramIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
         </IconButton>
-        <IconButton color="secondary" href="#" target="_blank">
+        {/* <IconButton color="secondary" href="#" target="_blank">
           <TwitterIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
-        </IconButton>
+        </IconButton> */}
         <IconButton color="secondary" href="#" target="_blank">
           <YouTubeIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
         </IconButton>
