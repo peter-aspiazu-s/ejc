@@ -37,7 +37,7 @@ const HomePage: NextPage = () => {
           }}    
       >
         <TypedHome 
-          servicesTyped={['Techumbre', 'Vía muerta', 'Canalones']}
+          servicesTyped={['Roofing', 'Siding', 'Gutters']}
         />
       </Box>
       <Box 
@@ -50,9 +50,9 @@ const HomePage: NextPage = () => {
       >
         <TypedHome 
           servicesTyped={[
-            'Techumbre - La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...', 
-            'Vía muerta - Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...', 
-            'Canalones - En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'
+            'Roofing - La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...', 
+            'Siding - Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...', 
+            'Gutters - En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'
           ]}
         />
       </Box>
@@ -96,15 +96,15 @@ const HomePage: NextPage = () => {
         <Container>
           <ServiceSection
             serviceSectionTitle={'Servicios'}
-            service1Title={'Techumbre'}
+            service1Title={'Roofing'}
             service1Description={'La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones...'}
-            service1Link={'/es/servicios/techumbre'}
-            service2Title={'Vía muerta'}
+            service1Link={'/es/servicios/roofing'}
+            service2Title={'Siding'}
             service2Description={'Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas...'}
-            service2Link={'/es/servicios/via-muerta'}
-            service3Title={'Canalones'}
+            service2Link={'/es/servicios/siding'}
+            service3Title={'Gutters'}
             service3Description={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino...'}
-            service3Link={'/es/servicios/canalones'}
+            service3Link={'/es/servicios/gutters'}
             textBtn={'Visitar Página'}
           />
         </Container>

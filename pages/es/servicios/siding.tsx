@@ -8,7 +8,7 @@ const ViaMuertaPage: NextPage = () => {
     <PlantillaLayoutEs title={'EJC | Siding'} contentPage={'En EJC Home Improvement Corp en nuestro servicio de siding, generamos un revestimiento que ayuda al cuidado y mantenimiento de cualquier infraestructura, haciéndola más duradera y protegida del exterior.'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
         <ServiceTwoHeader 
-          ServiceTwoHeaderTitle={'Vía muerta'}
+          ServiceTwoHeaderTitle={'Siding'}
           ServiceTwoHeaderSemiDescription={'Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética.'}
           ServiceTwoHeaderVisitBTN={'Contáctanos'}
         />

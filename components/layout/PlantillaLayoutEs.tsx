@@ -35,12 +35,12 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           frequentQuestions={'Preguntas Frecuentes'}
           linkFrequentQuestions={'/es/informacion-empresa/preguntas-frecuentes'}
           services={'Servicios'}
-          serviceOne={'Techumbre'}
-          linkServiceOne={'/es/servicios/techumbre'}
-          serviceTwo={'Vía muerta'}
-          linkServiceTwo={'/es/servicios/via-muerta'}
-          serviceThree={'Canalones'}
-          linkServiceThree={'/es/servicios/canalones'}
+          serviceOne={'Roofing'}
+          linkServiceOne={'/es/servicios/roofing'}
+          serviceTwo={'Siding'}
+          linkServiceTwo={'/es/servicios/siding'}
+          serviceThree={'Gutters'}
+          linkServiceThree={'/es/servicios/gutters'}
           companyInformation={'Información de la empresa'}
           linkBtnLanguage={
             pathname === '/es'
@@ -51,11 +51,11 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
                 ? '/company-information/contact'
                 : pathname === '/es/informacion-empresa/preguntas-frecuentes'
                   ? '/company-information/frequent-questions'
-                  : pathname === '/es/servicios/techumbre'
+                  : pathname === '/es/servicios/roofing'
                     ? '/services/roofing'
-                    : pathname === '/es/servicios/via-muerta'
+                    : pathname === '/es/servicios/siding'
                       ? '/services/siding'
-                      : pathname === '/es/servicios/canalones'
+                      : pathname === '/es/servicios/gutters'
                         ? '/services/gutters'
                         : pathname === '/es/politicas'
                           ? '/policies'
@@ -72,12 +72,12 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           frequentQuestions={'Preguntas Frecuentes'}
           linkFrequentQuestions={'/es/informacion-empresa/preguntas-frecuentes'}
           services={'Servicios'}
-          serviceOne={'Techumbre'}
-          linkServiceOne={'/es/servicios/techumbre'}
-          serviceTwo={'Vía muerta'}
-          linkServiceTwo={'/es/servicios/via-muerta'}
-          serviceThree={'Canalones'}
-          linkServiceThree={'/es/servicios/canalones'}
+          serviceOne={'Roofing'}
+          linkServiceOne={'/es/servicios/roofing'}
+          serviceTwo={'Siding'}
+          linkServiceTwo={'/es/servicios/siding'}
+          serviceThree={'Gutters'}
+          linkServiceThree={'/es/servicios/gutters'}
           companyInformation={'Información de la empresa'}
           linkBtnLanguage={
             pathname === '/es'
@@ -88,11 +88,11 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
                 ? '/company-information/contact'
                 : pathname === '/es/informacion-empresa/preguntas-frecuentes'
                   ? '/company-information/frequent-questions'
-                  : pathname === '/es/servicios/techumbre'
+                  : pathname === '/es/servicios/roofing'
                     ? '/services/roofing'
-                    : pathname === '/es/servicios/via-muerta'
+                    : pathname === '/es/servicios/siding'
                       ? '/services/siding'
-                      : pathname === '/es/servicios/canalones'
+                      : pathname === '/es/servicios/gutters'
                         ? '/services/gutters'
                         : pathname === '/es/politicas'
                           ? '/policies'
@@ -114,12 +114,12 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           frequentQuestions={'Preguntas Frecuentes'}
           linkFrequentQuestions={'/es/informacion-empresa/preguntas-frecuentes'}
           titleItemsServices={'Páginas de Servicios'}
-          serviceOne={'Techumbre'}
-          linkServiceOne={'/es/servicios/techumbre'}
-          serviceTwo={'Vía muerta'}
-          linkServiceTwo={'/es/servicios/via-muerta'}
-          serviceThree={'Canalones'}
-          linkServiceThree={'/es/servicios/canalones'}
+          serviceOne={'Roofing'}
+          linkServiceOne={'/es/servicios/roofing'}
+          serviceTwo={'Siding'}
+          linkServiceTwo={'/es/servicios/siding'}
+          serviceThree={'Gutters'}
+          linkServiceThree={'/es/servicios/gutters'}
           serviceFour={'Servicio 4'}
           linkServiceFour={'/es'}
           serviceFive={'Servicio 5'}

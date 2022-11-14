@@ -5,10 +5,10 @@ import { ServiceThreeHeader, ServiceThreeMore, WorkDoneThree } from '../../../co
 
 const CanalonesPage: NextPage = () => {
   return (
-    <PlantillaLayoutEs title={'EJC | Canalones'} contentPage={'EJC Home Improvement Corp es la mejor opción para una instalación eficiente de canaletas para lluvia ya que trabajamos con materiales de alta durabilidad y nos aseguramos que tu infraestructura tendrá el desfogue necesario para las diferentes condiciones climáticas'}>
+    <PlantillaLayoutEs title={'EJC | Gutters'} contentPage={'EJC Home Improvement Corp es la mejor opción para una instalación eficiente de canaletas para lluvia ya que trabajamos con materiales de alta durabilidad y nos aseguramos que tu infraestructura tendrá el desfogue necesario para las diferentes condiciones climáticas'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
         <ServiceThreeHeader 
-          ServiceThreeHeaderTitle={'Canalones'}
+          ServiceThreeHeaderTitle={'Gutters'}
           ServiceThreeHeaderSemiDescription={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados.'}
           ServiceThreeHeaderVisitBTN={'Contáctanos'}
         />
