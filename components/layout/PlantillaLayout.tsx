@@ -126,6 +126,7 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           serviceSix={'Service 6'}
           linkServiceSix={'/'}
           contactUs={'Contact Us'}
+          linkContactFooter={"https://wa.link/gswe2l"}
           legalWarning={'Legal Warning'}
           linkLegalWarning={'/policies'}
           privacyPolicy={'Privacy Policy'}
