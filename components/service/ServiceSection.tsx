@@ -1,6 +1,6 @@
 import {FC} from 'react'
 import NextLink from 'next/link';
-import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button } from '@mui/material';
+import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button, CardMedia } from '@mui/material';
 
 import FilterHdrIcon from '@mui/icons-material/FilterHdr';
 import CabinIcon from '@mui/icons-material/Cabin';
@@ -48,10 +48,15 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <FilterHdrIcon 
+                    <CardMedia
+                        component="img"
                         sx={{
-                            fontSize: {xs: '130px', sm: '150px', md: '180px'}
-                        }} />
+                            width:"100%",
+                            height:200
+                        }}
+                        image="/images/banner-slide-home-img1-xs.webp"
+                        alt="luego pondre algo"
+                    />
                     <CardContent>
                         <Typography 
                             gutterBottom 
@@ -83,10 +88,15 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <CabinIcon 
+                    <CardMedia
+                        component="img"
                         sx={{
-                            fontSize: {xs: '130px', sm: '150px', md: '180px'}
-                        }} />
+                            width:"100%",
+                            height:200
+                        }}
+                        image="/images/banner-slide-home-img2-xs.webp"
+                        alt="luego pondre algo"
+                    />
                     <CardContent>
                         <Typography 
                             gutterBottom 
@@ -118,7 +128,15 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <AccountTreeIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <CardMedia
+                        component="img"
+                        sx={{
+                            width:"100%",
+                            height:200
+                        }}
+                        image="/images/banner-slide-home-img3-xs.webp"
+                        alt="luego pondre algo"
+                    />
                     <CardContent>
                         <Typography 
                             gutterBottom 
