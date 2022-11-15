@@ -51,7 +51,7 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                                     fontSize: {xs: '0.9rem', md: '1rem'}, 
                                 textAlign: 'center', 
                                 mb:2}}>
-                                +1 (845) 5389673
+                                +1 (845) 538-9673
                             </Typography>
                         </Link>
                         <Link href={`mailto:${contact1Email}`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
