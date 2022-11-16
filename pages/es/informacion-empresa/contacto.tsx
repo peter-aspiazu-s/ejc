@@ -42,10 +42,12 @@ const ContactPage: NextPage = () => {
           <Grid item xs={12}>
             <ContactDirect 
               contact1Name={'Antonio G. Caguana'}
+              contact1Position={'Gerente General'}
               contact1Phone={'99 999999999'}
               contact1Email={'example@email.com'}
               contact1Link={'#'}
               contact2Name={'María T. Loja'}
+              contact2Position={'Jefa Administrativa'}
               contact2Phone={'99 999999999'}
               contact2Email={'example@email.com'}
               contact2Link={'#'}

@@ -6,10 +6,12 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 interface ContactDirectProps {
     contact1Name: string;
+    contact1Position: string;
     contact1Phone: string;
     contact1Email: string;
     contact1Link:string;
     contact2Name:string;
+    contact2Position: string;
     contact2Phone:string;
     contact2Email:string;
     contact2Link:string;
@@ -18,10 +20,12 @@ interface ContactDirectProps {
 
 export const ContactDirect: FC<ContactDirectProps> = ({
     contact1Name,
+    contact1Position,
     contact1Phone,
     contact1Email,
     contact1Link,
     contact2Name,
+    contact2Position,
     contact2Phone,
     contact2Email,
     contact2Link,
@@ -43,6 +47,13 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                                 textAlign: 'center', 
                                 mb:2}}>
                             {contact1Name}
+                        </Typography>
+                        <Typography 
+                            color="text.secondary" 
+                            sx={{fontSize: {xs: '0.9rem', md: '1rem'}, 
+                            textAlign: 'center', 
+                            mb:2}}>
+                            {contact1Position}
                         </Typography>
                         <Link href={`tel:+18455389673`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
                             <Typography 
@@ -90,6 +101,13 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                                 xl: '1.6rem'}, 
                             textAlign: 'center', mb:2}}>
                             {contact2Name}
+                        </Typography>
+                        <Typography 
+                            color="text.secondary" 
+                            sx={{fontSize: {xs: '0.9rem', md: '1rem'}, 
+                            textAlign: 'center', 
+                            mb:2}}>
+                            {contact2Position}
                         </Typography>
                         <Link href={`tel:+18458933425`} underline="always" sx={{textDecorationColor:'#90a4ae'}}>
                             <Typography 
