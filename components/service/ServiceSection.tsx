@@ -47,30 +47,32 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         </Grid>
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
-                <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <CardMedia
-                        component="img"
-                        sx={{
-                            width:"100%",
-                            height:200
-                        }}
-                        image="/images/banner-slide-home-img1-xs.webp"
-                        alt="luego pondre algo"
-                    />
-                    <CardContent>
-                        <Typography 
-                            gutterBottom 
-                            component="div" 
-                            sx={{fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}}}>
-                            {service1Title}
-                        </Typography>
-                        <Typography 
-                            color="text.secondary" 
-                            sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}>
-                            {service1Description}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
+                <NextLink href={service1Link} passHref>
+                    <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                        <CardMedia
+                            component="img"
+                            sx={{
+                                width:"100%",
+                                height:200
+                            }}
+                            image="/images/banner-page-roofing-xs.webp"
+                            alt="roofing"
+                        />
+                        <CardContent>
+                            <Typography 
+                                gutterBottom 
+                                component="div" 
+                                sx={{fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}}}>
+                                {service1Title}
+                            </Typography>
+                            <Typography 
+                                color="text.secondary" 
+                                sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}>
+                                {service1Description}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </NextLink>
                 <CardActions>
                     <NextLink href={service1Link} passHref>
                         <Button 
@@ -87,30 +89,32 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         </Grid>
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
-                <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <CardMedia
-                        component="img"
-                        sx={{
-                            width:"100%",
-                            height:200
-                        }}
-                        image="/images/banner-slide-home-img2-xs.webp"
-                        alt="luego pondre algo"
-                    />
-                    <CardContent>
-                        <Typography 
-                            gutterBottom 
-                            component="div" 
-                            sx={{fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}}}>
-                            {service2Title}
-                        </Typography>
-                        <Typography 
-                            color="text.secondary" 
-                            sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}>
-                            {service2Description}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
+                <NextLink href={service2Link} passHref>
+                    <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                        <CardMedia
+                            component="img"
+                            sx={{
+                                width:"100%",
+                                height:200
+                            }}
+                            image="/images/banner-page-siding-xs.webp"
+                            alt="luego pondre algo"
+                        />
+                        <CardContent>
+                            <Typography 
+                                gutterBottom 
+                                component="div" 
+                                sx={{fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}}}>
+                                {service2Title}
+                            </Typography>
+                            <Typography 
+                                color="text.secondary" 
+                                sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}>
+                                {service2Description}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </NextLink>
                 <CardActions>
                     <NextLink href={service2Link} passHref>
                         <Button 
@@ -127,30 +131,32 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
         </Grid>
         <Grid item xs={12} sm={6} md={4} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ maxWidth: 345, backgroundColor: 'primary.dark', pb: 2 }}>
-                <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <CardMedia
-                        component="img"
-                        sx={{
-                            width:"100%",
-                            height:200
-                        }}
-                        image="/images/banner-slide-home-img3-xs.webp"
-                        alt="luego pondre algo"
-                    />
-                    <CardContent>
-                        <Typography 
-                            gutterBottom 
-                            component="div" 
-                            sx={{fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}}}>
-                            {service3Title}
-                        </Typography>
-                        <Typography 
-                            color="text.secondary" 
-                            sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}>
-                            {service3Description}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
+                <NextLink href={service3Link} passHref>
+                    <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                        <CardMedia
+                            component="img"
+                            sx={{
+                                width:"100%",
+                                height:200
+                            }}
+                            image="/images/banner-slide-home-img3-xs.webp"
+                            alt="luego pondre algo"
+                        />
+                        <CardContent>
+                            <Typography 
+                                gutterBottom 
+                                component="div" 
+                                sx={{fontSize: {xs: '1.2rem', sm: '1.3rem', md: '1.4rem', lg: '1.5rem', xl: '1.6rem'}}}>
+                                {service3Title}
+                            </Typography>
+                            <Typography 
+                                color="text.secondary" 
+                                sx={{fontSize: {xs: '0.9rem', md: '1rem'}}}>
+                                {service3Description}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </NextLink>
                 <CardActions>
                     <NextLink href={service3Link} passHref>
                         <Button 
