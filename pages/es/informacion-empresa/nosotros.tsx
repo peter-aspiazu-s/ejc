@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayoutEs } from '../../../components/layout'
 import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusinessValues } from '../../../components/aboutPage'
+import { Certifications } from '../../../components/certifications'
 
 const AboutPage: NextPage = () => {
   return (
@@ -58,6 +59,11 @@ const AboutPage: NextPage = () => {
           aboutBusinessValuesDescription6={'Cumplir el trabajo con alto nivel de eficiencia, obteniendo resultados que cumplan las expectativas y necesidades de los usuarios.'}
           aboutBusinessValuesSubtitle7={'Organización'}
           aboutBusinessValuesDescription7={"Conjugar los recursos de forma ordenada y respetar las formas de trabajo de la empresa."}
+        />
+      </Container>
+      <Container sx={{ py:5 }}>
+        <Certifications 
+          title={"Certificaciones"}
         />
       </Container>
     </PlantillaLayoutEs>

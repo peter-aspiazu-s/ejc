@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayout } from '../../components/layout'
 import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusinessValues } from '../../components/aboutPage'
+import { Certifications } from '../../components/certifications'
 
 const AboutPage: NextPage = () => {
   return (
@@ -58,6 +59,11 @@ const AboutPage: NextPage = () => {
           aboutBusinessValuesDescription6={'Fulfill the work with a high level of efficiency, obtaining results that meet the expectations and needs of users.'}
           aboutBusinessValuesSubtitle7={'Organization'}
           aboutBusinessValuesDescription7={"To combine resources in an orderly manner and respect the company's work methods."}
+        />
+      </Container>
+      <Container sx={{ py:5 }}>
+        <Certifications 
+          title={"Certifications"}
         />
       </Container>
     </PlantillaLayout>

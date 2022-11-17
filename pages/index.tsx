@@ -9,6 +9,7 @@ import { ServiceSection } from '../components/service'
 import { SectionContact } from '../components/contact'
 import { CompanySummary } from '../components/companySummary'
 import { TypedHome } from '../components/typedHome'
+import { Certifications } from '../components/certifications'
 
 const HomePage: NextPage = () => {
 
@@ -120,6 +121,12 @@ const HomePage: NextPage = () => {
           contactLinkBtn={'/company-information/contact'}
         />
       </Box>
+
+      <Container sx={{ py:5 }}>
+        <Certifications 
+          title={"Certifications"}
+        />
+      </Container>
     </PlantillaLayout>
   )
 }
