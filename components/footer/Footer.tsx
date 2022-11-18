@@ -51,6 +51,7 @@ interface FooterProps {
     warningMessageInput: string;
     variantForm: string;
     TextButtonWhatsApp: string;
+    messageButtonWhatsapp: string;
 }
 
 export const Footer: FC<FooterProps> = ({
@@ -96,6 +97,7 @@ export const Footer: FC<FooterProps> = ({
     warningMessageInput,
     variantForm,
     TextButtonWhatsApp,
+    messageButtonWhatsapp,
 }) => {
 
   return (
@@ -198,6 +200,7 @@ export const Footer: FC<FooterProps> = ({
         >
             <ButtonWhatsApp 
                 TextButtonWhatsApp={TextButtonWhatsApp}
+                messageButtonWhatsapp={messageButtonWhatsapp}
             />
         </Box>
 

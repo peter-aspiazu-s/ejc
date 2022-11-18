@@ -12,12 +12,14 @@ interface ServiceThreeHeaderProps {
     ServiceThreeHeaderTitle: string;
     ServiceThreeHeaderSemiDescription: string;
     ServiceThreeHeaderVisitBTN:string;
+    ServiceThreeHeaderLinkMessageWhastapp: string;
 }
 
 export const ServiceThreeHeader: FC<ServiceThreeHeaderProps> = ({
     ServiceThreeHeaderTitle,
     ServiceThreeHeaderSemiDescription,
-    ServiceThreeHeaderVisitBTN
+    ServiceThreeHeaderVisitBTN,
+    ServiceThreeHeaderLinkMessageWhastapp
 }) => {
   return (
     <Grid container className="animate__animated animate__fadeIn">
@@ -70,7 +72,7 @@ export const ServiceThreeHeader: FC<ServiceThreeHeaderProps> = ({
                     component="p"
                 >{ServiceThreeHeaderSemiDescription}</Typography>
                 <Button 
-                    href="#"
+                    href={ServiceThreeHeaderLinkMessageWhastapp}
                     target="_blank" 
                     variant="contained" 
                     color="secondary" 

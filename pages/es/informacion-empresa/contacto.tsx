@@ -17,6 +17,7 @@ const ContactPage: NextPage = () => {
           contactTitle={'Contáctanos'}
           contactSemiDescription={'Ponte en contacto con un experto'}
           contactVisitBTN={'Contactar'}
+          contactLinkMessageWhatsapp={'https://wa.link/gswe2l'}
         />
       </Box>
       <Container sx={{py:5}}>
@@ -45,12 +46,12 @@ const ContactPage: NextPage = () => {
               contact1Position={'Gerente General'}
               contact1Phone={'99 999999999'}
               contact1Email={'example@email.com'}
-              contact1Link={'#'}
+              contact1Link={'https://wa.link/gswe2l'}
               contact2Name={'María T. Loja'}
               contact2Position={'Jefa Administrativa'}
               contact2Phone={'99 999999999'}
               contact2Email={'example@email.com'}
-              contact2Link={'#'}
+              contact2Link={'https://wa.link/gswe2l'}
               textBtnContact={'Contactar'}
             />
           </Grid>

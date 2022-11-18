@@ -12,12 +12,14 @@ interface AboutHeaderProps {
     aboutTitle: string;
     aboutSemiDescription: string;
     aboutVisitBTN:string;
+    aboutLinkMessageWhatsapp: string;
 }
 
 export const AboutHeader: FC<AboutHeaderProps> = ({
     aboutTitle,
     aboutSemiDescription,
     aboutVisitBTN,
+    aboutLinkMessageWhatsapp
 }) => {
   return (
     <Grid container className="animate__animated animate__fadeIn">
@@ -72,7 +74,7 @@ export const AboutHeader: FC<AboutHeaderProps> = ({
                 {/* <Typography sx={{fontSize: {xs:'16px', sm:'18px'}, mb: {xs: 2, sm: 3, md: 3, lg: 4}, textAlign:{xs:'center', md:'left'}}} component="p">{aboutSemiDescription2}</Typography>
                 <Typography sx={{fontSize: {xs:'16px', sm:'18px'}, mb: {xs: 2, sm: 3, md: 3, lg: 4}, textAlign:{xs:'center', md:'left'}}} component="p">{aboutSemiDescription3}</Typography> */}
                 <Button 
-                    href="#"
+                    href={aboutLinkMessageWhatsapp}
                     target="_blank" 
                     variant="contained" 
                     color="secondary" 

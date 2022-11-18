@@ -12,6 +12,7 @@ const AboutPage: NextPage = () => {
           aboutTitle={'About Us?'}
           aboutSemiDescription={'We are EJC Home Improvement Corp., a well-established company with a long-standing staff, headquartered in New York State. Our focus is oriented towards the management and execution of construction, remodeling and infrastructure repair services.'}
           aboutVisitBTN={'Contact'}
+          aboutLinkMessageWhatsapp={'https://wa.link/gswe2l'}
         />
       </Box>
       <Container sx={{py:5}}>
@@ -40,6 +41,8 @@ const AboutPage: NextPage = () => {
           about2Phone={'99 999999999'}
           about2Email={'example@email.com'}
           textBtnAbout={'Contact'}
+          aboutt1Link={'https://wa.link/gswe2l'}
+          aboutt2Link={'https://wa.link/gswe2l'}
         />
       </Container>
       <Container sx={{py:5}}>

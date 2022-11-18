@@ -17,6 +17,7 @@ const ContactPage: NextPage = () => {
           contactTitle={'Contact Us'}
           contactSemiDescription={'Get in touch with an expert'}
           contactVisitBTN={'contact'}
+          contactLinkMessageWhatsapp={'https://wa.link/gswe2l'}
         />
       </Box>
       <Container sx={{py:5}}>

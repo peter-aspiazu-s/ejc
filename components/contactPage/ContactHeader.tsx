@@ -12,12 +12,14 @@ interface SectionContactProps {
     contactTitle: string;
     contactSemiDescription: string;
     contactVisitBTN:string;
+    contactLinkMessageWhatsapp: string;
 }
 
 export const ContactHeader: FC<SectionContactProps> = ({
     contactTitle,
     contactSemiDescription,
     contactVisitBTN,
+    contactLinkMessageWhatsapp
 }) => {
   return (
     <Grid container className="animate__animated animate__fadeIn">
@@ -67,7 +69,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
                         textAlign:{xs:'center', md:'left'}
                     }} component="p">{contactSemiDescription}</Typography>
                 <Button 
-                    href="https://walink.co/5e72b8"
+                    href={contactLinkMessageWhatsapp}
                     target="_blank" 
                     variant="contained" 
                     color="secondary" 

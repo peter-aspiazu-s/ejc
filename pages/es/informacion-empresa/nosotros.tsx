@@ -12,6 +12,7 @@ const AboutPage: NextPage = () => {
           aboutTitle={'¿Quienes Somos?'}
           aboutSemiDescription={'Somos EJC Home Improvement Corp. una empresa consolidada, con personal que cuenta con una gran trayectoria, con sede principal en el Estado de Nueva York. Nuestro enfoque se orienta a la gestión y ejecución de servicios de construcción, remodelación y reparación de infraestructuras.'}
           aboutVisitBTN={'Contactar'}
+          aboutLinkMessageWhatsapp={'https://wa.link/gswe2l'}
         />
       </Box>
       <Container sx={{py:5}}>
@@ -40,6 +41,8 @@ const AboutPage: NextPage = () => {
           about2Phone={'99 999999999'}
           about2Email={'example@email.com'}
           textBtnAbout={'Contactar'}
+          aboutt1Link={'https://wa.link/gswe2l'}
+          aboutt2Link={'https://wa.link/gswe2l'}
         />
       </Container>
       <Container sx={{py:5}}>

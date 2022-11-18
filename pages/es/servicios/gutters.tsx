@@ -11,6 +11,7 @@ const CanalonesPage: NextPage = () => {
           ServiceThreeHeaderTitle={'Gutters'}
           ServiceThreeHeaderSemiDescription={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados.'}
           ServiceThreeHeaderVisitBTN={'Contáctanos'}
+          ServiceThreeHeaderLinkMessageWhastapp={'https://wa.link/67dm1b'}
         />
       </Box>
       <Container sx={{py:5}}>

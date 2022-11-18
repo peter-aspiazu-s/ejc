@@ -6,10 +6,12 @@ import ButtonWhatsAppImg from '../../public/images/btn-whatsapp.webp'
 
 interface ButtonWhatsAppProps {
     TextButtonWhatsApp: string;
+    messageButtonWhatsapp: string;
 }
 
 export const ButtonWhatsApp: FC<ButtonWhatsAppProps> = ({
-    TextButtonWhatsApp
+    TextButtonWhatsApp,
+    messageButtonWhatsapp,
 }) => {
 
   return (
@@ -17,7 +19,10 @@ export const ButtonWhatsApp: FC<ButtonWhatsAppProps> = ({
         <Box 
             sx={{cursor: 'pointer'}}
         >   
-            <Button>
+            <Button
+                href={messageButtonWhatsapp}
+                target="_blank"
+            >
                 <Image 
                     src={ButtonWhatsAppImg} 
                     width={50} 

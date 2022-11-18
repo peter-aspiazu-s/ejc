@@ -14,6 +14,8 @@ interface AboutPersonalProps {
     about2Phone?: string;
     about2Email: string;
     textBtnAbout: string;
+    aboutt1Link: string;
+    aboutt2Link: string;
 }
 
 export const AboutPersonal: FC<AboutPersonalProps> = ({
@@ -26,6 +28,8 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
     about2Phone,
     about2Email,
     textBtnAbout,
+    aboutt1Link,
+    aboutt2Link,
 }) => {
   return (
     <Grid container justifyContent='center' alignItems='center' spacing={3}>
@@ -80,7 +84,7 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
                         size="large" 
                         variant="contained" 
                         color="secondary"
-                        href="#"
+                        href={aboutt1Link}
                         target="_blank"
                         sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
                     >
@@ -139,7 +143,7 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
                         size="large" 
                         variant="contained" 
                         color="secondary"
-                        href="#"
+                        href={aboutt2Link}
                         target="_blank"
                         sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
                     >

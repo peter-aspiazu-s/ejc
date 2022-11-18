@@ -11,6 +11,7 @@ const ViaMuertaPage: NextPage = () => {
           ServiceTwoHeaderTitle={'Siding'}
           ServiceTwoHeaderSemiDescription={'Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética.'}
           ServiceTwoHeaderVisitBTN={'Contáctanos'}
+          ServiceTwoHeaderLinkMessageWhastapp={'https://wa.link/3sxlex'}
         />
       </Box>
       <Container sx={{py:5}}>

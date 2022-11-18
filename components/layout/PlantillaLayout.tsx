@@ -144,6 +144,7 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           warningMessageInput={'Please enter a value'}
           variantForm={'standard'}
           TextButtonWhatsApp={'Contact us by WhatsApp'}
+          messageButtonWhatsapp={"https://wa.link/gswe2l"}
         />
     </>
   )

@@ -127,7 +127,15 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           serviceSix={'Servicio 6'}
           linkServiceSix={'/es'}
           contactUs={'Contáctanos'}
-          linkContactFooter={"https://wa.link/gswe2l"}
+          linkContactFooter={
+            pathname === '/es/servicios/roofing'
+            ? 'https://wa.link/pb7a0b'
+            : pathname === '/es/servicios/siding'
+              ? 'https://wa.link/3sxlex'
+              : pathname === '/es/servicios/gutters'
+               ? 'https://wa.link/67dm1b'
+               : 'https://wa.link/gswe2l'
+          }
           legalWarning={'Aviso Legal'}
           linkLegalWarning={'/es/politicas'}
           privacyPolicy={'Política de Privacidad'}
@@ -145,6 +153,15 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
           warningMessageInput={'Ingrese un valor'}
           variantForm={'standard'}
           TextButtonWhatsApp={'Contáctanos por WhatsApp'}
+          messageButtonWhatsapp={
+            pathname === '/es/servicios/roofing'
+            ? 'https://wa.link/pb7a0b'
+            : pathname === '/es/servicios/siding'
+              ? 'https://wa.link/3sxlex'
+              : pathname === '/es/servicios/gutters'
+               ? 'https://wa.link/67dm1b'
+               : 'https://wa.link/gswe2l'
+          }
         />
     </>
   )

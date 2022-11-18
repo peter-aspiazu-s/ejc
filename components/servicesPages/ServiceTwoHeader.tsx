@@ -12,12 +12,14 @@ interface ServiceTwoHeaderProps {
     ServiceTwoHeaderTitle: string;
     ServiceTwoHeaderSemiDescription: string;
     ServiceTwoHeaderVisitBTN:string;
+    ServiceTwoHeaderLinkMessageWhastapp: string;
 }
 
 export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
     ServiceTwoHeaderTitle,
     ServiceTwoHeaderSemiDescription,
-    ServiceTwoHeaderVisitBTN
+    ServiceTwoHeaderVisitBTN,
+    ServiceTwoHeaderLinkMessageWhastapp
 }) => {
   return (
     <Grid container className="animate__animated animate__fadeIn">
@@ -70,7 +72,7 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
                     component="p"
                 >{ServiceTwoHeaderSemiDescription}</Typography>
                 <Button 
-                    href="#"
+                    href={ServiceTwoHeaderLinkMessageWhastapp}
                     target="_blank" 
                     variant="contained" 
                     color="secondary" 

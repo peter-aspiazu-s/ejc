@@ -11,6 +11,7 @@ const TechumbrePage: NextPage = () => {
           ServiceOneHeaderTitle={'Roofing'}
           ServiceOneHeaderSemiDescription={'La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad.'}
           ServiceOneHeaderVisitBTN={'Contáctanos'}
+          ServiceOneHeaderLinkMessageWhastapp={'https://wa.link/pb7a0b'}
         />
       </Box>
       <Container sx={{py:5}}>

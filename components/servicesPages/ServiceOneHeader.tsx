@@ -12,12 +12,14 @@ interface ServiceOneHeaderProps {
     ServiceOneHeaderTitle: string;
     ServiceOneHeaderSemiDescription: string;
     ServiceOneHeaderVisitBTN:string;
+    ServiceOneHeaderLinkMessageWhastapp: string;
 }
 
 export const ServiceOneHeader: FC<ServiceOneHeaderProps> = ({
     ServiceOneHeaderTitle,
     ServiceOneHeaderSemiDescription,
-    ServiceOneHeaderVisitBTN
+    ServiceOneHeaderVisitBTN,
+    ServiceOneHeaderLinkMessageWhastapp
 }) => {
   return (
     <Grid container className="animate__animated animate__fadeIn">
@@ -70,7 +72,7 @@ export const ServiceOneHeader: FC<ServiceOneHeaderProps> = ({
                     component="p"
                 >{ServiceOneHeaderSemiDescription}</Typography>
                 <Button 
-                    href="#"
+                    href={ServiceOneHeaderLinkMessageWhastapp}
                     target="_blank" 
                     variant="contained" 
                     color="secondary" 
