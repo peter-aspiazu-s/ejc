@@ -121,11 +121,11 @@ const HomePage: NextPage = () => {
           contactLinkBtn={'/es/informacion-empresa/contacto'}
         />
       </Box>
-      <Container sx={{ py:5 }}>
+      {/* <Container sx={{ py:5 }}>
         <Certifications 
           title={"Certificaciones"}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayoutEs>
   )
 }

@@ -10,23 +10,23 @@ import "swiper/css/navigation"
 
 import {Autoplay, Navigation} from 'swiper'
 
-import RoofingWorkImg1 from '../../public/images/roofing-work-img1-border.webp'
-import RoofingWorkImg2 from '../../public/images/roofing-work-img2-border.webp'
-import RoofingWorkImg3 from '../../public/images/roofing-work-img3-border.webp'
+// import RoofingWorkImg1 from '../../public/images/roofing-work-img1-border.webp'
+// import RoofingWorkImg2 from '../../public/images/roofing-work-img2-border.webp'
+// import RoofingWorkImg3 from '../../public/images/roofing-work-img3-border.webp'
 import RoofingWorkImg4 from '../../public/images/roofing-work-img4-border.webp'
-import RoofingWorkImg5 from '../../public/images/roofing-work-img5-border.webp'
+// import RoofingWorkImg5 from '../../public/images/roofing-work-img5-border.webp'
 import RoofingWorkImg6 from '../../public/images/roofing-work-img6-border.webp'
 import RoofingWorkImg7 from '../../public/images/roofing-work-img7-border.webp'
-import RoofingWorkImg8 from '../../public/images/roofing-work-img8-border.webp'
-import RoofingWorkImg9 from '../../public/images/roofing-work-img9-border.webp'
+// import RoofingWorkImg8 from '../../public/images/roofing-work-img8-border.webp'
+// import RoofingWorkImg9 from '../../public/images/roofing-work-img9-border.webp'
 import RoofingWorkImg10 from '../../public/images/roofing-work-img10-border.webp'
 import RoofingWorkImg11 from '../../public/images/roofing-work-img11-border.webp'
-import RoofingWorkImg12 from '../../public/images/roofing-work-img12-border.webp'
-import RoofingWorkImg13 from '../../public/images/roofing-work-img13-border.webp'
-import RoofingWorkImg14 from '../../public/images/roofing-work-img14-border.webp'
-import RoofingWorkImg15 from '../../public/images/roofing-work-img15-border.webp'
-import RoofingWorkImg16 from '../../public/images/roofing-work-img16-border.webp'
-import RoofingWorkImg17 from '../../public/images/roofing-work-img17-border.webp'
+// import RoofingWorkImg12 from '../../public/images/roofing-work-img12-border.webp'
+// import RoofingWorkImg13 from '../../public/images/roofing-work-img13-border.webp'
+// import RoofingWorkImg14 from '../../public/images/roofing-work-img14-border.webp'
+// import RoofingWorkImg15 from '../../public/images/roofing-work-img15-border.webp'
+// import RoofingWorkImg16 from '../../public/images/roofing-work-img16-border.webp'
+// import RoofingWorkImg17 from '../../public/images/roofing-work-img17-border.webp'
 
 interface WorkDoneProps {
     workDone: string;
@@ -87,7 +87,7 @@ export const WorkDone: FC<WorkDoneProps> = ({
                         modules={[Autoplay, Navigation]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <Image src={RoofingWorkImg1} />
                         </SwiperSlide>
                         <SwiperSlide>
@@ -95,32 +95,32 @@ export const WorkDone: FC<WorkDoneProps> = ({
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg3} />
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         <SwiperSlide>
                             <Image src={RoofingWorkImg4} />
                         </SwiperSlide>
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <Image src={RoofingWorkImg5} />
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         <SwiperSlide>
                             <Image src={RoofingWorkImg6} />
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg7} />
                         </SwiperSlide>
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <Image src={RoofingWorkImg8} />
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg9} />
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         <SwiperSlide>
                             <Image src={RoofingWorkImg10} />
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg11} />
                         </SwiperSlide>
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <Image src={RoofingWorkImg12} />
                         </SwiperSlide>
                         <SwiperSlide>
@@ -137,7 +137,7 @@ export const WorkDone: FC<WorkDoneProps> = ({
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg17} />
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                     </Swiper>
                 </Paper>
             </Grid>

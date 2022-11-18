@@ -122,11 +122,11 @@ const HomePage: NextPage = () => {
         />
       </Box>
 
-      <Container sx={{ py:5 }}>
+      {/* <Container sx={{ py:5 }}>
         <Certifications 
           title={"Certifications"}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayout>
   )
 }

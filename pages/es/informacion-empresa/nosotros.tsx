@@ -61,11 +61,11 @@ const AboutPage: NextPage = () => {
           aboutBusinessValuesDescription7={"Conjugar los recursos de forma ordenada y respetar las formas de trabajo de la empresa."}
         />
       </Container>
-      <Container sx={{ py:5 }}>
+      {/* <Container sx={{ py:5 }}>
         <Certifications 
           title={"Certificaciones"}
         />
-      </Container>
+      </Container> */}
     </PlantillaLayoutEs>
   )
 }
