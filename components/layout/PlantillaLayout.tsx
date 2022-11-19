@@ -128,12 +128,12 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           contactUs={'Contact Us'}
           linkContactFooter={
             pathname === '/services/roofing'
-            ? 'https://wa.link/pb7a0b'
+            ? 'https://wa.link/skf9x5'
             : pathname === '/services/siding'
-              ? 'https://wa.link/3sxlex'
+              ? 'https://wa.link/ggf638'
               : pathname === '/services/gutters'
-              ? 'https://wa.link/67dm1b'
-              : 'https://wa.link/gswe2l'
+              ? 'https://wa.link/6tn2re'
+              : 'https://wa.link/adxsm0'
           }
           legalWarning={'Legal Warning'}
           linkLegalWarning={'/policies'}
@@ -154,12 +154,12 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
           TextButtonWhatsApp={'Contact us by WhatsApp'}
           messageButtonWhatsapp={
             pathname === '/services/roofing'
-            ? 'https://wa.link/pb7a0b'
+            ? 'https://wa.link/skf9x5'
             : pathname === '/services/siding'
-              ? 'https://wa.link/3sxlex'
+              ? 'https://wa.link/ggf638'
               : pathname === '/services/gutters'
-               ? 'https://wa.link/67dm1b'
-               : 'https://wa.link/gswe2l'
+               ? 'https://wa.link/6tn2re'
+               : 'https://wa.link/adxsm0'
           }
         />
     </>
