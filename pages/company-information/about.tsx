@@ -35,14 +35,14 @@ const AboutPage: NextPage = () => {
           about1Name={'Antonio G. Caguana'}
           about1Position={'General Manager'}
           about1Phone={'99 999999999'}
-          about1Email={'example@email.com'}
+          about1Email={'acaguana@ejc-home.com'}
           about2Name={'María T. Loja'}
           about2Position={'Administrative Head'}
           about2Phone={'99 999999999'}
-          about2Email={'example@email.com'}
+          about2Email={'mloja@ejc-home.com'}
           textBtnAbout={'Contact'}
           aboutt1Link={'https://wa.link/adxsm0'}
-          aboutt2Link={'https://wa.link/adxsm0'}
+          aboutt2Link={'https://wa.link/ers6zv'}
         />
       </Container>
       <Container sx={{py:5}}>

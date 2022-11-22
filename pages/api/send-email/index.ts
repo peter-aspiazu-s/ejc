@@ -26,7 +26,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         
         const mailData = {
             from: 'ejc@ejc-home.com',
-            to: 'correo-prueba@ejc-home.com',
+            to: 'acaguana@ejc-home.com, mloja@ejc-home.com, sales@ejc-home.com',
             subject: `Message From ${req.body.name}`,
             text: `${req.body.message} | Sent from: ${req.body.email}`,
             html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`

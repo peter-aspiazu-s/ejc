@@ -30,10 +30,10 @@ export const ContactSocialMedia: FC<FooterProps> = ({
         >
             {contactUs}
         </Button>
-        <IconButton color="secondary" href="#" target="_blank">
+        <IconButton color="secondary" href="https://www.facebook.com/profile.php?id=100087763103794&mibextid=LQQJ4d" target="_blank">
             <FacebookIcon />
         </IconButton>
-        <IconButton color="secondary" href="#" target="_blank">
+        <IconButton color="secondary" href="https://instagram.com/ejc.home_improvement_corp?igshid=YmMyMTA2M2Y=" target="_blank">
             <InstagramIcon />
         </IconButton>
         {/* <IconButton color="secondary" href="#" target="_blank">

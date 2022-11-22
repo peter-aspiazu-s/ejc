@@ -45,23 +45,23 @@ const ContactPage: NextPage = () => {
               contact1Name={'Antonio G. Caguana'}
               contact1Position={'Gerente General'}
               contact1Phone={'99 999999999'}
-              contact1Email={'example@email.com'}
+              contact1Email={'acaguana@ejc-home.com'}
               contact1Link={'https://wa.link/gswe2l'}
               contact2Name={'María T. Loja'}
               contact2Position={'Jefa Administrativa'}
               contact2Phone={'99 999999999'}
-              contact2Email={'example@email.com'}
-              contact2Link={'https://wa.link/gswe2l'}
+              contact2Email={'mloja@ejc-home.com'}
+              contact2Link={'https://wa.link/cvrs9e'}
               textBtnContact={'Contactar'}
             />
           </Grid>
         </Grid>  
       </Container>
       <Container sx={{py: 3, display: 'flex', justifyContent:'center', alignItems:'center'}}>
-        <IconButton color="secondary" href="#" target="_blank">
+        <IconButton color="secondary" href="https://www.facebook.com/profile.php?id=100087763103794&mibextid=LQQJ4d" target="_blank">
           <FacebookIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
         </IconButton>
-        <IconButton color="secondary" href="#" target="_blank">
+        <IconButton color="secondary" href="https://instagram.com/ejc.home_improvement_corp?igshid=YmMyMTA2M2Y=" target="_blank">
           <InstagramIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
         </IconButton>
         {/* <IconButton color="secondary" href="#" target="_blank">
