@@ -13,9 +13,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         const password = process.env.PASSWORD
         const transporter = nodemailer.createTransport({
             port: 465,
-            host: 'smtp.gmail.com',
+            host: 'mail.ejc-home.com',
             auth: {
-                user: 'paspiazusabando@gmail.com',
+                user: 'ejc@ejc-home.com',
                 pass: password,
             },
             secure: true,
@@ -25,8 +25,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         })
         
         const mailData = {
-            from: 'paspiazusabando@gmail.com',
-            to: 'paspiazusabando@gmail.com',
+            from: 'ejc@ejc-home.com',
+            to: 'correo-prueba@ejc-home.com',
             subject: `Message From ${req.body.name}`,
             text: `${req.body.message} | Sent from: ${req.body.email}`,
             html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`

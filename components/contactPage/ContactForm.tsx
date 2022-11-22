@@ -1,5 +1,5 @@
 import {FC, useState, FormEvent} from 'react'
-import { Grid, Box, TextField, Button, Snackbar, Alert } from '@mui/material';
+import { Grid, Box, TextField, Button, Snackbar, Alert, CircularProgress } from '@mui/material';
 import validator from 'validator'
 
 interface ContactFormProps {
@@ -34,6 +34,7 @@ export const ContactForm: FC<ContactFormProps> = ({
     const [touchedName, setTouchedName] = useState(false);
     const [touchedEmail, setTouchedEmail] = useState(false);
     const [touchedMessage, setTouchedMessage] = useState(false);
+    const [btnForm, setBtnForm] = useState(false);
 
     const data = {
         name,
@@ -53,6 +54,7 @@ export const ContactForm: FC<ContactFormProps> = ({
           setTouchedName( false );
           setTouchedEmail( false );
           setTouchedMessage( false );
+          setBtnForm(true);
     
           console.log('Enviando...')
           fetch('/api/send-email', {
@@ -70,6 +72,7 @@ export const ContactForm: FC<ContactFormProps> = ({
               setEmail('')
               setMessage('')
               setOpenAlert(true)
+              setBtnForm(false)
             }
           }).catch((error) => {
             console.log(error)
@@ -190,13 +193,26 @@ export const ContactForm: FC<ContactFormProps> = ({
                     rows={3}
                     sx={{mb:3}}
                 />
-                <Button 
+                {
+                    btnForm 
+                    ? 
+                    <Box 
+                        sx={{ 
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}>
+                        <CircularProgress />
+                    </Box>
+                    :
+                    <Button 
                     type="submit" 
                     variant="contained" 
                     size="large" 
                     color="secondary"
                     sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
-                >{btnSubmit}</Button>
+                    >{btnSubmit}</Button>
+                }
             </Box>
         </Grid>
     </Grid>

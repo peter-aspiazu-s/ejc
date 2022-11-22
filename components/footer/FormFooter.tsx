@@ -1,5 +1,5 @@
 import {FC, useState, FormEvent} from 'react'
-import { Box, TextField, Button, Snackbar, Alert } from '@mui/material'
+import { Box, TextField, Button, Snackbar, Alert, CircularProgress } from '@mui/material'
 import validator from 'validator'
 
 interface FormProps {
@@ -47,6 +47,7 @@ export const FormFooter: FC<FormProps> = ({
   const [touchedName, setTouchedName] = useState(false);
   const [touchedEmail, setTouchedEmail] = useState(false);
   const [touchedMessage, setTouchedMessage] = useState(false);
+  const [btnForm, setBtnForm] = useState(false);
 
   const handleClose = () => {
     setOpenAlert(false)
@@ -60,6 +61,7 @@ export const FormFooter: FC<FormProps> = ({
       setTouchedName( false );
       setTouchedEmail( false );
       setTouchedMessage( false );
+      setBtnForm(true);
 
       console.log('Enviando...')
       fetch('/api/send-email', {
@@ -77,6 +79,7 @@ export const FormFooter: FC<FormProps> = ({
           setEmail('')
           setMessage('')
           setOpenAlert(true)
+          setBtnForm(false)
         }
       }).catch((error) => {
         console.log(error)
@@ -191,13 +194,29 @@ export const FormFooter: FC<FormProps> = ({
           }}
           sx={{ mb:2 }} 
       />
-      <Button 
-        type="submit" 
-        variant="contained" 
-        fullWidth 
-        color="secondary"
-        sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
+      {
+        btnForm 
+        ? 
+        <Box 
+          sx={{ 
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+          <CircularProgress />
+        </Box>
+        :
+        <Button 
+          type="submit" 
+          variant="contained" 
+          fullWidth 
+          color="secondary"
+          sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
+          // disabled={btnForm}
         >{btnSubmit}</Button>
+      }
+      
+      
     </Box>
   )
 }

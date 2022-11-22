@@ -10,6 +10,7 @@ import { SectionContact } from '../components/contact'
 import { CompanySummary } from '../components/companySummary'
 import { TypedHome } from '../components/typedHome'
 import { Certifications } from '../components/certifications'
+import { Video } from '../components/video'
 
 const HomePage: NextPage = () => {
 
@@ -69,6 +70,9 @@ const HomePage: NextPage = () => {
           />
         </Container>
       </Box>
+      <Container sx={{py:5}}>
+        <Video />
+      </Container>
       {/* <Box sx={{mt: -1, py:3, backgroundColor: 'primary.light'}}>
         <Container>
           <Technologies
