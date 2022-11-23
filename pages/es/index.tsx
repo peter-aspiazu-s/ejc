@@ -1,33 +1,16 @@
 import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayoutEs } from '../../components/layout'
-import { SlideHome } from '../../components/slides'
-import { Technologies } from '../../components/technologies'
-import { Testimonials } from '../../components/testimonials'
 import { SectionAbout } from '../../components/about'
 import { ServiceSection } from '../../components/service'
 import { SectionContact } from '../../components/contact'
 import { CompanySummary } from '../../components/companySummary'
 import { TypedHome } from '../../components/typedHome'
-import { Certifications } from '../../components/certifications'
 
 const HomePage: NextPage = () => {
   return (
     <PlantillaLayoutEs title={'EJC - Inicio'} contentPage={'Nuestro enfoque se orienta a la gestión y ejecución de servicios de construcción, remodelación y reparación de infraestructuras'}>
-      {/* <Box sx={{mt: {xs: 13, sm: 14, md: 15}}}>
-        <SlideHome 
-          titleSlide1={'Techumbre'}
-          descriptionService1={'La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...'}
-          servicePath1={'/es/servicios/techumbre'}
-          titleSlide2={'Vía muerta'}
-          descriptionService2={'Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...'}
-          servicePath2={'/es/servicios/via-muerta'}
-          titleSlide3={'Canalones'}
-          descriptionService3={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'}
-          servicePath3={'/es/servicios/canalones'}
-          start={'Empezar'}
-        />
-      </Box> */}
+
 
       <Box 
         sx={{
@@ -70,23 +53,6 @@ const HomePage: NextPage = () => {
             />
         </Container>
       </Box>
-      {/* <Box sx={{mt: -1, mb: 5, py:3, backgroundColor: 'primary.light'}}>
-        <Container>
-          <Technologies
-            technologiesTitle={'Marcas'}
-            technologiesSubTitle={'Marcas de confianza con las que trabajamos'}
-          />
-        </Container>
-      </Box> */}
-      {/* <Box sx={{py: 5}}>
-        <Testimonials
-          testimonialsTitle={'Testimonios de Clientes'}
-          clientTestimonial1={`"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?"`}
-          nameClient1={'Nombre cliente'}
-          clientTestimonial2={`"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eaque sit quis magni quo veritatis officiis?"`}
-          nameClient2={'Nombre cliente'}
-        />
-      </Box> */}
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionAbout 
           aboutTitle={'Sobre Nosotros'}
@@ -121,11 +87,6 @@ const HomePage: NextPage = () => {
           contactLinkBtn={'/es/informacion-empresa/contacto'}
         />
       </Box>
-      {/* <Container sx={{ py:5 }}>
-        <Certifications 
-          title={"Certificaciones"}
-        />
-      </Container> */}
     </PlantillaLayoutEs>
   )
 }

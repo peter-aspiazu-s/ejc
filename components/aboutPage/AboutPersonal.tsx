@@ -1,8 +1,6 @@
 import {FC} from 'react'
-import Image from 'next/image';
 import { Grid, Card, CardActionArea, CardContent, Typography, Link, CardActions, Button, CardMedia } from '@mui/material';
 
-import PublicIcon from '@mui/icons-material/Public';
 
 interface AboutPersonalProps {
     about1Name: string;
@@ -36,7 +34,6 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
         <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', py: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    {/* <Image src="/images/antonio-g-caguana.webp" width={300} height={300} /> */}
                     <CardMedia
                         component="img"
                         sx={{width:{xs: 250, sm:350, lg:400}}}
@@ -96,7 +93,6 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
         <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', py: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    {/* <Image src="/images/maria-t-loja.webp" width={400} height={400} /> */}
                     <CardMedia
                         component="img"
                         sx={{width:{xs: 250, sm:350, lg:400}}}

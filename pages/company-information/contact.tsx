@@ -6,7 +6,6 @@ import { Location } from '../../components/location';
 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const ContactPage: NextPage = () => {
@@ -74,10 +73,7 @@ const ContactPage: NextPage = () => {
         <IconButton color="secondary" href="https://instagram.com/ejc.home_improvement_corp?igshid=YmMyMTA2M2Y=" target="_blank">
           <InstagramIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
         </IconButton>
-        {/* <IconButton color="secondary" href="#" target="_blank">
-          <TwitterIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
-        </IconButton> */}
-        <IconButton color="secondary" href="#" target="_blank">
+        <IconButton color="secondary" href="https://www.youtube.com/@ejchomeimprovementcorp" target="_blank">
           <YouTubeIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
         </IconButton>
       </Container>

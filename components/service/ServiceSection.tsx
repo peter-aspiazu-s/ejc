@@ -2,9 +2,6 @@ import {FC} from 'react'
 import NextLink from 'next/link';
 import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button, CardMedia } from '@mui/material';
 
-import FilterHdrIcon from '@mui/icons-material/FilterHdr';
-import CabinIcon from '@mui/icons-material/Cabin';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 // TODO: agregar el alt en todas las imagenes usadas
 

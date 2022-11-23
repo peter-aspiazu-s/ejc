@@ -105,7 +105,6 @@ export const Footer: FC<FooterProps> = ({
         sx={{
             height: "auto", 
             width: "100%", 
-            // borderTop: "2px solid #78909c",
         }} 
         justifyContent="center"
         alignItems="center"

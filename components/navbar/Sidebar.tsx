@@ -18,8 +18,6 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import NightlightIcon from '@mui/icons-material/Nightlight';
 import { UiContext } from '../../context';
 
 import ImageEnglish from '../../public/images/english.webp'
@@ -98,15 +96,6 @@ export const Sidebar: FC<ItemsMenuProps> = ({
                                 </Button>
                             </NextLink>
                         </Grid>
-                        {/* <Grid item xs={4} sx={{display: {xs: 'flex', sm: 'none'}, justifyContent: 'center'}}>
-                            <IconButton color="secondary" onClick={handleDispatchFunctions}>
-                            {
-                                modeTheme
-                                ? <LightModeIcon />
-                                : <NightlightIcon />
-                            }
-                            </IconButton>
-                        </Grid> */}
                     </Grid>
                     <Divider />
                     <NextLink href={linkHome} passHref>

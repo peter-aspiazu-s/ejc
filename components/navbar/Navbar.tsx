@@ -15,18 +15,14 @@ import {
   Box
 } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import NightlightIcon from '@mui/icons-material/Nightlight';
 import MenuIcon from '@mui/icons-material/Menu';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { UiContext } from '../../context';
 
 import ImageEnglish from '../../public/images/english.webp'
 import ImageSpanish from '../../public/images/spanish.webp'
-import LogoImage from '../../public/images/logotipo.webp'
 
 interface ItemsMenuProps {
   home: string;
@@ -174,8 +170,6 @@ export const Navbar: FC<ItemsMenuProps> = ({
                     color="secondary"
                   >
                     <Typography
-                      // className={
-                      //   pathname === "/none" ? "" : "text-color"} 
                       className={
                         pathname === linkServiceOne 
                         || pathname === linkServiceTwo
@@ -247,12 +241,9 @@ export const Navbar: FC<ItemsMenuProps> = ({
                       || pathname === linkAbout
                       || pathname === linkFrequentQuestions ? "contained" : "text" 
                     }
-                    // variant="text"
                     color="secondary"
                   >
                     <Typography
-                      // className={
-                      //   pathname === "/none" ? "" : "text-color"} 
                       className={
                         pathname === linkContact 
                         || pathname === linkAbout
@@ -338,10 +329,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   <IconButton color="secondary" href="https://instagram.com/ejc.home_improvement_corp?igshid=YmMyMTA2M2Y=" target="_blank">
                       <InstagramIcon />
                   </IconButton>
-                  {/* <IconButton color="secondary" href="#" target="_blank">
-                      <TwitterIcon />
-                  </IconButton> */}
-                  <IconButton color="secondary" href="#" target="_blank">
+                  <IconButton color="secondary" href="https://www.youtube.com/@ejchomeimprovementcorp" target="_blank">
                       <YouTubeIcon />
                   </IconButton>
               </Grid>

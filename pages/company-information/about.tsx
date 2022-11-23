@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayout } from '../../components/layout'
 import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusinessValues } from '../../components/aboutPage'
-import { Certifications } from '../../components/certifications'
+import { VideoAbout } from '../../components/aboutPage/VideoAbout';
 
 const AboutPage: NextPage = () => {
   return (
@@ -20,6 +20,11 @@ const AboutPage: NextPage = () => {
           aboutMoreTitle={'More About Us'}
           aboutMoreDescription1={'The main asset of the organization is the human capital of our employees, formed by a large group of technicians with high experience in the development of the services we offer. Under this premise we develop the projects, demanding in each one of them the maximum effectiveness of our personnel, in order to obtain the quality guaranteed by our years in the construction sector.'}
           aboutMoreDescription2={'The collaborators of EJC Home Improvement Corp. contribute with their effort, dedication and affection to each work as if it were their own, which has led the company to be recognized for its dedication and work invested in each project.'}
+        />
+      </Container>
+      <Container sx={{py:5}}>
+        <VideoAbout 
+          linkVideo="https://www.youtube.com/embed/TixP6MJCkMA"
         />
       </Container>
       <Container sx={{py: 5}}>
@@ -64,11 +69,6 @@ const AboutPage: NextPage = () => {
           aboutBusinessValuesDescription7={"To combine resources in an orderly manner and respect the company's work methods."}
         />
       </Container>
-      {/* <Container sx={{ py:5 }}>
-        <Certifications 
-          title={"Certifications"}
-        />
-      </Container> */}
     </PlantillaLayout>
   )
 }

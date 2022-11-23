@@ -212,7 +212,6 @@ export const FormFooter: FC<FormProps> = ({
           fullWidth 
           color="secondary"
           sx={{fontSize: {xs: '0.8rem', xl: '1rem'}}}
-          // disabled={btnForm}
         >{btnSubmit}</Button>
       }
       

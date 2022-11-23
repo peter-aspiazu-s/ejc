@@ -5,6 +5,7 @@
 }
 
 
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -43,4 +44,19 @@
 
 .text-color{
     color: #263238 !important;
+}
+
+
+/* ANIMACION FADE */
+.fade-in{
+    animation-duration: 2s;
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

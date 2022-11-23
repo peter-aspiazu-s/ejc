@@ -22,7 +22,7 @@ export const AboutHeader: FC<AboutHeaderProps> = ({
     aboutLinkMessageWhatsapp
 }) => {
   return (
-    <Grid container className="animate__animated animate__fadeIn">
+    <Grid container className='fade-in'>
         <Grid item xs={12}>
         <Box sx={{display: {xs: 'bloxk', sm: 'none'}}}>
                 <Image src={BannerPageAboutxs} />
@@ -71,8 +71,6 @@ export const AboutHeader: FC<AboutHeaderProps> = ({
                     }} 
                     component="p"
                 >{aboutSemiDescription}</Typography>
-                {/* <Typography sx={{fontSize: {xs:'16px', sm:'18px'}, mb: {xs: 2, sm: 3, md: 3, lg: 4}, textAlign:{xs:'center', md:'left'}}} component="p">{aboutSemiDescription2}</Typography>
-                <Typography sx={{fontSize: {xs:'16px', sm:'18px'}, mb: {xs: 2, sm: 3, md: 3, lg: 4}, textAlign:{xs:'center', md:'left'}}} component="p">{aboutSemiDescription3}</Typography> */}
                 <Button 
                     href={aboutLinkMessageWhatsapp}
                     target="_blank" 

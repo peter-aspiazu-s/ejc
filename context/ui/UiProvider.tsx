@@ -1,9 +1,9 @@
-import {FC, ReactNode, useEffect, useReducer, useState} from 'react'
+import {FC, ReactNode, useReducer, useState} from 'react'
 import { useRouter } from 'next/router'
 import { UiContext } from './UiContext'
 import { uiReducer } from './uiReducer';
 import { ThemeProvider } from '@mui/material'
-import { lightTheme, darkTheme } from '../../themes'
+import { lightTheme } from '../../themes'
 
 
 export interface UIState {
@@ -51,7 +51,7 @@ export const UiProvider: FC<Props> = ({children}) => {
                 handleModeTheme,
             }}
         >
-            <ThemeProvider theme={ modeTheme ? darkTheme : lightTheme }>
+            <ThemeProvider theme={ lightTheme }>
                 {children}
             </ThemeProvider>
         </UiContext.Provider>

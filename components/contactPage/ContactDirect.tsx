@@ -1,6 +1,6 @@
 import {FC} from 'react'
 import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button, Link } from '@mui/material';
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 
 // TODO: agregar el alt en todas las imagenes usadas
 
@@ -36,7 +36,7 @@ export const ContactDirect: FC<ContactDirectProps> = ({
         <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ width:{xs:'300px', sm: '400px'}, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <PhoneInTalkIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <PhoneCallbackIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
                     <CardContent>
                         <Typography 
                             gutterBottom 
@@ -91,7 +91,7 @@ export const ContactDirect: FC<ContactDirectProps> = ({
         <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Card sx={{ width:{xs:'300px', sm: '400px'}, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <PhoneInTalkIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
+                    <PhoneCallbackIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
                     <CardContent>
                         <Typography 
                             gutterBottom 

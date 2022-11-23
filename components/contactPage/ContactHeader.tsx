@@ -22,7 +22,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
     contactLinkMessageWhatsapp
 }) => {
   return (
-    <Grid container className="animate__animated animate__fadeIn">
+    <Grid container className='fade-in'>
         <Grid item xs={12}>
             <Box sx={{display: {xs: 'bloxk', sm: 'none'}}}>
                 <Image src={BannerPageContactxs} />

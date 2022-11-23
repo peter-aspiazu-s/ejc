@@ -1,5 +1,5 @@
 import {FC} from 'react'
-import { Grid, Box, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import {Swiper, SwiperSlide} from 'swiper/react'
 
 // Import CSS Styles

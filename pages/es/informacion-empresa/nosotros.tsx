@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
 import { Box, Container } from '@mui/material'
 import { PlantillaLayoutEs } from '../../../components/layout'
-import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusinessValues } from '../../../components/aboutPage'
-import { Certifications } from '../../../components/certifications'
+import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusinessValues, VideoAbout } from '../../../components/aboutPage'
 
 const AboutPage: NextPage = () => {
   return (
@@ -20,6 +19,11 @@ const AboutPage: NextPage = () => {
           aboutMoreTitle={'Más Sobre Nosotros'}
           aboutMoreDescription1={'El principal activo de la organización es el capital humano de nuestros empleados, formado por un amplio grupo de técnicos con alta experiencia en el desarrollo de los servicios que ofrecemos. Bajo esta premisa desarrollamos los proyectos, exigiendo en cada uno de ellos la máxima efectividad de nuestro personal, a fin de obtener la calidad avalada por nuestros años en el sector de la construcción.'}
           aboutMoreDescription2={'Los colaboradores de EJC Home Improvement Corp. aportan con su esfuerzo, dedicación y cariño a cada obra como si fuera propia, lo que ha llevado a la misma a ser reconocida por su entrega y trabajo invertido en cada proyecto.'}
+        />
+      </Container>
+      <Container sx={{py:5}}>
+        <VideoAbout 
+          linkVideo="https://www.youtube.com/embed/xIZY9lhGfB0"
         />
       </Container>
       <Container sx={{py: 5}}>
@@ -64,11 +68,6 @@ const AboutPage: NextPage = () => {
           aboutBusinessValuesDescription7={"Conjugar los recursos de forma ordenada y respetar las formas de trabajo de la empresa."}
         />
       </Container>
-      {/* <Container sx={{ py:5 }}>
-        <Certifications 
-          title={"Certificaciones"}
-        />
-      </Container> */}
     </PlantillaLayoutEs>
   )
 }

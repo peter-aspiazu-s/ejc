@@ -2,7 +2,6 @@ import {FC} from 'react'
 import { Button, IconButton } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 interface FooterProps {
@@ -36,10 +35,7 @@ export const ContactSocialMedia: FC<FooterProps> = ({
         <IconButton color="secondary" href="https://instagram.com/ejc.home_improvement_corp?igshid=YmMyMTA2M2Y=" target="_blank">
             <InstagramIcon />
         </IconButton>
-        {/* <IconButton color="secondary" href="#" target="_blank">
-            <TwitterIcon />
-        </IconButton> */}
-        <IconButton color="secondary" href="#" target="_blank">
+        <IconButton color="secondary" href="https://www.youtube.com/@ejchomeimprovementcorp" target="_blank">
             <YouTubeIcon />
         </IconButton>
     </>

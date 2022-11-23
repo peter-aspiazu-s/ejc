@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import NextLink from 'next/link';
 import { Grid, Typography, Paper } from '@mui/material'
 
 interface Props {

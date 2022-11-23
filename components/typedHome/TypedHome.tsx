@@ -1,8 +1,7 @@
 import {FC} from 'react'
 import Typed from 'react-typed'
 import Image from 'next/image'
-import NextLink from 'next/link'
-import {Grid, Box, Typography, Button} from '@mui/material'
+import {Grid, Box, Button} from '@mui/material'
 import { scrollButtonBannerHome } from '../../helpers'
 
 import BannerSlideHomeImg1xs from '../../public/images/banner-slide-home-img1-xs.webp'
@@ -24,11 +23,18 @@ export const TypedHome:FC<TypedHomeProps> = ({
     const handleClickButton = (e: any) => {
         e.preventDefault();
         scrollButtonBannerHome(e);
-        // setState(false);
     }
     
   return (
-    <Grid container sx={{display:'flex', justifyContent:'center', alignItems:'center'}}> 
+    <Grid 
+        container 
+        sx={{
+            display:'flex', 
+            justifyContent:'center', 
+            alignItems:'center'
+        }}
+        className="fade-in"    
+    > 
         <Grid item xs={12}>
             <Box sx={{display: {xs: 'block', sm: 'none'}}}>
                 <Image src={BannerSlideHomeImg1xs} />
@@ -49,7 +55,6 @@ export const TypedHome:FC<TypedHomeProps> = ({
         
         <Grid container sx={{
             position:"absolute",
-            // top:'50%',
             display:"flex",
             justifyContent:"center",
             alignItems:"center",

@@ -1,6 +1,5 @@
 import React, { FC, ReactNode, useContext } from 'react'
 import Head from 'next/head'
-import { Container } from '@mui/material';
 import { Sidebar, Navbar } from '../navbar';
 import { Footer } from '../footer';
 import { UiContext } from '../../context';
@@ -22,9 +21,6 @@ export const PlantillaLayoutEs: FC<MetaProps> = ({ children, title, contentPage 
             <meta name="description" content={ contentPage } />
             <link rel="shortcut icon" href="/images/logotipo.webp" />
         </Head>
-        {/* TODO: Crear otro layout para el spanish  */}
-        {/* TODO: Hacer que los componentes reciban los paths y los textos por props
-                  ya que así podré mandar texto en inglés y en español */}
         <Navbar 
           home={'Inicio'}
           linkHome={'/es'}

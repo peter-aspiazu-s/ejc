@@ -21,9 +21,6 @@ export const PlantillaLayout: FC<MetaProps> = ({ children, title, contentPage })
             <meta name="description" content={ contentPage } />
             <link rel="shortcut icon" href="/images/logotipo.webp" />
         </Head>
-        {/* TODO: Crear otro layout para el spanish  */}
-        {/* TODO: Hacer que los componentes reciban los paths y los textos por props
-                  ya que así podré mandar texto en inglés y en español */}
         <Navbar 
           home={'Home'}
           linkHome={'/'}
