@@ -19,7 +19,7 @@ const CanalonesPage: NextPage = () => {
           serviceThreeMoreTitle={'Más sobre el servicio'}
           serviceThreeMoreDescription1={'EJC Home Improvement Corp es la mejor opción para una instalación eficiente de canaletas para lluvia ya que trabajamos con materiales de alta durabilidad y nos aseguramos que tu infraestructura tendrá el desfogue necesario para las diferentes condiciones climáticas.'}
           serviceThreeMoreDescription2={'En EJC Home Improvement Corp, nos caracterizamos en brindar el mejor servicio para nuestros clientes, ofreciendo en la unión de los techos un canal, con la cual brinda un mejor sellamiento para evitar filtraciones, cumpliendo con las exigencias de nuestros clientes.'}
-          serviceThreeMoreDescription3={'En el caso de necesitar reparar los canales, ya sea por consecuencias naturales o por el degaste normal, contamos con expertos en el área, para la identificación, evaluación y reparación del mismo, proporcionando el mejor resultado.'}
+          serviceThreeMoreDescription3={'En el caso de necesitar reparar los canales, ya sea por consecuencias naturales o por el degaste normal, contamos con expertos en el área, para la identificación, evaluación, limpieza y reparación del mismo, proporcionando el mejor resultado.'}
         />
       </Container>
       <Container sx={{py:5}}>

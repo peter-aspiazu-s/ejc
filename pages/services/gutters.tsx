@@ -19,7 +19,7 @@ const GuttersPage: NextPage = () => {
           serviceThreeMoreTitle={'More about the service'}
           serviceThreeMoreDescription1={'EJC Home Improvement Corp is the best option for an efficient installation of rain gutters since we work with highly durable materials and we make sure that your infrastructure will have the necessary drainage for the different weather conditions.'}
           serviceThreeMoreDescription2={'In EJC Home Improvement Corp, we are characterized in offering the best service for our clients, offering in the union of the roofs a gutter, which provides a better sealing to avoid filtrations, fulfilling the demands of our clients.'}
-          serviceThreeMoreDescription3={'In the case of needing to repair the gutters, either by natural consequences or by normal wear and tear, we have experts in the area, for the identification, evaluation and repair of the same, providing the best result.'}
+          serviceThreeMoreDescription3={'In the case of needing to repair the gutters, either by natural consequences or by normal wear and tear, we have experts in the area, for the identification, evaluation, cleaning and repair of the same, providing the best result.'}
         />
       </Container>
       <Container sx={{py:5}}>

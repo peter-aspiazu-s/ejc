@@ -36,7 +36,7 @@ const HomePage: NextPage = () => {
       >
         <TypedHome 
           servicesTyped={[
-            'Roofing - The construction and replacement of roofs at EJC Home Improvement Corp. is one of the best investments a homeowner can make, since the quality of work and the materials installed are of the highest quality...', 
+            'Roofing - The construction, cleaning and replacement of roofs at EJC Home Improvement Corp. is one of the best investments a homeowner can make, since the quality of work and the materials installed are of the highest quality...', 
             'Siding - With our siding service your walls will have the right materials to have good quality and aesthetic facades...', 
             'Gutters - At EJC Home Improvement Corp we not only install rain gutters in your house, but we also take care of their maintenance, repair and cleaning to extend their durability thanks to our trained specialists...'
           ]}
@@ -71,7 +71,7 @@ const HomePage: NextPage = () => {
           <ServiceSection
             serviceSectionTitle={'Services'}
             service1Title={'Roofing'}
-            service1Description={'The construction and replacement of roofs at EJC Home Improvement Corp. is one of the best...'}
+            service1Description={'The construction, cleaning and replacement of roofs at EJC Home Improvement Corp. is one of the best...'}
             service1Link={'/services/roofing'}
             service2Title={'Siding'}
             service2Description={'With our siding service your walls will have the right materials to have good quality and...'}

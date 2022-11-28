@@ -35,7 +35,7 @@ const HomePage: NextPage = () => {
       >
         <TypedHome 
           servicesTyped={[
-            'Roofing - La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...', 
+            'Roofing - La construcción, limpieza y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...', 
             'Siding - Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...', 
             'Gutters - En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'
           ]}
@@ -66,7 +66,7 @@ const HomePage: NextPage = () => {
           <ServiceSection
             serviceSectionTitle={'Servicios'}
             service1Title={'Roofing'}
-            service1Description={'La construcción y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones...'}
+            service1Description={'La construcción, limpieza y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones...'}
             service1Link={'/es/servicios/roofing'}
             service2Title={'Siding'}
             service2Description={'Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas...'}

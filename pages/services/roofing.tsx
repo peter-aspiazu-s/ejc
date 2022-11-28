@@ -9,7 +9,7 @@ const RoofingPage: NextPage = () => {
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
         <ServiceOneHeader 
           ServiceOneHeaderTitle={'Roofing'}
-          ServiceOneHeaderSemiDescription={'The construction and replacement of roofs at EJC Home Improvement Corp. is one of the best investments a homeowner can make, since the quality of work and the materials installed are of the highest quality.'}
+          ServiceOneHeaderSemiDescription={'The construction, cleaning and replacement of roofs at EJC Home Improvement Corp. is one of the best investments a homeowner can make, since the quality of work and the materials installed are of the highest quality.'}
           ServiceOneHeaderVisitBTN={'Contact'}
           ServiceOneHeaderLinkMessageWhastapp={'https://wa.link/skf9x5'}
         />
