@@ -54,7 +54,9 @@ const HomePage: NextPage = () => {
         </Container>
       </Box>
       <Container sx={{py:5}}>
-        <Video />
+        <Video 
+          linkVideo={"https://www.youtube.com/embed/SI7AMlIbqvw"}
+        />
       </Container>
       
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>

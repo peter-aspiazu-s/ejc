@@ -1,7 +1,13 @@
 import {FC} from 'react'
 import { Grid } from '@mui/material'
 
-export const Video:FC = () => {
+interface VideoProps {
+    linkVideo: string;
+}
+
+export const Video:FC<VideoProps> = ({
+    linkVideo
+}) => {
   return (
     <Grid container>
         <Grid 
@@ -16,7 +22,7 @@ export const Video:FC = () => {
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/8vdeayKIRc0" 
+                src={linkVideo} 
                 title="YouTube video player" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

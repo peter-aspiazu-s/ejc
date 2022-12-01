@@ -6,6 +6,7 @@ import { ServiceSection } from '../../components/service'
 import { SectionContact } from '../../components/contact'
 import { CompanySummary } from '../../components/companySummary'
 import { TypedHome } from '../../components/typedHome'
+import { Video } from '../../components/video'
 
 const HomePage: NextPage = () => {
   return (
@@ -53,6 +54,11 @@ const HomePage: NextPage = () => {
             />
         </Container>
       </Box>
+      <Container sx={{py:5}}>
+        <Video 
+          linkVideo={"https://www.youtube.com/embed/kUZUqOy0KAw"}
+        />
+      </Container>
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionAbout 
           aboutTitle={'Sobre Nosotros'}
