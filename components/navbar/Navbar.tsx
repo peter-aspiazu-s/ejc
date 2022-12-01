@@ -113,27 +113,23 @@ export const Navbar: FC<ItemsMenuProps> = ({
 
               <Box 
                 sx={{
-                  position:{
-                    xs: "absolute"
-                  },
+                  position: "absolute",
                   transform: "rotate(90deg)",
                   top: "-15px",
                   right:"0px"
                 }}
               >
-                <Image src="/images/decoracion1.webp" width={160} height={160} />
+                <img src="/images/decoracion1.webp" width={160} height={160} />
               </Box>
               <Box 
                 sx={{
-                  position:{
-                    xs: "fixed"
-                  },
+                  position: "fixed",
                   transform: "rotate(90deg)",
                   bottom: "-10px",
                   left:"-10px"
                 }}
               >
-                <Image src="/images/decoracion2.webp" width={200} height={200} />
+                <img src="/images/decoracion2.webp" width={200} height={200} />
               </Box>
 
               <Grid 
