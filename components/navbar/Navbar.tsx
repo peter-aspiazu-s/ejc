@@ -119,7 +119,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   right:"0px"
                 }}
               >
-                <img src="/images/decoracion1.webp" width={160} height={160} />
+                <img src="/images/decoracion1.webp" alt='imagen decorativa' width={160} height={160} />
               </Box>
               <Box 
                 sx={{
@@ -129,7 +129,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   left:"-10px"
                 }}
               >
-                <img src="/images/decoracion2.webp" width={200} height={200} />
+                <img src="/images/decoracion2.webp" alt='imagen decorativa' width={200} height={200} />
               </Box>
 
               <Grid 
