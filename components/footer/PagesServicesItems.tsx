@@ -1,6 +1,9 @@
 import {FC, useContext} from 'react'
 import NextLink from 'next/link';
-import { Typography, Link } from '@mui/material';
+
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+
 import { UiContext } from '../../context';
 
 interface FooterProps {

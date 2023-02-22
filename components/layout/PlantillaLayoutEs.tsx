@@ -1,5 +1,5 @@
-import React, { FC, ReactNode, useContext } from 'react'
-import Head from 'next/head'
+import React, { FC, ReactNode, useContext } from 'react';
+import Head from 'next/head';
 import { Sidebar, Navbar } from '../navbar';
 import { Footer } from '../footer';
 import { UiContext } from '../../context';

@@ -1,5 +1,8 @@
-import type { NextPage } from 'next'
-import { Box, Container } from '@mui/material';
+import type { NextPage } from 'next';
+
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+
 import { PlantillaLayout } from '../../components/layout'
 import { ServiceOneHeader, ServiceOneMore, WorkDone } from '../../components/servicesPages';
 

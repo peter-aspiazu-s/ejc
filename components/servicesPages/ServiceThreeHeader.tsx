@@ -1,12 +1,10 @@
-import {FC} from 'react'
-import Image from 'next/image';
-import { Grid, Box, Typography, Button } from '@mui/material';
+import {FC} from 'react';
 
-import BannerPageGuttersxs from '../../public/images/banner-page-gutters-xs.webp'
-import BannerPageGutterssm from '../../public/images/banner-page-gutters-sm.webp'
-import BannerPageGuttersmd from '../../public/images/banner-page-gutters-md.webp'
-import BannerPageGutterslg from '../../public/images/banner-page-gutters-lg.webp'
-import BannerPageGuttersxl from '../../public/images/banner-page-gutters-xl.webp'
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+
 
 interface ServiceThreeHeaderProps {
     ServiceThreeHeaderTitle: string;
@@ -21,24 +19,22 @@ export const ServiceThreeHeader: FC<ServiceThreeHeaderProps> = ({
     ServiceThreeHeaderVisitBTN,
     ServiceThreeHeaderLinkMessageWhastapp
 }) => {
+
+    const backgroundImage = '/images/banner-page-gutters-lg.webp';
+
   return (
     <Grid container className='fade-in'>
         <Grid item xs={12}>
-        <Box sx={{display: {xs: 'bloxk', sm: 'none'}}}>
-                <Image src={BannerPageGuttersxs} />
-            </Box>
-            <Box sx={{display: {xs: 'none', sm: 'block', md: 'none'}}}>
-                <Image src={BannerPageGutterssm} />
-            </Box>
-            <Box sx={{display: {xs: 'none', md: 'block', lg: 'none'}}}>
-                <Image src={BannerPageGuttersmd} />
-            </Box>
-            <Box sx={{display: {xs: 'none', lg: 'block', xl: 'none'}}}>
-                <Image src={BannerPageGutterslg} />
-            </Box>
-            <Box sx={{display: {xs: 'none', xl: 'block'}}}>
-                <Image src={BannerPageGuttersxl} />
-            </Box>
+            <Box 
+                sx={{
+                    display: 'block',
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
 
             <Box
                 sx={{

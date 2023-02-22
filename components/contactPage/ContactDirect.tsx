@@ -1,5 +1,14 @@
-import {FC} from 'react'
-import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button, Link } from '@mui/material';
+import {FC} from 'react';
+
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
+
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 
 // TODO: agregar el alt en todas las imagenes usadas

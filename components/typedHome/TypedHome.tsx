@@ -1,14 +1,12 @@
-import {FC} from 'react'
-import Typed from 'react-typed'
-import Image from 'next/image'
-import {Grid, Box, Button} from '@mui/material'
-import { scrollButtonBannerHome } from '../../helpers'
+import {FC} from 'react';
+import Typed from 'react-typed';
 
-import BannerSlideHomeImg1xs from '../../public/images/banner-slide-home-img1-xs.webp'
-import BannerSlideHomeImg1sm from '../../public/images/banner-slide-home-img1-sm.webp'
-import BannerSlideHomeImg1md from '../../public/images/banner-slide-home-img1-md.webp'
-import BannerSlideHomeImg1lg from '../../public/images/banner-slide-home-img1-lg.webp'
-import BannerSlideHomeImg1xl from '../../public/images/banner-slide-home-img1-xl.webp'
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+
+import { scrollButtonBannerHome } from '../../helpers';
+
 
 interface TypedHomeProps {
     servicesTyped: string[];
@@ -24,6 +22,8 @@ export const TypedHome:FC<TypedHomeProps> = ({
         e.preventDefault();
         scrollButtonBannerHome(e);
     }
+
+    const backgroundImage = '/images/banner-slide-home-img1-lg.webp';
     
   return (
     <Grid 
@@ -36,21 +36,16 @@ export const TypedHome:FC<TypedHomeProps> = ({
         className="fade-in"    
     > 
         <Grid item xs={12}>
-            <Box sx={{display: {xs: 'block', sm: 'none'}}}>
-                <Image src={BannerSlideHomeImg1xs} />
-            </Box>
-            <Box sx={{display: {xs: 'none', sm: 'block', md: 'none'}}}>
-                <Image src={BannerSlideHomeImg1sm} />
-            </Box>
-            <Box sx={{display: {xs: 'none', md: 'block', lg: 'none'}}}>
-                <Image src={BannerSlideHomeImg1md} />
-            </Box>
-            <Box sx={{display: {xs: 'none', lg: 'block', xl: 'none'}}}>
-                <Image src={BannerSlideHomeImg1lg} />
-            </Box>
-            <Box sx={{display: {xs: 'none', xl: 'block'}}}>
-                <Image src={BannerSlideHomeImg1xl} />
-            </Box>
+            <Box 
+                sx={{
+                    display: 'block',
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
         </Grid>
         
         <Grid container sx={{
@@ -58,7 +53,7 @@ export const TypedHome:FC<TypedHomeProps> = ({
             display:"flex",
             justifyContent:"center",
             alignItems:"center",
-            px:{md:3}
+            px:{md:3},
         }}>
             <Grid 
                 item 

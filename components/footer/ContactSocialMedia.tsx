@@ -1,5 +1,8 @@
-import {FC} from 'react'
-import { Button, IconButton } from '@mui/material';
+import {FC} from 'react';
+
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';

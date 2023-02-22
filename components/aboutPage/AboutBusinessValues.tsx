@@ -1,9 +1,13 @@
-import {FC, useState, SyntheticEvent} from 'react'
-import { Grid, Typography } from '@mui/material';
+import {FC, useState, SyntheticEvent} from 'react';
+
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import MuiAccordionSummary, {AccordionSummaryProps} from '@mui/material/AccordionSummary';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+
 import { styled } from '@mui/material/styles';
 
 

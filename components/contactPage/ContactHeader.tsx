@@ -1,6 +1,10 @@
 import {FC} from 'react'
 import Image from 'next/image';
-import { Grid, Box, Typography, Button } from '@mui/material';
+
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 import BannerPageContactxs from '../../public/images/banner-page-contact-xs.webp'
 import BannerPageContactsm from '../../public/images/banner-page-contact-sm.webp'
@@ -21,24 +25,46 @@ export const ContactHeader: FC<SectionContactProps> = ({
     contactVisitBTN,
     contactLinkMessageWhatsapp
 }) => {
+
+    const backgroundImage = '/images/banner-page-contact-lg.webp';
+
   return (
     <Grid container className='fade-in'>
         <Grid item xs={12}>
-            <Box sx={{display: {xs: 'bloxk', sm: 'none'}}}>
-                <Image src={BannerPageContactxs} />
-            </Box>
-            <Box sx={{display: {xs: 'none', sm: 'block', md: 'none'}}}>
-                <Image src={BannerPageContactsm} />
-            </Box>
-            <Box sx={{display: {xs: 'none', md: 'block', lg: 'none'}}}>
-                <Image src={BannerPageContactmd} />
-            </Box>
-            <Box sx={{display: {xs: 'none', lg: 'block', xl: 'none'}}}>
-                <Image src={BannerPageContactlg} />
-            </Box>
-            <Box sx={{display: {xs: 'none', xl: 'block'}}}>
-                <Image src={BannerPageContactxl} />
-            </Box>
+            
+            <Box 
+                sx={{
+                    display: {xs: 'block', sm:'none'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: '-130px',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', sm:'block', lg: 'none'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'left',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', lg: 'block'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+
             <Box
                 sx={{
                     position: 'absolute',

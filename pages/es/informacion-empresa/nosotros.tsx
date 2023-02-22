@@ -1,7 +1,10 @@
-import type { NextPage } from 'next'
-import { Box, Container } from '@mui/material'
-import { PlantillaLayoutEs } from '../../../components/layout'
-import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusinessValues, VideoAbout } from '../../../components/aboutPage'
+import type { NextPage } from 'next';
+
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+
+import { PlantillaLayoutEs } from '../../../components/layout';
+import { AboutHeader, AboutMisionVision, AboutPersonal, AboutMore, AboutBusinessValues, VideoAbout } from '../../../components/aboutPage';
 
 const AboutPage: NextPage = () => {
   return (

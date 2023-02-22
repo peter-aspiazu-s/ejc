@@ -1,6 +1,6 @@
-import { NextPage } from 'next'
-import { PlantillaLayoutEs } from '../../../components/layout'
-import { Container } from '@mui/material';
+import { NextPage } from 'next';
+import { PlantillaLayoutEs } from '../../../components/layout';
+import Container from '@mui/material/Container';
 import { FrequentQuestions } from '../../../components/frequent-questions';
 
 const PreguntasFrecuentesPage: NextPage = () => {

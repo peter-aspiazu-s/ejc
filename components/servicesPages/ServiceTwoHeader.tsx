@@ -1,12 +1,9 @@
-import {FC} from 'react'
-import Image from 'next/image';
-import { Grid, Box, Typography, Button } from '@mui/material';
+import {FC} from 'react';
 
-import BannerPageSidingxs from '../../public/images/banner-page-siding-xs.webp'
-import BannerPageSidingsm from '../../public/images/banner-page-siding-sm.webp'
-import BannerPageSidingmd from '../../public/images/banner-page-siding-md.webp'
-import BannerPageSidinglg from '../../public/images/banner-page-siding-lg.webp'
-import BannerPageSidingxl from '../../public/images/banner-page-siding-xl.webp'
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 interface ServiceTwoHeaderProps {
     ServiceTwoHeaderTitle: string;
@@ -21,24 +18,33 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
     ServiceTwoHeaderVisitBTN,
     ServiceTwoHeaderLinkMessageWhastapp
 }) => {
+
+    const backgroundImage = '/images/banner-page-siding-lg.webp';
+
   return (
     <Grid container className='fade-in'>
         <Grid item xs={12}>
-        <Box sx={{display: {xs: 'bloxk', sm: 'none'}}}>
-                <Image src={BannerPageSidingxs} />
-            </Box>
-            <Box sx={{display: {xs: 'none', sm: 'block', md: 'none'}}}>
-                <Image src={BannerPageSidingsm} />
-            </Box>
-            <Box sx={{display: {xs: 'none', md: 'block', lg: 'none'}}}>
-                <Image src={BannerPageSidingmd} />
-            </Box>
-            <Box sx={{display: {xs: 'none', lg: 'block', xl: 'none'}}}>
-                <Image src={BannerPageSidinglg} />
-            </Box>
-            <Box sx={{display: {xs: 'none', xl: 'block'}}}>
-                <Image src={BannerPageSidingxl} />
-            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'block', sm: 'none'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: '-260px',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', sm: 'block'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh',
+                }} 
+            ></Box>
 
             <Box
                 sx={{

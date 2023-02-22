@@ -1,6 +1,14 @@
 import {FC} from 'react'
 import NextLink from 'next/link';
-import { Card, CardActionArea, CardActions, CardContent, Grid, Typography, Button, CardMedia } from '@mui/material';
+
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import CardMedia from '@mui/material/CardMedia';
 
 
 // TODO: agregar el alt en todas las imagenes usadas
@@ -95,7 +103,7 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
                                 height:200
                             }}
                             image="/images/banner-page-siding-xs.webp"
-                            alt="luego pondre algo"
+                            alt="Siding"
                         />
                         <CardContent>
                             <Typography 
@@ -137,7 +145,7 @@ export const ServiceSection: FC<ServiceSectionProps> = ({
                                 height:200
                             }}
                             image="/images/banner-slide-home-img3-xs.webp"
-                            alt="luego pondre algo"
+                            alt="Gutters"
                         />
                         <CardContent>
                             <Typography 

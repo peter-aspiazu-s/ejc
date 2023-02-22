@@ -1,7 +1,10 @@
 import {FC} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import Image from 'next/image';
-import { Grid, Paper, Typography } from '@mui/material';
+
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 // Import CSS Styles
 import "swiper/css"
@@ -75,16 +78,16 @@ export const WorkDoneThree: FC<WorkDoneThreeProps> = ({
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <Image src={GuttersWorkImg1} />
+                            <Image src={GuttersWorkImg1} alt="gutters" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={GuttersWorkImg2} />
+                            <Image src={GuttersWorkImg2} alt="gutters" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={GuttersWorkImg5} />
+                            <Image src={GuttersWorkImg5} alt="gutters" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={GuttersWorkImg6} />
+                            <Image src={GuttersWorkImg6} alt="gutters" />
                         </SwiperSlide>
                     </Swiper>
                 </Paper>

@@ -64,7 +64,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
   linkBtnLanguage,
 }) => {
 
-  const { pathname, openSideMenu, handleModeTheme, modeTheme } = useContext( UiContext )
+  const { pathname, openSideMenu } = useContext( UiContext )
   
   const [ anchorEl, setAnchorEl ] = useState<null | HTMLElement>(null)
   const open = Boolean(anchorEl)
@@ -107,7 +107,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                 sx={{display: 'flex', justifyContent:'start', alignItems:{xs:'center'}}}
               >
                 <NextLink href={linkHome} passHref>
-                  <Image src='/images/logotipo.svg' width={100} height={100} className='logo' />
+                  <Image src='/images/logotipo.svg' alt='logo' width={100} height={100} className='logo' />
                 </NextLink>
               </Grid>
 
@@ -119,7 +119,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   right:"0px"
                 }}
               >
-                <img src="/images/decoracion1.webp" alt='imagen decorativa' width={160} height={160} />
+                <Image src="/images/imagen-decorativa.webp" alt='decoration' width={160} height={160} />
               </Box>
               <Box 
                 sx={{
@@ -129,7 +129,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   left:"-10px"
                 }}
               >
-                <img src="/images/decoracion2.webp" alt='imagen decorativa' width={200} height={200} />
+                <Image src="/images/imagen-decorativa2.webp" alt='decoration' width={200} height={200} />
               </Box>
 
               <Grid 
@@ -307,8 +307,8 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   <Button color="secondary">
                     {
                       pathname.includes('/es') 
-                      ? <Image src={ImageEnglish} width={50} height={30} />
-                      : <Image src={ImageSpanish} width={50} height={30} />
+                      ? <Image src={ImageEnglish} alt="ico english" width={50} height={30} />
+                      : <Image src={ImageSpanish} alt="ico espanol" width={50} height={30} />
                     }
                   </Button>
                 </NextLink>

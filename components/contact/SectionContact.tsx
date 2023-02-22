@@ -1,13 +1,12 @@
 import {FC} from 'react'
 import Image from 'next/image';
 import NextLink from 'next/link';
-import { Grid, Typography, Button, Box } from '@mui/material';
 
-import BannerSectionContactxs from '../../public/images/banner-section-contact-xs.webp'
-import BannerSectionContactsm from '../../public/images/banner-section-contact-sm.webp'
-import BannerSectionContactmd from '../../public/images/banner-section-contact-md.webp'
-import BannerSectionContactlg from '../../public/images/banner-section-contact-lg.webp'
-import BannerSectionContactxl from '../../public/images/banner-section-contact-xl.webp'
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+
 
 interface SectionContactProps {
     contactTitle: string;
@@ -22,23 +21,61 @@ export const SectionContact: FC<SectionContactProps> = ({
     contactVisitBTN,
     contactLinkBtn,
 }) => {
+
+    const backgroundImage = '/images/banner-section-contact-md.webp';
+
   return (
     <Grid container>
         <Grid item xs={12}>
-        <Box sx={{display: {xs: 'block', sm: 'none'}}}>
-                <Image src={BannerSectionContactxs} />
+            <Box 
+                sx={{
+                    display: {xs: 'block', sm: 'none'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: '-900px',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
             </Box>
-            <Box sx={{display: {xs: 'none', sm: 'block', md: 'none'}}}>
-                <Image src={BannerSectionContactsm} />
+            <Box 
+                sx={{
+                    display: {xs: 'none', sm: 'block',  md: 'none'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: '-700px',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
             </Box>
-            <Box sx={{display: {xs: 'none', md: 'block', lg: 'none'}}}>
-                <Image src={BannerSectionContactmd} />
+            <Box 
+                sx={{
+                    display: {xs: 'none', md: 'block', xl: 'none'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
             </Box>
-            <Box sx={{display: {xs: 'none', lg: 'block', xl: 'none'}}}>
-                <Image src={BannerSectionContactlg} />
-            </Box>
-            <Box sx={{display: {xs: 'none', xl: 'block',}}}>
-                <Image src={BannerSectionContactxl} />
+            <Box 
+                sx={{
+                    display: {xs: 'none', xl: 'block'},
+                    background: `linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 60%), url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
             </Box>
             <Box
                 sx={{

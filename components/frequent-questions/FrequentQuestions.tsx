@@ -1,5 +1,8 @@
-import {FC, useState, SyntheticEvent} from 'react'
-import { Grid, Paper, Typography } from '@mui/material';
+import {FC, useState, SyntheticEvent} from 'react';
+
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';

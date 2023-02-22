@@ -1,12 +1,16 @@
-import type { NextPage } from 'next'
-import { Container, Box } from '@mui/material'
-import { PlantillaLayout } from '../components/layout'
-import { SectionAbout } from '../components/about'
-import { ServiceSection } from '../components/service'
-import { SectionContact } from '../components/contact'
-import { CompanySummary } from '../components/companySummary'
-import { TypedHome } from '../components/typedHome'
-import { Video } from '../components/video'
+import type { NextPage } from 'next';
+
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+
+import { PlantillaLayout } from '../components/layout';
+import { SectionAbout } from '../components/about';
+import { ServiceSection } from '../components/service';
+import { SectionContact } from '../components/contact';
+import { CompanySummary } from '../components/companySummary';
+import { TypedHome } from '../components/typedHome';
+import { Video } from '../components/video';
+import { homeTyped, nextSectionFour, nextSectionOne, nextSectionThree, nextSectionTwo } from '../database/dataHome';
 
 const HomePage: NextPage = () => {
 
@@ -35,52 +39,48 @@ const HomePage: NextPage = () => {
           }}    
       >
         <TypedHome 
-          servicesTyped={[
-            'Roofing - The construction, cleaning and replacement of roofs at EJC Home Improvement Corp. is one of the best investments a homeowner can make, since the quality of work and the materials installed are of the highest quality...', 
-            'Siding - With our siding service your walls will have the right materials to have good quality and aesthetic facades...', 
-            'Gutters - At EJC Home Improvement Corp we not only install rain gutters in your house, but we also take care of their maintenance, repair and cleaning to extend their durability thanks to our trained specialists...'
-          ]}
+          servicesTyped={homeTyped[0]}
           viewMore="View More"
         />
       </Box>
       <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>
         <Container>
           <CompanySummary
-            companySummaryTitle={'EJC | Home Improvement Corp'}
-            companySummaryDescription1={'We are EJC Home Improvement Corp., a well-established company with a long-standing staff, headquartered in New York State. Our focus is oriented towards the management and execution of construction, remodeling and infrastructure repair services...'}
-            companySummaryLinkAbout={'/company-information/about'}
+            companySummaryTitle={nextSectionOne[0].titleSectionOne}
+            companySummaryDescription1={nextSectionOne[0].descriptionSectionOne}
+            companySummaryLinkAbout={nextSectionOne[0].linkSectionOne}
             companySummaryMore={'Read more'}
           />
         </Container>
       </Box>
       <Container sx={{py:5}}>
         <Video 
-          linkVideo={"https://www.youtube.com/embed/SI7AMlIbqvw"}
+          linkVideo={nextSectionOne[0].videoSectionOne}
         />
       </Container>
       
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionAbout 
-          aboutTitle={'About Us'}
-          aboutSemiDescription={'We are EJC Home Improvement Corp., a well-established...'}
+          aboutTitle={nextSectionTwo[0].titleSectionTwo}
+          aboutSemiDescription={nextSectionTwo[0].descriptionSectionTwo}
           aboutVisitBTN={'Visit The Page'}
-          aboutLinkBtn={'/company-information/about'}
+          aboutLinkBtn={nextSectionTwo[0].linkSectionTwo}
         />
       </Box>
     
       <Box sx={{py: 5}}>
         <Container>
           <ServiceSection
-            serviceSectionTitle={'Services'}
-            service1Title={'Roofing'}
-            service1Description={'The construction, cleaning and replacement of roofs at EJC Home Improvement Corp. is one of the best...'}
-            service1Link={'/services/roofing'}
-            service2Title={'Siding'}
-            service2Description={'With our siding service your walls will have the right materials to have good quality and...'}
-            service2Link={'/services/siding'}
-            service3Title={'Gutters'}
-            service3Description={'At EJC Home Improvement Corp we not only install rain gutters in your house, but we also...'}
-            service3Link={'/services/gutters'}
+            serviceSectionTitle={nextSectionThree[0].titleSectionThree}
+            service1Title={nextSectionThree[0].subTitleSectionThree[0]}
+            service1Description={nextSectionThree[0].descriptionSectionThree[0]}
+            service1Link={nextSectionThree[0].linkSectionThree[0]}
+            service2Title={nextSectionThree[0].subTitleSectionThree[1]}
+            service2Description={nextSectionThree[0].descriptionSectionThree[1]}
+            service2Link={nextSectionThree[0].linkSectionThree[1]}
+            service3Title={nextSectionThree[0].subTitleSectionThree[2]}
+            service3Description={nextSectionThree[0].descriptionSectionThree[2]}
+            service3Link={nextSectionThree[0].linkSectionThree[2]}
             textBtn={'Visit The Page'}
           />
         </Container>
@@ -88,10 +88,10 @@ const HomePage: NextPage = () => {
 
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionContact 
-          contactTitle={'Contact Us'}
-          contactSemiDescription={'Check the different ways to contact us...'}
+          contactTitle={nextSectionFour[0].titleSectionFour}
+          contactSemiDescription={nextSectionFour[0].descriptionSectionFour}
           contactVisitBTN={'Visit The Page'}
-          contactLinkBtn={'/company-information/contact'}
+          contactLinkBtn={nextSectionFour[0].linkSectionFour}
         />
       </Box>
     </PlantillaLayout>

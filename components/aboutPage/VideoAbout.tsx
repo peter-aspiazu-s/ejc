@@ -1,5 +1,5 @@
 import {FC} from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 
 interface VideoAboutProps {
     linkVideo: string;

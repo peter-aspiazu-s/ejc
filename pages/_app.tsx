@@ -1,7 +1,7 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { CssBaseline } from '@mui/material'
-import { UiProvider } from '../context'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import { CssBaseline } from '@mui/material';
+import { UiProvider } from '../context';
 
 function MyApp({ Component, pageProps }: AppProps) {
 

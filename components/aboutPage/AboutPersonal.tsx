@@ -1,5 +1,14 @@
-import {FC} from 'react'
-import { Grid, Card, CardActionArea, CardContent, Typography, Link, CardActions, Button, CardMedia } from '@mui/material';
+import {FC} from 'react';
+
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import CardActions from '@mui/material/CardActions';
+import Button from '@mui/material/Button';
+import CardMedia from '@mui/material/CardMedia';
 
 
 interface AboutPersonalProps {
@@ -38,7 +47,7 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
                         component="img"
                         sx={{width:{xs: 250, sm:350, lg:400}}}
                         image="/images/antonio-g-caguana-border.webp"
-                        alt="luego pondre algo"
+                        alt="Antonio Caguana"
                     />
                     <CardContent>
                         <Typography 
@@ -97,7 +106,7 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
                         component="img"
                         sx={{width:{xs: 250, sm:350, lg:400}}}
                         image="/images/maria-t-loja-border.webp"
-                        alt="luego pondre algo"
+                        alt="María Loja"
                     />
                     <CardContent>
                         <Typography 

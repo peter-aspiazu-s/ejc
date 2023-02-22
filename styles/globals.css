@@ -47,6 +47,12 @@
 }
 
 
+.img-xl img{
+    height: 100vh !important;
+}
+
+
+
 /* ANIMACION FADE */
 .fade-in{
     animation-duration: 2s;

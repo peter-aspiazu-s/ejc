@@ -1,5 +1,10 @@
-import {FC} from 'react'
-import { Grid, Card, CardActionArea, CardContent, Typography } from '@mui/material';
+import {FC} from 'react';
+
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 import ConstructionIcon from '@mui/icons-material/Construction';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';

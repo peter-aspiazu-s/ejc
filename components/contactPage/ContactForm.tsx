@@ -1,6 +1,14 @@
-import {FC, useState, FormEvent} from 'react'
-import { Grid, Box, TextField, Button, Snackbar, Alert, CircularProgress } from '@mui/material';
-import validator from 'validator'
+import {FC, useState, FormEvent} from 'react';
+
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import CircularProgress from '@mui/material/CircularProgress';
+
+import validator from 'validator';
 
 interface ContactFormProps {
     labelName: string;

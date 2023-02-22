@@ -1,5 +1,7 @@
-import {FC} from 'react'
-import { Grid, Typography } from '@mui/material';
+import {FC} from 'react';
+
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 
 interface ServiceThreeMoreProps {
     serviceThreeMoreTitle: string;

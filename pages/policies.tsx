@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import { PlantillaLayout } from "../components/layout"
 import { Policies } from "../components/policies"
-import { Container } from '@mui/material';
+import Container from '@mui/material/Container';
 
 const PoliciesPage: NextPage = () => {
     return (

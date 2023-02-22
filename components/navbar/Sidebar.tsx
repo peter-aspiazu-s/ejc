@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react'
+import React, { FC, useContext } from 'react';
 import NextLink from 'next/link';
 import Image from 'next/image';
 import { 
@@ -90,8 +90,8 @@ export const Sidebar: FC<ItemsMenuProps> = ({
                                 <Button color="secondary" onClick={closeSideMenu}>
                                 {
                                     pathname.includes('/es')  
-                                    ? <Image src={ImageEnglish} width={50} height={30} />
-                                    : <Image src={ImageSpanish} width={50} height={30} />
+                                    ? <Image src={ImageEnglish} alt="ico english" width={50} height={30} />
+                                    : <Image src={ImageSpanish} alt="ico espanol" width={50} height={30} />
                                 }
                                 </Button>
                             </NextLink>

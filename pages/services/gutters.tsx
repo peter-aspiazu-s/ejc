@@ -1,7 +1,10 @@
-import type { NextPage } from 'next'
-import { Box, Container } from '@mui/material'
-import { PlantillaLayout } from '../../components/layout'
-import { ServiceThreeHeader, ServiceThreeMore, WorkDoneThree } from '../../components/servicesPages'
+import type { NextPage } from 'next';
+
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+
+import { PlantillaLayout } from '../../components/layout';
+import { ServiceThreeHeader, ServiceThreeMore, WorkDoneThree } from '../../components/servicesPages';
 
 const GuttersPage: NextPage = () => {
   return (

@@ -1,5 +1,11 @@
-import type { NextPage } from 'next'
-import { Box, Container, Grid, Typography, IconButton } from '@mui/material';
+import type { NextPage } from 'next';
+
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+
 import { PlantillaLayout } from '../../components/layout'
 import { ContactDirect, ContactHeader, ContactForm } from '../../components/contactPage';
 import { Location } from '../../components/location';

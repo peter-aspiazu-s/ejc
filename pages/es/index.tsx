@@ -1,12 +1,14 @@
-import type { NextPage } from 'next'
-import { Box, Container } from '@mui/material'
-import { PlantillaLayoutEs } from '../../components/layout'
-import { SectionAbout } from '../../components/about'
-import { ServiceSection } from '../../components/service'
-import { SectionContact } from '../../components/contact'
-import { CompanySummary } from '../../components/companySummary'
-import { TypedHome } from '../../components/typedHome'
-import { Video } from '../../components/video'
+import type { NextPage } from 'next';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import { PlantillaLayoutEs } from '../../components/layout';
+import { SectionAbout } from '../../components/about';
+import { ServiceSection } from '../../components/service';
+import { SectionContact } from '../../components/contact';
+import { CompanySummary } from '../../components/companySummary';
+import { TypedHome } from '../../components/typedHome';
+import { Video } from '../../components/video';
+import { homeTypedES, nextSectionFourES, nextSectionOneES, nextSectionThreeES, nextSectionTwoES } from '../../database/dataHome';
 
 const HomePage: NextPage = () => {
   return (
@@ -35,11 +37,7 @@ const HomePage: NextPage = () => {
           }}    
       >
         <TypedHome 
-          servicesTyped={[
-            'Roofing - La construcción, limpieza y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones que un propietario puede hacer, ya que la calidad de trabajo y los materiales instalados son de alta calidad...', 
-            'Siding - Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas de buena calidad y estética...', 
-            'Gutters - En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino que también nos encargamos de su mantenimiento, reparación y limpieza para alargar su durabilidad gracias a nuestros especialistas capacitados...'
-          ]}
+          servicesTyped={homeTypedES[0]}
           viewMore="Ver Más"
         />
       </Box>
@@ -47,39 +45,39 @@ const HomePage: NextPage = () => {
       <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>
         <Container>
           <CompanySummary
-              companySummaryTitle={'EJC | Home Improvement Corp'}
-              companySummaryDescription1={'Somos EJC Home Improvement Corp. una empresa consolidada, con personal que cuenta con una gran trayectoria, con sede principal en el Estado de Nueva York. Nuestro enfoque se orienta a la gestión y ejecución de servicios de construcción, remodelación y reparación de infraestructuras....'}
-              companySummaryLinkAbout={'/es/informacion-empresa/nosotros'}
+              companySummaryTitle={nextSectionOneES[0].titleSectionOne}
+              companySummaryDescription1={nextSectionOneES[0].descriptionSectionOne}
+              companySummaryLinkAbout={nextSectionOneES[0].linkSectionOne}
               companySummaryMore={'Leer más'}
             />
         </Container>
       </Box>
       <Container sx={{py:5}}>
         <Video 
-          linkVideo={"https://www.youtube.com/embed/kUZUqOy0KAw"}
+          linkVideo={nextSectionOneES[0].videoSectionOne}
         />
       </Container>
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionAbout 
-          aboutTitle={'Sobre Nosotros'}
-          aboutSemiDescription={'Somos EJC Home Improvement Corp., una empresa consolidada, con...'}
+          aboutTitle={nextSectionTwoES[0].titleSectionTwo}
+          aboutSemiDescription={nextSectionTwoES[0].descriptionSectionTwo}
           aboutVisitBTN={'Visitar Página'}
-          aboutLinkBtn={'/es/informacion-empresa/nosotros'}
+          aboutLinkBtn={nextSectionTwoES[0].linkSectionTwo}
         />
       </Box>
       <Box sx={{py: 5}}>
         <Container>
           <ServiceSection
-            serviceSectionTitle={'Servicios'}
-            service1Title={'Roofing'}
-            service1Description={'La construcción, limpieza y reemplazo de techos en EJC Home Improvement Corp. es una de las mejores inversiones...'}
-            service1Link={'/es/servicios/roofing'}
-            service2Title={'Siding'}
-            service2Description={'Con nuestro servicio de siding tus muros y paredes tendrán los materiales adecuados para contar con fachadas...'}
-            service2Link={'/es/servicios/siding'}
-            service3Title={'Gutters'}
-            service3Description={'En EJC Home Improvement Corp no solo realizamos instalaciones de canaletas para lluvia en tu casa, sino...'}
-            service3Link={'/es/servicios/gutters'}
+            serviceSectionTitle={nextSectionThreeES[0].titleSectionThree}
+            service1Title={nextSectionThreeES[0].subTitleSectionThree[0]}
+            service1Description={nextSectionThreeES[0].descriptionSectionThree[0]}
+            service1Link={nextSectionThreeES[0].linkSectionThree[0]}
+            service2Title={nextSectionThreeES[0].subTitleSectionThree[1]}
+            service2Description={nextSectionThreeES[0].descriptionSectionThree[1]}
+            service2Link={nextSectionThreeES[0].linkSectionThree[1]}
+            service3Title={nextSectionThreeES[0].subTitleSectionThree[2]}
+            service3Description={nextSectionThreeES[0].descriptionSectionThree[2]}
+            service3Link={nextSectionThreeES[0].linkSectionThree[2]}
             textBtn={'Visitar Página'}
           />
         </Container>
@@ -87,14 +85,14 @@ const HomePage: NextPage = () => {
 
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionContact 
-          contactTitle={'Contáctanos'}
-          contactSemiDescription={'Revisa las diferentes formas de contactarnos...'}
+          contactTitle={nextSectionFourES[0].titleSectionFour}
+          contactSemiDescription={nextSectionFourES[0].descriptionSectionFour}
           contactVisitBTN={'Visitar Página'}
-          contactLinkBtn={'/es/informacion-empresa/contacto'}
+          contactLinkBtn={nextSectionFourES[0].linkSectionFour}
         />
       </Box>
     </PlantillaLayoutEs>
   )
 }
 
-export default HomePage
+export default HomePage;

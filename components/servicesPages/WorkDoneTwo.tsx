@@ -1,20 +1,23 @@
-import {FC} from 'react'
-import {Swiper, SwiperSlide} from 'swiper/react'
+import {FC} from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import Image from 'next/image';
-import { Grid, Paper, Typography } from '@mui/material';
+
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 // Import CSS Styles
-import "swiper/css"
-import "swiper/css/pagination"
-import "swiper/css/navigation"
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import {Autoplay, Navigation} from 'swiper'
+import {Autoplay, Navigation} from 'swiper';
 
-import SidingWorkImg1 from '../../public/images/siding-work-img1-border.webp'
-import SidingWorkImg3 from '../../public/images/siding-work-img3-border.webp'
-import SidingWorkImg7 from '../../public/images/siding-work-img7-border.webp'
-import SidingWorkImg10 from '../../public/images/siding-work-img10-border.webp'
-import SidingWorkImg14 from '../../public/images/siding-work-img14-border.webp'
+import SidingWorkImg1 from '../../public/images/siding-work-img1-border.webp';
+import SidingWorkImg3 from '../../public/images/siding-work-img3-border.webp';
+import SidingWorkImg7 from '../../public/images/siding-work-img7-border.webp';
+import SidingWorkImg10 from '../../public/images/siding-work-img10-border.webp';
+import SidingWorkImg14 from '../../public/images/siding-work-img14-border.webp';
 
 interface WorkDoneTwoProps {
     workDoneTwo: string;
@@ -76,19 +79,19 @@ export const WorkDoneTwo: FC<WorkDoneTwoProps> = ({
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <Image src={SidingWorkImg1} />
+                            <Image src={SidingWorkImg1} alt="siding" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={SidingWorkImg3} />
+                            <Image src={SidingWorkImg3} alt="siding" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={SidingWorkImg7} />
+                            <Image src={SidingWorkImg7} alt="siding" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={SidingWorkImg10} />
+                            <Image src={SidingWorkImg10} alt="siding" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={SidingWorkImg14} />
+                            <Image src={SidingWorkImg14} alt="siding" />
                         </SwiperSlide>
                     </Swiper>
                 </Paper>

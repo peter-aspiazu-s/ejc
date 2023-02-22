@@ -1,6 +1,13 @@
-import {FC, useState, FormEvent} from 'react'
-import { Box, TextField, Button, Snackbar, Alert, CircularProgress } from '@mui/material'
-import validator from 'validator'
+import {FC, useState, FormEvent} from 'react';
+
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import CircularProgress from '@mui/material/CircularProgress';
+
+import validator from 'validator';
 
 interface FormProps {
   labelName: string;
@@ -29,7 +36,6 @@ export const FormFooter: FC<FormProps> = ({
   emailErrorMessage,
   messageErrorMessage,
   warningMessageInput,
-  variantForm
 }) => {
 
   const [name, setName] = useState('')
