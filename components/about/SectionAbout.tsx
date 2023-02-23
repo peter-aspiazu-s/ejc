@@ -40,7 +40,7 @@ export const SectionAbout: FC<SectionAboutProps> = ({
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
                     width: '100%',
-                    height: '500px'
+                    height: '400px'
                 }}
             >
             </Box>
@@ -53,7 +53,7 @@ export const SectionAbout: FC<SectionAboutProps> = ({
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
                     width: '100%',
-                    height: '500px'
+                    height: '400px'
                 }}
             >
             </Box>
