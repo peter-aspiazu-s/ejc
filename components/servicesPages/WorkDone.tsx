@@ -17,7 +17,6 @@ import RoofingWorkImg4 from '../../public/images/roofing-work-img4-border.webp'
 import RoofingWorkImg6 from '../../public/images/roofing-work-img6-border.webp'
 import RoofingWorkImg7 from '../../public/images/roofing-work-img7-border.webp'
 import RoofingWorkImg10 from '../../public/images/roofing-work-img10-border.webp'
-import RoofingWorkImg11 from '../../public/images/roofing-work-img11-border.webp'
 import RoofingWorkImg18 from '../../public/images/roofing-work-img18-border.webp'
 import RoofingWorkImg19 from '../../public/images/roofing-work-img19-border.webp'
 import RoofingWorkImg20 from '../../public/images/roofing-work-img20-border.webp'
@@ -92,9 +91,6 @@ export const WorkDone: FC<WorkDoneProps> = ({
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg10} alt="roofing" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={RoofingWorkImg11} alt="roofing" />
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={RoofingWorkImg18} alt="roofing" />

@@ -27,6 +27,7 @@ export const SectionAbout: FC<SectionAboutProps> = ({
     aboutLinkBtn,
 }) => {
 
+    const backgroundImageXS = '/images/banner-section-about-xs.webp';
     const backgroundImage = '/images/banner-section-about-md.webp';
 
   return (
@@ -34,12 +35,25 @@ export const SectionAbout: FC<SectionAboutProps> = ({
         <Grid item xs={12}>
             <Box 
                 sx={{
-                    display: {xs: 'block', xl: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'block', sm: 'none'},
+                    background: `url('${backgroundImageXS}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     backgroundPositionX: 'right',
                     backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', sm: 'block', xl: 'none'},
+                    background: `url('${backgroundImage}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'left',
+                    // backgroundPositionY: 'center',
                     width: '100%',
                     height: '500px'
                 }}

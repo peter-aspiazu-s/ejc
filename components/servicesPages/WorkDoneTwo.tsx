@@ -13,7 +13,6 @@ import "swiper/css/navigation";
 
 import {Autoplay, Navigation} from 'swiper';
 
-import SidingWorkImg1 from '../../public/images/siding-work-img1-border.webp';
 import SidingWorkImg3 from '../../public/images/siding-work-img3-border.webp';
 import SidingWorkImg7 from '../../public/images/siding-work-img7-border.webp';
 import SidingWorkImg10 from '../../public/images/siding-work-img10-border.webp';
@@ -80,9 +79,6 @@ export const WorkDoneTwo: FC<WorkDoneTwoProps> = ({
                         modules={[Autoplay, Navigation]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
-                            <Image src={SidingWorkImg1} alt="siding" />
-                        </SwiperSlide>
                         <SwiperSlide>
                             <Image src={SidingWorkImg3} alt="siding" />
                         </SwiperSlide>
