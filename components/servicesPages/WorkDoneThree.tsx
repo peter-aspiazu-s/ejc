@@ -13,9 +13,9 @@ import "swiper/css/navigation"
 
 import {Autoplay, Navigation} from 'swiper'
 
-import GuttersWorkImg1 from '../../public/images/gutters-work-img1-border.webp'
-import GuttersWorkImg2 from '../../public/images/gutters-work-img2-border.webp'
-import GuttersWorkImg3 from '../../public/images/gutters-work-img3-border.webp'
+import GuttersWorkImg1 from '/public/images/gutters-work-img1-border.webp'
+import GuttersWorkImg2 from '/public/images/gutters-work-img2-border.webp'
+import GuttersWorkImg3 from '/public/images/gutters-work-img3-border.webp'
 
 interface WorkDoneThreeProps {
     workDoneThree: string;

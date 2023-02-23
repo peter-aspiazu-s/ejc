@@ -13,13 +13,13 @@ import "swiper/css/navigation"
 
 import {Autoplay, Navigation} from 'swiper'
 
-import RoofingWorkImg4 from '../../public/images/roofing-work-img4-border.webp'
-import RoofingWorkImg6 from '../../public/images/roofing-work-img6-border.webp'
-import RoofingWorkImg7 from '../../public/images/roofing-work-img7-border.webp'
-import RoofingWorkImg10 from '../../public/images/roofing-work-img10-border.webp'
-import RoofingWorkImg18 from '../../public/images/roofing-work-img18-border.webp'
-import RoofingWorkImg19 from '../../public/images/roofing-work-img19-border.webp'
-import RoofingWorkImg20 from '../../public/images/roofing-work-img20-border.webp'
+import RoofingWorkImg4 from '/public/images/roofing-work-img4-border.webp'
+import RoofingWorkImg6 from '/public/images/roofing-work-img6-border.webp'
+import RoofingWorkImg7 from '/public/images/roofing-work-img7-border.webp'
+import RoofingWorkImg10 from '/public/images/roofing-work-img10-border.webp'
+import RoofingWorkImg18 from '/public/images/roofing-work-img18-border.webp'
+import RoofingWorkImg19 from '/public/images/roofing-work-img19-border.webp'
+import RoofingWorkImg20 from '/public/images/roofing-work-img20-border.webp'
 
 interface WorkDoneProps {
     workDone: string;
