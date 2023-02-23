@@ -7,11 +7,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
-import BannerSectionAboutxs from '../../public/images/banner-section-about-xs.webp'
-import BannerSectionAboutsm from '../../public/images/banner-section-about-sm.webp'
-import BannerSectionAboutmd from '../../public/images/banner-section-about-md.webp'
-import BannerSectionAboutlg from '../../public/images/banner-section-about-lg.webp'
-import BannerSectionAboutxl from '../../public/images/banner-section-about-xl.webp'
 
 interface SectionAboutProps {
     aboutTitle: string;
@@ -27,19 +22,22 @@ export const SectionAbout: FC<SectionAboutProps> = ({
     aboutLinkBtn,
 }) => {
 
+    const backgroundImageXS = '/images/banner-section-about-xs.webp';
     const backgroundImageSM = '/images/banner-section-about-sm.webp';
-    const backgroundImage = '/images/banner-section-about-md.webp';
+    const backgroundImageMD = '/images/banner-section-about-md.webp';
+    const backgroundImageLG = '/images/banner-section-about-lg.webp';
+    const backgroundImageXL = '/images/banner-section-about-xl.webp';
 
   return (
     <Grid container>
         <Grid item xs={12}>
             <Box 
                 sx={{
-                    display: {xs: 'block', md: 'none'},
-                    background: `url('${backgroundImageSM}')`,
+                    display: {xs: 'block', sm: 'none'},
+                    background: `url('${backgroundImageXS}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: 'right',
+                    backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
                     width: '100%',
                     height: '500px'
@@ -48,11 +46,37 @@ export const SectionAbout: FC<SectionAboutProps> = ({
             </Box>
             <Box 
                 sx={{
-                    display: {xs: 'none', md: 'block', xl: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'none', sm: 'block', md: 'none'},
+                    background: `url('${backgroundImageSM}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: 'right',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', md: 'block', lg: 'none'},
+                    background: `url('${backgroundImageMD}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', lg: 'block', xl: 'none'},
+                    background: `url('${backgroundImageLG}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
                     width: '100%',
                     height: '500px'
@@ -62,14 +86,17 @@ export const SectionAbout: FC<SectionAboutProps> = ({
             <Box 
                 sx={{
                     display: {xs: 'none', xl: 'block'},
-                    background: `linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 60%), url('${backgroundImage}')`,
+                    background: `url('${backgroundImageXL}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '500px'
                 }}
             >
             </Box>
+            
             <Box
                 sx={{
                     position: 'absolute',

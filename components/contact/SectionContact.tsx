@@ -22,7 +22,11 @@ export const SectionContact: FC<SectionContactProps> = ({
     contactLinkBtn,
 }) => {
 
-    const backgroundImage = '/images/banner-section-contact-md.webp';
+    const backgroundImageXS = '/images/banner-section-contact-xs.webp';
+    const backgroundImageSM = '/images/banner-section-contact-sm.webp';
+    const backgroundImageMD = '/images/banner-section-contact-md.webp';
+    const backgroundImageLG = '/images/banner-section-contact-lg.webp';
+    const backgroundImageXL = '/images/banner-section-contact-xl.webp';
 
   return (
     <Grid container>
@@ -30,10 +34,10 @@ export const SectionContact: FC<SectionContactProps> = ({
             <Box 
                 sx={{
                     display: {xs: 'block', sm: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    background: `url('${backgroundImageXS}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: '-900px',
+                    backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
                     width: '100%',
                     height: '500px'
@@ -42,11 +46,11 @@ export const SectionContact: FC<SectionContactProps> = ({
             </Box>
             <Box 
                 sx={{
-                    display: {xs: 'none', sm: 'block',  md: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'none', sm: 'block', md: 'none'},
+                    background: `url('${backgroundImageSM}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: '-700px',
+                    backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
                     width: '100%',
                     height: '500px'
@@ -55,8 +59,21 @@ export const SectionContact: FC<SectionContactProps> = ({
             </Box>
             <Box 
                 sx={{
-                    display: {xs: 'none', md: 'block', xl: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'none', md: 'block', lg: 'none'},
+                    background: `url('${backgroundImageMD}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '500px'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', lg: 'block', xl: 'none'},
+                    background: `url('${backgroundImageLG}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     backgroundPositionX: 'center',
@@ -69,9 +86,11 @@ export const SectionContact: FC<SectionContactProps> = ({
             <Box 
                 sx={{
                     display: {xs: 'none', xl: 'block'},
-                    background: `linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 60%), url('${backgroundImage}')`,
+                    background: `url('${backgroundImageXL}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '500px'
                 }}

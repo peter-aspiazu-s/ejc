@@ -23,7 +23,11 @@ export const TypedHome:FC<TypedHomeProps> = ({
         scrollButtonBannerHome(e);
     }
 
-    const backgroundImage = '/images/banner-slide-home-img1-lg.webp';
+    const backgroundImageXS = '/images/banner-slide-home-img1-xs.webp';
+    const backgroundImageSM = '/images/banner-slide-home-img1-sm.webp';
+    const backgroundImageMD = '/images/banner-slide-home-img1-md.webp';
+    const backgroundImageLG = '/images/banner-slide-home-img1-lg.webp';
+    const backgroundImageXL = '/images/banner-slide-home-img1-xl.webp';
     
   return (
     <Grid 
@@ -38,14 +42,69 @@ export const TypedHome:FC<TypedHomeProps> = ({
         <Grid item xs={12}>
             <Box 
                 sx={{
-                    display: 'block',
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'block', sm: 'none'},
+                    background: `url('${backgroundImageXS}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '100vh'
-                }} 
-            ></Box>
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', sm: 'block', md: 'none'},
+                    background: `url('${backgroundImageSM}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '100vh'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', md: 'block', lg: 'none'},
+                    background: `url('${backgroundImageMD}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '100vh'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', lg: 'block', xl: 'none'},
+                    background: `url('${backgroundImageLG}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '100vh'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', xl: 'block'},
+                    background: `url('${backgroundImageXL}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '100vh'
+                }}
+            >
+            </Box>
         </Grid>
         
         <Grid container sx={{

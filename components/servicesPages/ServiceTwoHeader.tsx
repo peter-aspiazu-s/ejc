@@ -19,7 +19,11 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
     ServiceTwoHeaderLinkMessageWhastapp
 }) => {
 
-    const backgroundImage = '/images/banner-page-siding-lg.webp';
+    const backgroundImageXS = '/images/banner-page-siding-xs.webp';
+    const backgroundImageSM = '/images/banner-page-siding-sm.webp';
+    const backgroundImageMD = '/images/banner-page-siding-md.webp';
+    const backgroundImageLG = '/images/banner-page-siding-lg.webp';
+    const backgroundImageXL = '/images/banner-page-siding-xl.webp';
 
   return (
     <Grid container className='fade-in'>
@@ -27,24 +31,68 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
             <Box 
                 sx={{
                     display: {xs: 'block', sm: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    background: `url('${backgroundImageXS}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: '-260px',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '100vh'
-                }} 
-            ></Box>
+                }}
+            >
+            </Box>
             <Box 
                 sx={{
-                    display: {xs: 'none', sm: 'block'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'none', sm: 'block', md: 'none'},
+                    background: `url('${backgroundImageSM}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
                     width: '100%',
-                    height: '100vh',
-                }} 
-            ></Box>
+                    height: '100vh'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', md: 'block', lg: 'none'},
+                    background: `url('${backgroundImageMD}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '100vh'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', lg: 'block', xl: 'none'},
+                    background: `url('${backgroundImageLG}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '100vh'
+                }}
+            >
+            </Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', xl: 'block'},
+                    background: `url('${backgroundImageXL}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    width: '100%',
+                    height: '100vh'
+                }}
+            >
+            </Box>
 
             <Box
                 sx={{
