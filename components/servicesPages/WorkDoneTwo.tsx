@@ -18,6 +18,8 @@ import SidingWorkImg3 from '../../public/images/siding-work-img3-border.webp';
 import SidingWorkImg7 from '../../public/images/siding-work-img7-border.webp';
 import SidingWorkImg10 from '../../public/images/siding-work-img10-border.webp';
 import SidingWorkImg14 from '../../public/images/siding-work-img14-border.webp';
+import SidingWorkImg15 from '../../public/images/siding-work-img15-border.webp';
+import SidingWorkImg16 from '../../public/images/siding-work-img16-border.webp';
 
 interface WorkDoneTwoProps {
     workDoneTwo: string;
@@ -92,6 +94,12 @@ export const WorkDoneTwo: FC<WorkDoneTwoProps> = ({
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src={SidingWorkImg14} alt="siding" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={SidingWorkImg15} alt="siding" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src={SidingWorkImg16} alt="siding" />
                         </SwiperSlide>
                     </Swiper>
                 </Paper>

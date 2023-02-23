@@ -15,8 +15,7 @@ import {Autoplay, Navigation} from 'swiper'
 
 import GuttersWorkImg1 from '../../public/images/gutters-work-img1-border.webp'
 import GuttersWorkImg2 from '../../public/images/gutters-work-img2-border.webp'
-import GuttersWorkImg5 from '../../public/images/gutters-work-img5-border.webp'
-import GuttersWorkImg6 from '../../public/images/gutters-work-img6-border.webp'
+import GuttersWorkImg3 from '../../public/images/gutters-work-img3-border.webp'
 
 interface WorkDoneThreeProps {
     workDoneThree: string;
@@ -84,10 +83,7 @@ export const WorkDoneThree: FC<WorkDoneThreeProps> = ({
                             <Image src={GuttersWorkImg2} alt="gutters" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={GuttersWorkImg5} alt="gutters" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={GuttersWorkImg6} alt="gutters" />
+                            <Image src={GuttersWorkImg3} alt="gutters" />
                         </SwiperSlide>
                     </Swiper>
                 </Paper>

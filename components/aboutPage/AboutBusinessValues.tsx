@@ -92,7 +92,9 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
     };
 
   return (
-    <Grid container>
+    <Grid 
+        container
+    >
         <Grid item xs={12} mb={3}>
             <Typography 
                 sx={{

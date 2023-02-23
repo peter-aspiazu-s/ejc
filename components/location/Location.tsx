@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import {FC, useState, useEffect} from 'react';
 
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -10,12 +10,41 @@ interface LocationProps {
 export const Location: FC<LocationProps> = ({
     titleLocation
 }) => {
+
+    const [scrollAnimation4, setScrollAnimation4] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      let animation4 = document.getElementById('animationScroll4');
+      let position4: any = animation4?.getBoundingClientRect().top;
+
+      let windowSize = window.innerHeight / 4; 
+
+      if( position4 < windowSize ){
+        setScrollAnimation4(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
-    <Grid container sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-    }}>
+    <Grid 
+        container 
+        sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        id='animationScroll4' 
+        className={scrollAnimation4 ? 'animate__animated animate__backInLeft' : ''} 
+        display={scrollAnimation4 ? 'block' : 'none'}
+    >
         <Grid item xs={12} sx={{mb:3}}>
             <Typography sx={{
                 color:'text.disabled',

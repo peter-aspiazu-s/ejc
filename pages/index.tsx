@@ -12,6 +12,7 @@ import { TypedHome } from '../components/typedHome';
 import { Video } from '../components/video';
 import { homeTyped, nextSectionFour, nextSectionOne, nextSectionThree, nextSectionTwo } from '../database/dataHome';
 
+
 const HomePage: NextPage = () => {
 
   return (
@@ -43,14 +44,17 @@ const HomePage: NextPage = () => {
           viewMore="View More"
         />
       </Box>
+
       <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>
         <Container>
+
           <CompanySummary
             companySummaryTitle={nextSectionOne[0].titleSectionOne}
             companySummaryDescription1={nextSectionOne[0].descriptionSectionOne}
             companySummaryLinkAbout={nextSectionOne[0].linkSectionOne}
             companySummaryMore={'Read more'}
           />
+
         </Container>
       </Box>
       <Container sx={{py:5}}>

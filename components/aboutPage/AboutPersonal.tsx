@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import {FC, useState, useEffect} from 'react';
 
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -38,9 +38,46 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
     aboutt1Link,
     aboutt2Link,
 }) => {
+
+    const [scrollAnimation3, setScrollAnimation3] = useState(false);
+    const [scrollAnimation4, setScrollAnimation4] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      let animation3 = document.getElementById('animationScroll3');
+      let position3: any = animation3?.getBoundingClientRect().top;
+      let animation4 = document.getElementById('animationScroll4');
+      let position4: any = animation4?.getBoundingClientRect().top;
+
+      let windowSize = window.innerHeight / 4; 
+
+      if( position3 < windowSize ){
+        setScrollAnimation3(true);
+      }
+      if( position4 < windowSize ){
+        setScrollAnimation4(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
     <Grid container justifyContent='center' alignItems='center' spacing={3}>
-        <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <Grid 
+            item 
+            xs={12} 
+            md={6} 
+            sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+            id='animationScroll3' 
+            className={scrollAnimation3 ? 'animate__animated animate__pulse animate__faster' : ''} 
+            display={scrollAnimation3 ? 'block' : 'none'}
+        >
             <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', py: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <CardMedia
@@ -99,7 +136,16 @@ export const AboutPersonal: FC<AboutPersonalProps> = ({
                 </CardActions>
             </Card>
         </Grid>
-        <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+
+        <Grid 
+            item 
+            xs={12} 
+            md={6} 
+            sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+            id='animationScroll4' 
+            className={scrollAnimation4 ? 'animate__animated animate__pulse animate__faster' : ''} 
+            display={scrollAnimation4 ? 'block' : 'none'}
+        >
             <Card sx={{width:{xs: 300, sm: 400, md: 500}, maxWidth: 600, backgroundColor: 'primary.dark', py: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <CardMedia

@@ -22,6 +22,7 @@ const SidingPage: NextPage = () => {
           serviceTwoMoreTitle={'More about the service'}
           serviceTwoMoreDescription1={'We offer the improvements that fit the needs of your infrastructure, since we have an expert human capital in the area, capable of a quality work that will allow you to feel satisfied.'}
           serviceTwoMoreDescription2={'In EJC Home Improvement Corp in our siding service, we generate a coating that helps the care and maintenance of any infrastructure, making it more durable and protected from the outside.'}
+          serviceTwoMoreDescription3={'We also have the repairing service and maintenance of the aluminum frames of your doors and windows.'}
         />
       </Container>
       <Container sx={{py:5}}>

@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import {FC, useEffect, useState} from 'react';
 
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
@@ -40,9 +40,46 @@ export const ContactDirect: FC<ContactDirectProps> = ({
     contact2Link,
     textBtnContact,
 }) => {
+
+    const [scrollAnimation1, setScrollAnimation1] = useState(false);
+    const [scrollAnimation2, setScrollAnimation2] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      let animation1 = document.getElementById('animationScroll1');
+      let position1: any = animation1?.getBoundingClientRect().top;
+      let animation2 = document.getElementById('animationScroll2');
+      let position2: any = animation2?.getBoundingClientRect().top;
+
+      let windowSize = window.innerHeight / 4; 
+
+      if( position1 < windowSize ){
+        setScrollAnimation1(true);
+      }
+      if( position2 < windowSize ){
+        setScrollAnimation2(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
     <Grid container justifyContent='center' alignItems='center' spacing={5}>
-        <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <Grid 
+            item 
+            xs={12} 
+            md={6} 
+            sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+            id='animationScroll1' 
+            className={scrollAnimation1 ? 'animate__animated animate__pulse animate__faster' : ''} 
+            display={scrollAnimation1 ? 'block' : 'none'}
+        >
             <Card sx={{ width:{xs:'300px', sm: '400px'}, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <PhoneCallbackIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />
@@ -97,7 +134,16 @@ export const ContactDirect: FC<ContactDirectProps> = ({
                 </CardActions>
             </Card>
         </Grid>
-        <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+
+        <Grid 
+            item 
+            xs={12} 
+            md={6} 
+            sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+            id='animationScroll2' 
+            className={scrollAnimation2 ? 'animate__animated animate__pulse animate__faster' : ''} 
+            display={scrollAnimation2 ? 'block' : 'none'}
+        >
             <Card sx={{ width:{xs:'300px', sm: '400px'}, backgroundColor: 'primary.dark', pb: 2 }}>
                 <CardActionArea sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <PhoneCallbackIcon sx={{fontSize: {xs: '130px', sm: '150px', md: '180px'}}} />

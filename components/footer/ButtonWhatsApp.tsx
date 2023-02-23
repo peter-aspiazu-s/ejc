@@ -19,6 +19,7 @@ export const ButtonWhatsApp: FC<ButtonWhatsAppProps> = ({
   return (
     <>
         <Box 
+            className='animate__animated animate__tada animate__repeat-3'
             sx={{cursor: 'pointer'}}
         >   
             <Button

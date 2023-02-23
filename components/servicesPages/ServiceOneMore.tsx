@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import {FC, useState, useEffect} from 'react';
 
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -16,8 +16,36 @@ export const ServiceOneMore: FC<ServiceOneMoreProps> = ({
     serviceOneMoreDescription2,
     serviceOneMoreDescription3,
 }) => {
+
+  const [scrollAnimation, setScrollAnimation] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      let animation = document.getElementById('animationScroll');
+      let position: any = animation?.getBoundingClientRect().top;
+
+      let windowSize = window.innerHeight / 4; 
+
+      if( position < windowSize ){
+        setScrollAnimation(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
-    <Grid container>
+    <Grid 
+      container
+      id='animationScroll' 
+      className={scrollAnimation ? 'animate__animated animate__backInLeft' : ''} 
+      display={scrollAnimation ? 'block' : 'none'}
+    >
         <Grid item xs={12}>
             <Typography 
               sx={{

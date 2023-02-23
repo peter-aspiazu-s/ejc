@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
 
 import Box from '@mui/material/Box';
@@ -15,6 +16,29 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const ContactPage: NextPage = () => {
+
+  const [scrollAnimation3, setScrollAnimation3] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      let animation3 = document.getElementById('animationScroll');
+      let position3: any = animation3?.getBoundingClientRect().top;
+
+      let windowSize = window.innerHeight / 4; 
+
+      if( position3 < windowSize ){
+        setScrollAnimation3(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
     <PlantillaLayout title={'EJC - Contact'} contentPage={'Page with information to contact us'}>
       <Box sx={{mt: {xs: 13, sm: 14, md: 15}, height: 'auto', position: 'relative'}}>
@@ -73,14 +97,31 @@ const ContactPage: NextPage = () => {
         </Grid>
       </Container>
       <Container sx={{py: 3, display: 'flex', justifyContent:'center', alignItems:'center'}}>
-        <IconButton color="secondary" href="https://www.facebook.com/profile.php?id=100087763103794&mibextid=LQQJ4d" target="_blank">
-          <FacebookIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
+        <IconButton 
+          color="secondary" 
+          href="https://www.facebook.com/profile.php?id=100087763103794&mibextid=LQQJ4d" 
+          target="_blank"
+        >
+          <FacebookIcon 
+            sx={{fontSize: {xs:'40px', sm:'60px'}}} 
+            id='animationScroll3' 
+            className={scrollAnimation3 ? 'animate__animated animate__tada' : ''} 
+            display={scrollAnimation3 ? 'block' : 'none'}
+          />
         </IconButton>
         <IconButton color="secondary" href="https://instagram.com/ejc.home_improvement_corp?igshid=YmMyMTA2M2Y=" target="_blank">
-          <InstagramIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
+          <InstagramIcon 
+            sx={{fontSize: {xs:'40px', sm:'60px'}}} 
+            className={scrollAnimation3 ? 'animate__animated animate__tada' : ''} 
+            display={scrollAnimation3 ? 'block' : 'none'}
+          />
         </IconButton>
         <IconButton color="secondary" href="https://www.youtube.com/@ejchomeimprovementcorp" target="_blank">
-          <YouTubeIcon sx={{fontSize: {xs:'40px', sm:'60px'}}} />
+          <YouTubeIcon 
+            sx={{fontSize: {xs:'40px', sm:'60px'}}} 
+            className={scrollAnimation3 ? 'animate__animated animate__tada' : ''} 
+            display={scrollAnimation3 ? 'block' : 'none'}
+          />
         </IconButton>
       </Container>
       <Container sx={{py: 3}}>
