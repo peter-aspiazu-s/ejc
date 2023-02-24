@@ -1,11 +1,9 @@
-import {FC} from 'react'
-import Image from 'next/image';
+import {FC} from 'react';
 
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
 
 interface SectionContactProps {
     contactTitle: string;
@@ -35,7 +33,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
                 sx={{
                     display: {xs: 'block', sm:'none'},
                     background: `url('${backgroundImageXS}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
                     width: '100%',
@@ -46,7 +44,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
                 sx={{
                     display: {xs: 'none', sm:'block', md: 'none'},
                     background: `url('${backgroundImageSM}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
                     width: '100%',
@@ -57,7 +55,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
                 sx={{
                     display: {xs: 'none', md: 'block', lg: 'none'},
                     background: `url('${backgroundImageMD}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
                     width: '100%',
@@ -68,7 +66,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
                 sx={{
                     display: {xs: 'none', lg: 'block', xl: 'none'},
                     background: `url('${backgroundImageLG}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
                     width: '100%',
@@ -79,7 +77,7 @@ export const ContactHeader: FC<SectionContactProps> = ({
                 sx={{
                     display: {xs: 'none', xl: 'block'},
                     background: `url('${backgroundImageXL}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
                     width: '100%',

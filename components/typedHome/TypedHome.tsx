@@ -44,11 +44,9 @@ export const TypedHome:FC<TypedHomeProps> = ({
                 sx={{
                     display: {xs: 'block', sm: 'none'},
                     background: `url('${backgroundImageXS}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
-                    backgroundPositionX: 'center',
-                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '100vh'
                 }}
@@ -58,11 +56,9 @@ export const TypedHome:FC<TypedHomeProps> = ({
                 sx={{
                     display: {xs: 'none', sm: 'block', md: 'none'},
                     background: `url('${backgroundImageSM}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
-                    backgroundPositionX: 'center',
-                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '100vh'
                 }}
@@ -72,11 +68,9 @@ export const TypedHome:FC<TypedHomeProps> = ({
                 sx={{
                     display: {xs: 'none', md: 'block', lg: 'none'},
                     background: `url('${backgroundImageMD}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
-                    backgroundPositionX: 'center',
-                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '100vh'
                 }}
@@ -86,11 +80,9 @@ export const TypedHome:FC<TypedHomeProps> = ({
                 sx={{
                     display: {xs: 'none', lg: 'block', xl: 'none'},
                     background: `url('${backgroundImageLG}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
-                    backgroundPositionX: 'center',
-                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '100vh'
                 }}
@@ -100,11 +92,9 @@ export const TypedHome:FC<TypedHomeProps> = ({
                 sx={{
                     display: {xs: 'none', xl: 'block'},
                     background: `url('${backgroundImageXL}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     WebkitBackgroundSize: 'cover',
-                    backgroundPositionX: 'center',
-                    backgroundPositionY: 'center',
                     width: '100%',
                     height: '100vh'
                 }}

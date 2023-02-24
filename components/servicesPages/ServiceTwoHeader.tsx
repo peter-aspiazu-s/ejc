@@ -32,7 +32,7 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
                 sx={{
                     display: {xs: 'block', sm: 'none'},
                     background: `url('${backgroundImageXS}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
@@ -45,7 +45,7 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
                 sx={{
                     display: {xs: 'none', sm: 'block', md: 'none'},
                     background: `url('${backgroundImageSM}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
@@ -58,7 +58,7 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
                 sx={{
                     display: {xs: 'none', md: 'block', lg: 'none'},
                     background: `url('${backgroundImageMD}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
@@ -71,7 +71,7 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
                 sx={{
                     display: {xs: 'none', lg: 'block', xl: 'none'},
                     background: `url('${backgroundImageLG}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
@@ -84,7 +84,7 @@ export const ServiceTwoHeader: FC<ServiceTwoHeaderProps> = ({
                 sx={{
                     display: {xs: 'none', xl: 'block'},
                     background: `url('${backgroundImageXL}')`,
-                    backgroundAttachment: 'fixed',
+                    // backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
