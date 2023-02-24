@@ -56,14 +56,18 @@
 /* ANIMACION FADE */
 .fade-in{
     animation-duration: 2s;
+    -webkit-animation-duration: 2s;
     animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
+        -webkit-opacity: 0;
     }
     to {
         opacity: 1;
+        -webkit-opacity: 0;
     }
 }

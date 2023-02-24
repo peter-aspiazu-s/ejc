@@ -6,11 +6,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-import BannerPageContactxs from '../../public/images/banner-page-contact-xs.webp'
-import BannerPageContactsm from '../../public/images/banner-page-contact-sm.webp'
-import BannerPageContactmd from '../../public/images/banner-page-contact-md.webp'
-import BannerPageContactlg from '../../public/images/banner-page-contact-lg.webp'
-import BannerPageContactxl from '../../public/images/banner-page-contact-xl.webp'
 
 interface SectionContactProps {
     contactTitle: string;
