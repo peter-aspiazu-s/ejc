@@ -1,4 +1,4 @@
-import {FC, useState, SyntheticEvent} from 'react';
+import {FC, useState, SyntheticEvent, useEffect} from 'react';
 
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -91,9 +91,34 @@ export const AboutBusinessValues: FC<AboutBusinessValuesProps> = ({
         setExpanded(newExpanded ? panel : false);
     };
 
+    const [scrollAnimation, setScrollAnimation] = useState(false);
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+        let animation = document.getElementById('animationScroll');
+        let position: any = animation?.getBoundingClientRect().top;
+
+        let windowSize = window.innerHeight / 4; 
+
+        if( position < windowSize ){
+            setScrollAnimation(true);
+        }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
+
   return (
     <Grid 
         container
+        id='animationScroll' 
+        className={scrollAnimation ? 'animate__animated animate__pulse' : ''} 
+        display={scrollAnimation ? 'block' : 'none'}
     >
         <Grid item xs={12} mb={3}>
             <Typography 

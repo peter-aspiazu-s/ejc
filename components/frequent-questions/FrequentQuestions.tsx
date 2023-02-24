@@ -1,4 +1,4 @@
-import {FC, useState, SyntheticEvent} from 'react';
+import {FC, useState, SyntheticEvent, useEffect} from 'react';
 
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -80,7 +80,7 @@ export const FrequentQuestions: FC<FrequentQuestionsProps> = ({
     };
 
   return (
-    <Grid container className="animate__animated animate__fadeIn">
+    <Grid container>
         <Grid item>
             <Paper elevation={3} sx={{p: {xs:3, md:5}}}>
                 <Grid container>
