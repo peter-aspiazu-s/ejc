@@ -20,28 +20,66 @@ export const AboutHeader: FC<AboutHeaderProps> = ({
     aboutLinkMessageWhatsapp
 }) => {
 
-    const backgroundImage = '/images/banner-page-about-lg.webp';
+    const backgroundImageXS = '/images/banner-page-about-xs.webp';
+    const backgroundImageSM = '/images/banner-page-about-sm.webp';
+    const backgroundImageMD = '/images/banner-page-about-md.webp';
+    const backgroundImageLG = '/images/banner-page-about-lg.webp';
+    const backgroundImageXL = '/images/banner-page-about-xl.webp';
 
   return (
     <Grid container className='fade-in'>
         <Grid item xs={12}>
             <Box 
                 sx={{
-                    display: {xs:'block', lg: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs:'block', sm: 'none'},
+                    background: `url('${backgroundImageXS}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: 'center',
+                    WebkitBackgroundSize: 'cover',
                     width: '100%',
                     height: '100vh'
                 }} 
             ></Box>
             <Box 
                 sx={{
-                    display: {xs: 'none', lg: 'block'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'none', sm: 'block', md: 'none'},
+                    background: `url('${backgroundImageSM}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
+                    WebkitBackgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', md: 'block', lg: 'none'},
+                    background: `url('${backgroundImageMD}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    WebkitBackgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', lg: 'block', xl: 'none'},
+                    background: `url('${backgroundImageLG}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    WebkitBackgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', xl: 'block'},
+                    background: `url('${backgroundImageXL}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    WebkitBackgroundSize: 'cover',
                     width: '100%',
                     height: '100vh'
                 }} 

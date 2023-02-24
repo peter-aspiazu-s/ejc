@@ -26,7 +26,11 @@ export const ContactHeader: FC<SectionContactProps> = ({
     contactLinkMessageWhatsapp
 }) => {
 
-    const backgroundImage = '/images/banner-page-contact-lg.webp';
+    const backgroundImageXS = '/images/banner-page-contact-xs.webp';
+    const backgroundImageSM = '/images/banner-page-contact-sm.webp';
+    const backgroundImageMD = '/images/banner-page-contact-md.webp';
+    const backgroundImageLG = '/images/banner-page-contact-lg.webp';
+    const backgroundImageXL = '/images/banner-page-contact-xl.webp';
 
   return (
     <Grid container className='fade-in'>
@@ -35,31 +39,54 @@ export const ContactHeader: FC<SectionContactProps> = ({
             <Box 
                 sx={{
                     display: {xs: 'block', sm:'none'},
-                    background: `url('${backgroundImage}')`,
+                    background: `url('${backgroundImageXS}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: '-130px',
+                    WebkitBackgroundSize: 'cover',
                     width: '100%',
                     height: '100vh'
                 }} 
             ></Box>
             <Box 
                 sx={{
-                    display: {xs: 'none', sm:'block', lg: 'none'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'none', sm:'block', md: 'none'},
+                    background: `url('${backgroundImageSM}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
-                    backgroundPositionX: 'left',
+                    WebkitBackgroundSize: 'cover',
                     width: '100%',
                     height: '100vh'
                 }} 
             ></Box>
             <Box 
                 sx={{
-                    display: {xs: 'none', lg: 'block'},
-                    background: `url('${backgroundImage}')`,
+                    display: {xs: 'none', md: 'block', lg: 'none'},
+                    background: `url('${backgroundImageMD}')`,
                     backgroundAttachment: 'fixed',
                     backgroundSize: 'cover',
+                    WebkitBackgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', lg: 'block', xl: 'none'},
+                    background: `url('${backgroundImageLG}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    WebkitBackgroundSize: 'cover',
+                    width: '100%',
+                    height: '100vh'
+                }} 
+            ></Box>
+            <Box 
+                sx={{
+                    display: {xs: 'none', xl: 'block'},
+                    background: `url('${backgroundImageXL}')`,
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover',
+                    WebkitBackgroundSize: 'cover',
                     width: '100%',
                     height: '100vh'
                 }} 
