@@ -111,7 +111,7 @@ export const Navbar: FC<ItemsMenuProps> = ({
                   <Image src='/images/logotipo.svg' alt='logo' width={100} height={100} className='logo' />
                 </NextLink>
                 <NextLink href={"https://www.bbb.org/us/ny/nanuet/profile/carpenter/ejc-home-improvement-corp-0121-87176629/#sealclick"} passHref>
-                  <Image src='/images/logo-certification.png' alt='logo certification' width={70} height={70} className='logo' />
+                  <Image src='/images/logo-certification.png' alt='logo certification' width={50} height={50} className='logo' />
                 </NextLink>
               </Grid>
 
