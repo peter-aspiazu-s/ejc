@@ -108,3 +108,19 @@ export const nextSectionFourES = [
         linkSectionFour: '/es/informacion-empresa/contacto',
     }
 ]
+
+export const nextSectionCertification = [
+    {
+        titleSectionFour: 'BBB Accredited Business',
+        descriptionSectionFour: 'EJC Home LLC is an accredited business by the Better Business Bureau (BBB), which means it meets the highest standards of integrity, business ethics, and commitment to customer satisfaction.',
+        linkSectionFour: 'https://www.bbb.org/us/ny/nanuet/profile/carpenter/ejc-home-improvement-corp-0121-87176629/#sealclick',
+    }
+]
+
+export const nextSectionCertificationES = [
+    {
+        titleSectionFour: 'Negocio Acreditado por la BBB',
+        descriptionSectionFour: 'EJC Home LLC es un negocio acreditado por la Better Business Bureau (BBB), lo que significa que cumple con los más altos estándares de integridad, ética comercial y compromiso con la satisfacción del cliente.',
+        linkSectionFour: 'https://www.bbb.org/us/ny/nanuet/profile/carpenter/ejc-home-improvement-corp-0121-87176629/#sealclick',
+    }
+]

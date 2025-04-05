@@ -10,7 +10,15 @@ import { SectionContact } from '../components/contact';
 import { CompanySummary } from '../components/companySummary';
 import { TypedHome } from '../components/typedHome';
 import { Video } from '../components/video';
-import { homeTyped, nextSectionFour, nextSectionOne, nextSectionThree, nextSectionTwo } from '../database/dataHome';
+import { 
+  homeTyped, 
+  nextSectionFour, 
+  nextSectionOne, 
+  nextSectionThree, 
+  nextSectionTwo,
+  nextSectionCertification 
+} from '../database/dataHome';
+import { Certification } from '../components/certification';
 
 
 const HomePage: NextPage = () => {
@@ -89,6 +97,22 @@ const HomePage: NextPage = () => {
           />
         </Container>
       </Box>
+
+      <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>
+        <Container>
+
+          <CompanySummary
+            companySummaryTitle={nextSectionCertification[0].titleSectionFour}
+            companySummaryDescription1={nextSectionCertification[0].descriptionSectionFour}
+            companySummaryLinkAbout={nextSectionCertification[0].linkSectionFour}
+            companySummaryMore={'Visit website'}
+          />
+
+        </Container>
+      </Box>
+      <Container sx={{py:5}}>
+        <Certification />
+      </Container>
 
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionContact 

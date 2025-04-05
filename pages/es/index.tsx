@@ -8,7 +8,15 @@ import { SectionContact } from '../../components/contact';
 import { CompanySummary } from '../../components/companySummary';
 import { TypedHome } from '../../components/typedHome';
 import { Video } from '../../components/video';
-import { homeTypedES, nextSectionFourES, nextSectionOneES, nextSectionThreeES, nextSectionTwoES } from '../../database/dataHome';
+import { 
+  homeTypedES, 
+  nextSectionFourES, 
+  nextSectionOneES, 
+  nextSectionThreeES, 
+  nextSectionTwoES,
+  nextSectionCertificationES
+} from '../../database/dataHome';
+import { Certification } from '../../components/certification';
 
 const HomePage: NextPage = () => {
   return (
@@ -82,6 +90,22 @@ const HomePage: NextPage = () => {
           />
         </Container>
       </Box>
+
+      <Box sx={{mt: -1, py:5, backgroundColor: 'primary.light'}}>
+        <Container>
+
+          <CompanySummary
+            companySummaryTitle={nextSectionCertificationES[0].titleSectionFour}
+            companySummaryDescription1={nextSectionCertificationES[0].descriptionSectionFour}
+            companySummaryLinkAbout={nextSectionCertificationES[0].linkSectionFour}
+            companySummaryMore={'Visit website'}
+          />
+
+        </Container>
+      </Box>
+      <Container sx={{py:5}}>
+        <Certification />
+      </Container>
 
       <Box sx={{mb: -1, height: 'auto', position: 'relative'}}>
         <SectionContact 

@@ -105,9 +105,13 @@ export const Navbar: FC<ItemsMenuProps> = ({
                 sm={10} 
                 md={2} 
                 sx={{display: 'flex', justifyContent:'start', alignItems:{xs:'center'}}}
+                gap={2}
               >
                 <NextLink href={linkHome} passHref>
                   <Image src='/images/logotipo.svg' alt='logo' width={100} height={100} className='logo' />
+                </NextLink>
+                <NextLink href={"https://www.bbb.org/us/ny/nanuet/profile/carpenter/ejc-home-improvement-corp-0121-87176629/#sealclick"} passHref>
+                  <Image src='/images/logo-certification.png' alt='logo certification' width={100} height={100} className='logo' />
                 </NextLink>
               </Grid>
 
